@@ -1,0 +1,23 @@
+# personal task/board state (task standard: TODO is gitignored everywhere)
+TODO.md
+NOW.md
+
+# work-machine-local layer — never committed (one-way flow rule, CLAUDE.md)
+local/
+
+# OS junk
+.DS_Store
+
+# secrets defense-in-depth (no secrets should ever exist in this repo at all)
+.env
+.env.*
+*.env
+keys/
+secrets/
+*.key
+*.pem
+*credentials*
+*.secret
+
+# task-estate store + operational state (personal data — never committed; task-estate refactor 2026-08-04)
+/state/
