@@ -15,6 +15,7 @@ The one-sentence thesis: **human participation improves results exactly where th
 - Decisions reach the human in ONE known format: the concrete options, one recommendation with its reason, the do-nothing consequence, the named default. A decision arriving in a known format costs a fraction of the attention of a free-form "what should we do?"
 - At every choice point, name the exact intended option and pre-empt the plausible wrong one — never leave a branch to the human's guess.
 - Fewer, richer decision points beat many shallow confirmations. Approval fatigue is a real failure mode: a gate the human has stopped reading is a heuristic control pretending to be structural.
+- A flow that would create an account, profile, or identity as a side effect STOPS and names that fact before proceeding — registration is itself an authority-gate press, never something discovered afterwards.
 
 ## Interface investment
 

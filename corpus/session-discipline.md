@@ -17,12 +17,13 @@ How a working session — an AI agent session, or a person following the same di
 - A checkable fact is verified against its primary source before being asserted whenever something rides on it (an action, a recommendation, a report upward) or it contradicts what someone reported. Facts recalled from memory are labeled as such ("unverified", "as I recall") — never dressed as checked.
 - Never escalate a diagnosed blocker to someone else's hands without first testing the cheap path yourself; escalate only on verified failure.
 - When handing a person a manual step, deliver it execute-ready: exact command or click-path, the target end state, any text prepared ready to paste, and what to confirm afterwards. At every UI choice point, name the exact option — never leave a branch to guesswork. After they report doing it, verify the result where a tool can.
+- **Instruction completeness for human-executed steps is the session's duty, on par with the execution itself:** a person's error under absent, incorrect, or incomplete instruction is the system's failure, never theirs — attribute and fix it system-side.
 - Every execution arc closes with **verify · record · report faithfully**: failed tests reported as failures with output, skipped steps named as skipped, done stated plainly when verified.
 
 ## Capture at settle
 
 - When a judgment stabilizes or a practice recurs, write it into its durable home **in the same session it settles** — conventions file, design doc, config, TODO. Sessions are stateless; an unwritten conclusion is re-derived at full cost.
-- A correction received — doubly one that had to be repeated — is formalization debt: encode it durably the same session, so the next session inherits it instead of re-earning it.
+- A correction received — doubly one that had to be repeated — is formalization debt: encode it durably the same session, so the next session inherits it instead of re-earning it. On any correction, the next reply leads by restating what was actually meant; the same misunderstanding corrected a SECOND time in one session → stop, no third guess: restate the actual ask in one plain sentence and get it confirmed.
 - Guards against rule bloat: formalize at the second occurrence (rule of two), not the first; every rule names its consumer; a stale rule is drift — fix or delete on sight.
 - When a standard, tool, or name is renamed, retired, or superseded: sweep the instruction surfaces for the old world in the same session and fix stale references.
 

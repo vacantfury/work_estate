@@ -15,6 +15,7 @@ The ordered-TODO task system. Plain markdown, human- and machine-readable, tooli
 - **Every session maintains the TODO of the workspace it works in.** Completions and material advances are recorded in the same session they happen.
 - **Finished and dropped items move to an archive file** (e.g. `archive.md`), one line each: `<close-date> · [done|dropped] · task text · [added: YYYY-MM-DD]`. Records are kept, never deleted. Never guess a missing date — write `[added: ?]`.
 - **Rules that never complete are not tasks.** Recurring invariants belong in the conventions/instructions layer, not the TODO.
+- **Task files and records are written in plain English,** whatever language the input arrived in (translate at intake, no glosses); human names may keep their native script.
 
 ## States (before scores)
 
