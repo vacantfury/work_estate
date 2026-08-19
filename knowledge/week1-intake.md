@@ -97,7 +97,7 @@
 
 ## 13. Company baseline: leadership, people, and direction surfaces (feeds design principle 12)
 
-*Seeds the company watch (`corpus/company-watch.md`): the source map, the leadership chain, and the initial registers — recorded in `local/state/company.md`, never here. Scope is the whole company — the own org watched most closely, proximity weighting attention but never drawing the boundary; the record candid and complete, for the owner's benefit.*
+*Seeds the company watch (`corpus/company-watch.md`): the source map, the leadership chain, and the initial registers — recorded in `local/state/company.md`, never here. Scope is the whole company — the own org watched most closely, proximity weighting attention but never drawing the boundary; the record candid and complete, for the user's benefit.*
 
 - ☐ Map the leadership chain by name: manager → skip → org lead → division/company leadership; for each, what they formally lead and what they visibly push. Add the notable leaders OUTSIDE the chain worth tracking from day one — company leadership and adjacent-org owners of themes that touch the team's path. (The leader register's first fill.)
 - ☐ Map the surfaces at each level: all-hands and town halls (company, org, team), leadership memos and newsletters, cross-org channels, where planning artifacts (OKRs, commitments, charters) live — and where personnel news actually lands: promotion announcements, departure notes, org-chart changes, in the own org and company-wide. (Extends §9's where-leadership-reads with where-leadership-writes.)
@@ -108,14 +108,14 @@
 
 ## 14. Health facilities and the wall (feeds design principle 13)
 
-*Binding grounding rule: facility docs FIRST, then ask the owner where the docs don't answer — no facility practice is assumed. The resolved facility map is recorded in `local/`, never here.*
+*Binding grounding rule: facility docs FIRST, then ask the user where the docs don't answer — no facility practice is assumed. The resolved facility map is recorded in `local/`, never here.*
 
 - ☐ Locate the facilities/benefits documentation and build the facility map: ergonomics program and the equipment-request channel, sit-stand desk availability, gym/fitness access, cafeteria locations and hours, break spaces and walking routes. **[assume: a large-campus employer documents all of these; the request channels are what varies — verify]**
 - ☐ Week 1, at eligibility: submit the ergonomic setup — chair fitting, monitor at eye height, external keyboard/mouse. Request equipment early; never wait for pain.
-- ☐ Home-equipment provision (owner ruling 2026-08-14 — employer-provision-first): does the employer provide or reimburse home-office equipment (monitor, keyboard/mouse, chair), through which channel and up to what allowance? Checked BEFORE any personal purchase — the home station is furnished through this channel first; personally bought only what it doesn't cover.
+- ☐ Home-equipment provision (settled 2026-08-14 — employer-provision-first): does the employer provide or reimburse home-office equipment (monitor, keyboard/mouse, chair), through which channel and up to what allowance? Checked BEFORE any personal purchase — the home station is furnished through this channel first; personally bought only what it doesn't cover.
 - ☐ Home station (WFH days), furnished after start via the channel above: same ergonomic bar — real desk, real chair, external monitor — and ONE dedicated work spot (the wall's physical mechanism).
 - ☐ On-call reality: does the role carry a rotation; which channel/tooling it genuinely requires, at what response expectation, on what schedule (docs AND teammates — §10's dual-source rule). Scope the wall's carve-out to exactly that.
-- ☐ Set with the owner and record in the ledger: the hard-stop time, the lunch block, and the moment-table cadences (`corpus/health-guard.md`).
+- ☐ Set with the user and record in the ledger: the hard-stop time, the lunch block, and the moment-table cadences (`corpus/health-guard.md`).
 - ☐ Wire the guard's clock: the best reminder mechanism the device and sanctioned tooling offer (calendar blocks, OS/assistant break reminders, the agent's own surface; degraded path: phone timers + the printed moment table).
 - ☐ Set the distillation cadence: which planning-rhythm checkpoint (§8) the register refresh and portfolio alignment re-score ride on.
 
@@ -127,7 +127,7 @@
 - ☐ Ask the manager directly (fold into the §8/§9 week-1 conversation): where would they want to see a running record of delivered work, and at what cadence? This is the mechanism behind §9's record-keeping-between-reviews question.
 - ☐ Ask a teammate: where does status actually get posted AND read here — which of the existing surfaces does the manager (or leads) really look at?
 - ☐ Resolve and record in `local/`: the public view's home (an existing team surface, a new page in the team's knowledge home (§8), or the manager's 1:1 doc) + the render cadence (ride an existing ceremony where one exists; weekly default). Until resolved, the rendering stages at `local/state/worklog-public.md`.
-- ☐ Confirm the private capture rhythm with the owner: session-end appends + his one-minute end-of-day pass.
+- ☐ Confirm the private capture rhythm with the user: session-end appends + their one-minute end-of-day pass.
 
 ## 16. Environments, promotion, and design ritual (feeds design principle 15)
 
@@ -158,6 +158,6 @@
   - 2026-08-18 finding: the device's enterprise-managed GitHub account cannot accept collaboration invitations to repos outside the enterprise (invitation refused). Invitations are therefore never the access route — an outside PRIVATE repo reaches the device only via the per-device credential (`corpus/research-infrastructure.md` item 2); PUBLIC repos clone credential-free (this seed's own channel). github.com reachable in the browser (the invitation attempt rendered); the git clone/push legs remain unverified.
 - ☐ Policy on ACTIVE personal projects on the device (sharpens A3/Phase 0, which asked only about this conventions seed): personal repos worked on, personal tools installed, personal secret-manager sign-in — allowed, tolerated, or prohibited?
 - ☐ External/personal LLM endpoints from the device: permitted at all, and for which content classes? This answer decides every gray flow in the two-stack rule.
-- ☐ May work-confidential content run on non-employer compute (the owner's own clusters), or is work content bound to employer devices/tenancy? Default before the answer: no.
+- ☐ May work-confidential content run on non-employer compute (the user's own clusters), or is work content bound to employer devices/tenancy? Default before the answer: no.
 - ☐ The employer secret store and LLM gateway the team actually uses — the work stack's incumbents (extends §1 and §17).
 - ☐ Record every answer plus the chosen sync posture (full client vs read-only satellite) in `local/ledger.md`; on a blocked-push outcome, name the fallback explicitly.

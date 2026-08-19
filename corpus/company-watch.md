@@ -40,15 +40,15 @@ Unfold-seeded, work-local:
 
 Updates are new dated log entries first, registers second; history is never rewritten, because trajectory — of themes and of people — is read from it. The schema is deliberately typed so the record stays machine-readable: markdown is the default medium, and if the sanctioned work tooling supports something more structured, the same schema carries over — the unfold's call.
 
-## The record's posture — candid, owner-settled
+## The record's posture — candid and complete
 
-The store lives on the work device, and records **candidly and completely, for the owner's benefit** (owner-settled 2026-08-12): observations, trajectory reads, honest analysis of events — what actually happened and what it means. The content is knowledge legitimately gained through ordinary work and violates no obligation; completeness is never traded away for appearance. The owner's owner still keeps his own career view beyond the job — not out of caution, but because it outlives any single job: person relationships are lifelong assets, and what company events mean for the career is a beyond-the-job question; debriefs travel via the boundary protocol (`boundary-protocol.md`).
+The store lives on the work device, and records **candidly and completely, for the user's benefit** (settled 2026-08-12): observations, trajectory reads, honest analysis of events — what actually happened and what it means. The content is knowledge legitimately gained through ordinary work and violates no obligation; completeness is never traded away for appearance. The user still keeps their own career view beyond the job — not out of caution, but because it outlives any single job: person relationships are lifelong assets, and what company events mean for the career is a beyond-the-job question; debriefs travel via the boundary discipline (`boundary-protocol.md`).
 
 ## Collection — riding existing surfaces
 
 Never a new ceremony. Capture happens at moments of exposure already lived: all-hands and town halls at each level · leadership memos and company/org announcements · personnel announcements — promotion lists, departure notes, org-chart changes, in the own org and beyond it · planning cycles, where OKRs and commitments get set · promotion and calibration language · casual remarks in meetings and hallways (logged like formal signals, graded as rhetoric until repeated) · cross-org channels and other divisions' visible moves · and the **manager 1:1, the standing direct channel** — "what is leadership pushing this half, and what is getting headcount" is a normal question, not an imposition, and doubles as relationship investment.
 
-The **public lane** — executive moves, layoff and reorg press coverage, earnings themes, leadership statements outside the company — is the owner's own concern off this machine, watched by his standing public-information feeds; what matters reaches this installation in his own word. The work side runs no external feed tooling.
+The **public lane** — executive moves, layoff and reorg press coverage, earnings themes, leadership statements outside the company — is the user's own concern off this machine, watched by whatever public-information feeds they keep; what matters reaches this installation in their own word. The work side runs no external feed tooling.
 
 ## Distillation — cadence and coupling
 

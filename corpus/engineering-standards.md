@@ -42,7 +42,7 @@ Defaults for new code. Where the employer or team has an established practice �
 
 - The universal interface is **environment variables**: code reads plain env vars (`os.environ`, pydantic-settings) — never a secrets file, never with knowledge of any particular secret store.
 - No plaintext secret value ever exists in a repo — committed or gitignored. Secrets live in the sanctioned secret store and are injected into the process at launch.
-- **Which store is the sanctioned one is decided by the environment's own documentation and resources, discovered at intake — never imported from another estate's standard.** A personal secret manager present on the machine serves only personal-stack content (`research-infrastructure.md`); work secrets live in the work environment's own store, whatever intake finds it to be.
+- **Which store is the sanctioned one is decided by the environment's own documentation and resources, discovered at intake — never imported from outside.** A personal secret manager present on the machine serves only personal-stack content (`research-infrastructure.md`); work secrets live in the work environment's own store, whatever intake finds it to be.
 - `.env`-style patterns stay gitignored as defense-in-depth even though such files should never exist with real values.
 - When any key is rotated or revoked, the record in the secret store is updated in the same motion — the store stays the single source of truth.
 

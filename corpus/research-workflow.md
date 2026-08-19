@@ -1,6 +1,6 @@
 # Research workflow — the research lane
 
-*The research arc for an applied-scientist role, ported generically from the owner's personal research workflow (design principle 16). `project-lifecycle.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc and the auto-research jobs that run it with minimal owner attention.*
+*The research arc for an applied-scientist role, ported generically from the maintainer's established research workflow (design principle 16). `project-lifecycle.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc and the auto-research jobs that run it with minimal user attention.*
 
 ## The arc
 
@@ -23,7 +23,7 @@ The lane's standing jobs — each writes to its project record or the lane's sta
 - **Internal prior-art scout** — standing watch on internal docs/experiment records adjacent to active questions; new relevant prior art is a grounding update, sometimes a kill signal — escalate a kill signal.
 - **Eval-landscape watch** — what benchmarks/evals/judge practices the field and the org are moving to for the active problem class; feeds stage 3.
 - **Experiment monitor** — running jobs triaged (failed runs, anomalous metrics, done-ness); result lines drafted into the project record; escalate anomalies that block the loop.
-- **Analysis and writing assists** — drafting the analysis pass and readout artifacts from the project record for the owner's taste-judge pass.
+- **Analysis and writing assists** — drafting the analysis pass and readout artifacts from the project record for the user's taste-judge pass.
 
 ## Fit with the rest
 

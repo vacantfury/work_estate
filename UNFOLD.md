@@ -1,10 +1,10 @@
 # UNFOLD — the installer
 
-*Run on the work device, in the first session after cloning. Executable by any sanctioned capable agent — or manually by the owner (degraded path at the end). This file is deliberately plain markdown with no dependency on any harness, language runtime, or feature: which AI tooling may execute it is itself a question it answers (A1).*
+*Run on the work device, in the first session after cloning. Executable by any sanctioned capable agent — or manually by the user (degraded path at the end). This file is deliberately plain markdown with no dependency on any harness, language runtime, or feature: which AI tooling may execute it is itself a question it answers (A1).*
 
 ## Contract
 
-- **Input:** this repo (read-only during the unfold), the work documents the owner points at (AI-tooling policy, device/acceptable-use policy, engineering handbook if offered), and the device itself.
+- **Input:** this repo (read-only during the unfold), the work documents the user points at (AI-tooling policy, device/acceptable-use policy, engineering handbook if offered), and the device itself.
 - **Output:** everything lands in `local/` (gitignored). The committed seed is never edited by the unfold, and nothing derived from employer docs, systems, or code is ever committed or pushed — the one-way flow rule (CLAUDE.md) is absolute.
 - **Re-runnable:** `local/generated/` is wiped and regenerated on each run; `local/state/` (living work state) is never touched by a re-run.
 
@@ -16,24 +16,24 @@
 
 ## Phase 0 — precondition gate
 
-1. Confirm the device policy permits a personal-convention repo on this machine (this is A3, resolved first because everything else depends on it). Evidence: the device/acceptable-use policy, or an explicit answer from the owner after he checks.
+1. Confirm the device policy permits a personal-convention repo on this machine (this is A3, resolved first because everything else depends on it). Evidence: the device/acceptable-use policy, or an explicit answer from the user after they check.
 2. If the answer is no or remains unclear → **STOP**: delete the clone, record nothing on the device. The corpus still serves in reading form elsewhere.
 
 ## Phase 1 — detect
 
 Gather evidence; note everything observed (it feeds Phase 2).
 
-1. **Work docs:** read the documents the owner supplies — AI-tooling policy (what agents/endpoints/tools are sanctioned), device policy, engineering standards if offered. Extract only what the ledger needs; quote policy minimally.
-2. **Device inspection (read-only):** what AI/agent tooling is installed or available (internal tooling, editor agents, CLIs); what runtimes exist (`git`, `python`, `uv` versions); what backup/sync mechanisms the employer provides (managed folder sync, work-hosted git, device backup — feeds A6); whether the personal remote is reachable (a credential-free read-only check, e.g. `git ls-remote` on this repo's public URL — the repo is public so this check needs no credential; personal credentials land on the device only later, per the amended credential rule in `corpus/boundary-protocol.md` and the setup order in `corpus/research-infrastructure.md`, never to make this check pass).
+1. **Work docs:** read the documents the user supplies — AI-tooling policy (what agents/endpoints/tools are sanctioned), device policy, engineering standards if offered. Extract only what the ledger needs; quote policy minimally.
+2. **Device inspection (read-only):** what AI/agent tooling is installed or available (internal tooling, editor agents, CLIs); what runtimes exist (`git`, `python`, `uv` versions); what backup/sync mechanisms the employer provides (managed folder sync, work-hosted git, device backup — feeds A6); whether the seed's remote is reachable (a credential-free read-only check, e.g. `git ls-remote` on this repo's public URL — the repo is public so this check needs no credential; the user's own credentials land on the device only later, per the amended credential rule in `corpus/boundary-protocol.md` and the setup order in `corpus/research-infrastructure.md`, never to make this check pass).
 3. **Work stack and real conventions:** which languages/build systems dominate the repos actually worked on, and the conventions actually practiced in them — read the code and recent merged PRs, not only any written guide; the real house style may be documented nowhere (design principle 10). On the first run this may be unknown — mark it deferred; it refines A5 on a later re-run.
-4. **Axis-2 assumptions:** walk `knowledge/week1-intake.md` (the pre-start assumptions ledger). Record confirm/refute/refine per entry in `local/` — some entries resolve from the same docs/inspection as steps 1–2; the rest become the owner's week-1 questions. Results feed A5 and calibrate the provisional `corpus/role-playbook.md` module.
+4. **Axis-2 assumptions:** walk `knowledge/week1-intake.md` (the pre-start assumptions ledger). Record confirm/refute/refine per entry in `local/` — some entries resolve from the same docs/inspection as steps 1–2; the rest become the user's week-1 questions. Results feed A5 and calibrate the provisional `corpus/role-playbook.md` module.
 
 ## Phase 2 — resolve the ledger
 
 Answer A1–A6 in `local/ledger.md`, each with the one evidence line that decides it. An unanswerable question is recorded as **unresolved** with what's missing — never guessed.
 
 - **A1 — sanctioned AI tooling.** Decides what executes future sessions and the format of the generated instructions layer — and, with the intake §17 answers (token budget, unattended-run policy, reachable surfaces), the work engine's queue mode and budget knob (`corpus/work-engine.md`). Outcome classes: a full agent harness · an instructions-consuming assistant · none (→ degraded path).
-- **A2 — personal-remote reachability.** Decides the update channel: reachable → `git pull` + re-run unfold picks up seed improvements; not reachable → the seed is refreshed rarely, by whatever sanctioned transfer route exists, or not at all.
+- **A2 — remote reachability.** Decides the update channel: reachable → `git pull` + re-run unfold picks up seed improvements; not reachable → the seed is refreshed rarely, by whatever sanctioned transfer route exists, or not at all.
 - **A3 — personal-repo policy.** Already gated Phase 0; record the evidence here.
 - **A4 — form of the work-side task/state layer.** Default: `local/state/` inside this clone. If policy or practice prefers work content in a work-managed location, place the state there instead and record the pointer in the ledger.
 - **A5 — applicable convention/skill subset.** Per corpus module and per portable-skills entry: **adopt / adapt / fold away**, one-line reason each. What is folded away stays in the corpus, available to later re-runs.
@@ -53,9 +53,9 @@ From the resolved ledger, wipe and regenerate `local/generated/`:
 8. **Health tracker:** seed `local/state/health.md` if absent, per the tracker format in `corpus/health-guard.md`, and wire the guard's clock from what Phase 1 found — the best reminder mechanism the device and sanctioned tooling offer (calendar blocks, OS/assistant break reminders, the agent's own surface; degraded path: phone timers + the printed moment table).
 9. **Work record:** seed `local/state/worklog.md` if absent, per the private-record format in `corpus/work-record.md`. The PUBLIC view's home is an intake question (`knowledge/week1-intake.md` §15) — until it resolves, seed the staging file `local/state/worklog-public.md`; once a team surface is named, render there and retire the staging file.
 10. **Work-engine registry + lane state:** seed the agent-jobs registry `local/state/agent-jobs.yaml` if absent, per the schema in `corpus/work-engine.md`, with priorities/cadences drafted from the corpus defaults and the queue mode set from A1 + intake §17 (scheduled agents · session-opening sweep · degraded checklists); seed `local/state/people.md` (per `corpus/connections.md`) and `local/state/communication.md` (per `corpus/communication-craft.md`) if absent.
-11. **Footprint register:** seed `local/state/footprint.md` if absent, per `corpus/device-return.md`, and back-fill a line for anything personal already present on the machine (this clone itself needs no line while the repo is public and credential-free; the first personal credential or sign-in does).
+11. **Footprint register:** seed `local/state/footprint.md` if absent, per `corpus/device-return.md`, and back-fill a line for anything personal already present on the machine (this clone itself needs no line while the repo is public and credential-free; the first of the user's credentials or sign-ins does).
 12. **Log:** write `local/generated/UNFOLD-LOG.md` — date, ledger summary, what was generated where, what was folded away.
-13. **Report to the owner:** the ledger answers, what was generated, and the single next action (typically: wire the generated instructions file into the sanctioned tool, exact steps stated).
+13. **Report to the user:** the ledger answers, what was generated, and the single next action (typically: wire the generated instructions file into the sanctioned tool, exact steps stated).
 
 ## Re-running
 

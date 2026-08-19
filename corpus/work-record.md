@@ -1,6 +1,6 @@
 # Work record — the running log of everything done
 
-*A time-ordered record of what was actually done, day by day — ALL of it, across projects and around them (owner directive 2026-08-14). Two layers: a **private record**, full-grain, on the work machine — the single truth; and a **public view**, a curated rendering for the manager and team, derived from it and never separately maintained. The record is the memory the role runs on: status answers, the weekly debrief, and review-time impact evidence are all reads of it, never reconstructions.*
+*A time-ordered record of what was actually done, day by day — ALL of it, across projects and around them (settled 2026-08-14). Two layers: a **private record**, full-grain, on the work machine — the single truth; and a **public view**, a curated rendering for the manager and team, derived from it and never separately maintained. The record is the memory the role runs on: status answers, the weekly debrief, and review-time impact evidence are all reads of it, never reconstructions.*
 
 ## What it is — and what it is not
 
@@ -24,13 +24,13 @@ Unfold-seeded, work-local, append-only by day:
 - note: <candid free grain — friction, time sinks, judgment calls>
 ```
 
-**Capture discipline:** cheap and continuous, never a reconstruction ceremony. A session appends what IT did as it closes (session-end capture — the same reflex as capture-at-settle, `session-discipline.md`); the owner adds the lines only he knows (meetings, hallway conversations, his own manual work) — a one-minute end-of-day pass suffices. A day with no entry is a visible gap, not a silent one.
+**Capture discipline:** cheap and continuous, never a reconstruction ceremony. A session appends what IT did as it closes (session-end capture — the same reflex as capture-at-settle, `session-discipline.md`); the user adds the lines only they know (meetings, hallway conversations, their own manual work) — a one-minute end-of-day pass suffices. A day with no entry is a visible gap, not a silent one.
 
-**Record posture** (the standing owner ruling, 2026-08-12/13, applied here): the private record lives ON the work machine, candid and complete, kept for the owner's benefit — what a task actually cost, what dragged, honest working notes. His own work activity is knowledge legitimately his; completeness is never traded for appearance. Conservatism about his content on the work device applies only on real risk or real company conflict, never by default.
+**Record posture** (the standing ruling, settled 2026-08-12/13, applied here): the private record lives ON the work machine, candid and complete, kept for the user's benefit — what a task actually cost, what dragged, honest working notes. The user's own work activity is knowledge legitimately theirs; completeness is never traded for appearance. Conservatism about the user's own content on the work device applies only on real risk or real company conflict, never by default.
 
 ## The public view — a rendering, never a second truth
 
-The manager-and-team-visible version is **derived from the private record — one direction, private → filtered → public.** Two parallel records are never maintained; the public view is re-rendered from the private truth at its cadence (the dual-truth ban, same rule as everywhere in the estate).
+The manager-and-team-visible version is **derived from the private record — one direction, private → filtered → public.** Two parallel records are never maintained; the public view is re-rendered from the private truth at its cadence (the dual-truth ban).
 
 - **What renders public:** delivered and progressed work, collaboration and reviews, results with their evidence — written in the team's idiom for its actual readers (the manager scanning status, teammates coordinating).
 - **What stays private:** the candid grain — friction, time accounting, half-formed judgments, health-adjacent notes, company-watch observations. Curation is audience-writing, not concealment: everything public is true; not everything true is the reader's business.
@@ -42,13 +42,13 @@ The team very likely already has a status-record convention — weekly snippets,
 
 ## Cadence
 
-- **Private capture: daily** — sessions continuously, the owner's one-minute pass at day end.
+- **Private capture: daily** — sessions continuously, the user's one-minute pass at day end.
 - **Public render: the team's rhythm** — ride an existing ceremony where one exists (standup, sprint readout, a snippets cadence); weekly by default otherwise. A render is a read-and-distill of the period's private entries — minutes, not hours.
 
 ## Consumers — why the record pays
 
 - **Manager alignment:** this is the concrete mechanism behind the playbook's "running shared record of delivered work" — the review conversation holds no surprises because the public view already told the story all period (`role-playbook.md`, working in the org).
-- **The weekly debrief (format home: HERE):** at week's end the record distills into a six-line summary appended to the worklog — `## Debrief (week of YYYY-MM-DD)`: role (how the work is going) · growth (skills/scope/evidence) · people (relationship developments, meaning grain) · load (light|normal|heavy|crunch, plus one line why if not normal) · health (floors held | breaches n (which), from the health-guard tracker, plus a strain one-liner) · events (review cycles, org changes, milestones). Distilled from the week's record — a read, not a reconstruction; the record grain rule (`boundary-protocol.md`) governs it like every record. The owner reads it at week's end.
+- **The weekly debrief (format home: HERE):** at week's end the record distills into a six-line summary appended to the worklog — `## Debrief (week of YYYY-MM-DD)`: role (how the work is going) · growth (skills/scope/evidence) · people (relationship developments, meaning grain) · load (light|normal|heavy|crunch, plus one line why if not normal) · health (floors held | breaches n (which), from the health-guard tracker, plus a strain one-liner) · events (review cycles, org changes, milestones). Distilled from the week's record — a read, not a reconstruction; the record grain rule (`boundary-protocol.md`) governs it like every record. The user reads it at week's end.
 - **Review-time evidence:** impact narratives at review time assemble from dated record lines, not from memory.
 - **Cold-session memory:** any session answering "what happened last week / what did I do on X" reads the record.
 
