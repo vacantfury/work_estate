@@ -16,7 +16,7 @@ An **open work tool**, shaped as an installation package: a portable working-con
 
 **This repo owns:** portable working discipline safe for a corporate device — e.g. the ordered-TODO task convention, engineering standards (uv, parameters-in-config-not-code), session discipline.
 
-**Stays elsewhere, never enters this repo:** the user's private content — profile/self-model content, finances, people/contacts, message-channel access, the internals of any other system of theirs. Concretely: career strategy and employer-relationship records are the user's own affair elsewhere, not here.
+**Never enters this repo:** personal data of any user's, anything derived from any employer, and knowledge about how any particular user relates this tool to the rest of their life — the tool describes only itself.
 
 **The division, one line (settled 2026-08-06):** this installation = the job (day-to-day operations inside the employer boundary) · the employment's wider meaning for the user's life is their own affair beyond it. The installation is self-contained; boundary discipline (`corpus/boundary-protocol.md`) binds: employer-confidential content stays in employer systems, and every record the user keeps is written at meaning grain — employer-safe by construction.
 
@@ -26,7 +26,7 @@ An **open work tool**, shaped as an installation package: a portable working-con
 2. **One-way flow, generic in, nothing employer-derived out:** committed content is employer-generic convention only. Anything derived from employer docs, systems, code, or confidential context is NEVER committed or pushed here — it stays machine-local on the work device (`local/`, gitignored). This mirrors the standing IP rule in both directions: nothing from work leaves the employer; nothing of the user's private content enters this repo.
 3. **No secrets of any kind** — no values, no secret-manager item names, no tokens, no placeholders that reveal private infrastructure.
 4. **Not a bridge:** this repo is not a sync channel; work state never leaves the work device through it.
-5. **Open-tool voice (design principle 18):** committed content speaks as an open, user-generic work tool — "the user" (or "the maintainer"/"the author" in provenance contexts), never a named owner or a personal-ecosystem counterpart.
+5. **Open-tool voice and content scope (design principle 18):** committed content speaks as an open, user-generic work tool — "the user" (or "the maintainer"/"the author" in provenance contexts), never a named owner or a personal-ecosystem counterpart — and describes only the tool ITSELF: knowledge about how any particular user relates the tool to the rest of their estate (what they keep out of it, inventories of what stays elsewhere) is that user's own knowledge and never enters the seed.
 
 ## Layout
 
@@ -53,5 +53,6 @@ An **open work tool**, shaped as an installation package: a portable working-con
 - 2026-08-19 · axis-1 refresh, final pre-use pass: five law-sync additions (secrets store discovery, instruction-completeness + twice-corrected stop rule, plain-English records, side-effect account registration surfaced before the flow runs).
 - 2026-08-19 · open-tool voice pass: principle 18 — the whole committed repo rephrased as an open, user-generic work tool.
 - 2026-08-19 · estate-form correction (maintainer): principle 19 — the unfold FOUNDS an estate of many projects (hub + function projects + per-work-project homes), never one super-repo; `UNFOLD.md` Phase 3 rewritten as estate founding; the single-clone `local/` form demoted to the degraded fallback.
+- 2026-08-19 · content-scope correction (maintainer): principle 18 extended — the seed describes only ITSELF; user-estate knowledge about the tool (inventories of what stays out, counterpart relations) removed from the purpose, principles 1/2/17, the boundary hard core, and the scope boundary.
 
 Next action is at onboarding: run the unfold on the work device — see `TODO.md`.
