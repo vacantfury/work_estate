@@ -4,7 +4,7 @@
 
 ## What this repo is
 
-An **open work tool**, shaped as an installation package: a portable working-conventions toolkit for operating well on an employer-managed work device. The committed repo stays permanently generic; it is cloned onto a work device, where its unfold procedure detects the environment (work docs + device) and "unfolds" the seed into the adapted form that best serves the user there — written to `local/`, never pushed back. It contains ONLY:
+An **open work tool**, shaped as an installation package: a portable working-conventions toolkit for operating well on an employer-managed work device. The committed repo stays permanently generic; it is cloned onto a work device, where its unfold procedure detects the environment (work docs + device) and FOUNDS the work-side ESTATE — many projects (hub · people · company intelligence · records · health · communication · risk · per-work-project homes), the same estate structure the user works in anywhere, restricted to work-relevant parts and extended with work-native ones (design principle 19) — all machine-local, never pushed back. It contains ONLY:
 
 - the corpus: portable working discipline a work environment may use — task convention, session working style, engineering standards, generically useful skills;
 - idea/direction notes about how to structure work-machine workflows;
@@ -35,8 +35,8 @@ An **open work tool**, shaped as an installation package: a portable working-con
 - `corpus/` — the genome: the generic convention modules and portable skills the unfold selects from.
 - `text_docs/design.md` — design record: the installation-package model, settled principles, the adaptation-points ledger. `text_docs/` also holds idea/direction notes.
 - `knowledge/` — reference research digests (committed; same employer-readable discipline).
-- `local/` — gitignored; the unfold's output home and the designated place for ALL work-machine-specific content. Nothing in it is ever committed.
-- `TODO.md` — gitignored, per the task convention (`corpus/task-convention.md`); tracked in the maintainer's task system off this machine. On the work machine, the unfold seeds a local equivalent.
+- `local/` — gitignored; holds the unfold's ledger + log, and the degraded-fallback state form. The unfold's real output is the founded ESTATE at the root A4 chooses (outside this clone). Nothing work-machine-specific is ever committed.
+- `TODO.md` — gitignored, per the task convention (`corpus/task-convention.md`); tracked in the maintainer's task system off this machine. On the work machine, the estate hub's task head takes this role — the clone itself never carries work state post-install.
 
 ## Build state (dated passes; full detail in `text_docs/design.md` and git history)
 
@@ -52,5 +52,6 @@ An **open work tool**, shaped as an installation package: a portable working-con
 - 2026-08-17 · record-discipline pass: `corpus/boundary-protocol.md` reconceived as boundary discipline (record grain rule, division of subject matter); `corpus/work-report.md` reframed as the role's own steering loop; weekly-debrief format homed in `corpus/work-record.md`; `corpus/sidework.md` founded.
 - 2026-08-19 · axis-1 refresh, final pre-use pass: five law-sync additions (secrets store discovery, instruction-completeness + twice-corrected stop rule, plain-English records, side-effect account registration surfaced before the flow runs).
 - 2026-08-19 · open-tool voice pass: principle 18 — the whole committed repo rephrased as an open, user-generic work tool.
+- 2026-08-19 · estate-form correction (maintainer): principle 19 — the unfold FOUNDS an estate of many projects (hub + function projects + per-work-project homes), never one super-repo; `UNFOLD.md` Phase 3 rewritten as estate founding; the single-clone `local/` form demoted to the degraded fallback.
 
 Next action is at onboarding: run the unfold on the work device — see `TODO.md`.

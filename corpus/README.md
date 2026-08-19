@@ -1,6 +1,6 @@
 # corpus/ — the genome
 
-The generic convention modules the unfold (`UNFOLD.md`) selects from and adapts. Everything here is permanently employer-generic: portable working discipline only, written to stand alone, with zero personal data, zero references to private infrastructure, and no pre-specialization to any employer. The unfold never edits these files — it reads them and generates the adapted form into `local/`.
+The generic convention modules the unfold (`UNFOLD.md`) selects from and adapts. Everything here is permanently employer-generic: portable working discipline only, written to stand alone, with zero personal data, zero references to private infrastructure, and no pre-specialization to any employer. The unfold never edits these files — it reads them as GENOMES and founds the work-side estate from them (design principle 19). Module references to `local/state/<file>` resolve to the owning estate project's state home via the hub's estate registry.
 
 Modules:
 

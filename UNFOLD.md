@@ -5,14 +5,13 @@
 ## Contract
 
 - **Input:** this repo (read-only during the unfold), the work documents the user points at (AI-tooling policy, device/acceptable-use policy, engineering handbook if offered), and the device itself.
-- **Output:** everything lands in `local/` (gitignored). The committed seed is never edited by the unfold, and nothing derived from employer docs, systems, or code is ever committed or pushed — the one-way flow rule (CLAUDE.md) is absolute.
-- **Re-runnable:** `local/generated/` is wiped and regenerated on each run; `local/state/` (living work state) is never touched by a re-run.
+- **Output:** the unfold FOUNDS the work-side ESTATE — many projects, one per design-principle-19 roster row, at the root A4 chooses — plus the ledger and log in this clone's gitignored `local/`. The committed seed is never edited by the unfold, and nothing derived from employer docs, systems, or code is ever committed or pushed — the one-way flow rule (CLAUDE.md) is absolute.
+- **Re-runnable:** generated instruction/skill layers are wiped and regenerated on each run; living project state (task files, boards, registers, records) is never touched by a re-run.
 
-## `local/` layout (created by the unfold)
+## What the unfold creates
 
-- `local/ledger.md` — the resolved A1–A6 answers, each with its deciding evidence, dated; re-runs append a new dated section, keeping history.
-- `local/generated/` — the unfolded convention set; safe to wipe and regenerate.
-- `local/state/` — living work state (`TODO.md`, `NOW.md`, `archive.md`, notes); owned by daily work, not by the unfold.
+- **The estate** (at the A4 root): one directory per project — hub · people · company intelligence · records · health · communication · risk, plus per-work-project homes created later at accept (principle 19). Each project gets its instruction layer, its `TODO.md` + `NOW.md` + `archive.md` per `corpus/task-convention.md`, and its state files seeded from its genome module. Project homes are local git repos where device practice allows. The hub carries the estate registry — every project, its home, its state files; corpus references to `local/state/<file>` resolve to the owning project's state home via this registry.
+- **In this clone's `local/` (gitignored):** `local/ledger.md` — the resolved A1–A6 answers, each with its deciding evidence, dated; re-runs append a new dated section, keeping history — and the unfold log.
 
 ## Phase 0 — precondition gate
 
@@ -35,35 +34,42 @@ Answer A1–A6 in `local/ledger.md`, each with the one evidence line that decide
 - **A1 — sanctioned AI tooling.** Decides what executes future sessions and the format of the generated instructions layer — and, with the intake §17 answers (token budget, unattended-run policy, reachable surfaces), the work engine's queue mode and budget knob (`corpus/work-engine.md`). Outcome classes: a full agent harness · an instructions-consuming assistant · none (→ degraded path).
 - **A2 — remote reachability.** Decides the update channel: reachable → `git pull` + re-run unfold picks up seed improvements; not reachable → the seed is refreshed rarely, by whatever sanctioned transfer route exists, or not at all.
 - **A3 — personal-repo policy.** Already gated Phase 0; record the evidence here.
-- **A4 — form of the work-side task/state layer.** Default: `local/state/` inside this clone. If policy or practice prefers work content in a work-managed location, place the state there instead and record the pointer in the ledger.
+- **A4 — the estate root and project-home form.** Where the work-side estate lives (a work-projects directory in the user's device home, or a work-managed location if policy or practice prefers it) and what form project homes take (plain dirs · local git repos · work-hosted git). Default: a projects directory with each project a local git repo. Record the chosen root in the ledger; the estate never pushes to the seed's remote.
 - **A5 — applicable convention/skill subset.** Per corpus module and per portable-skills entry: **adopt / adapt / fold away**, one-line reason each. What is folded away stays in the corpus, available to later re-runs.
-- **A6 — backup of the work-side local state.** `local/` never pushes anywhere, so it is single-copy until a route is chosen. Decide the backup process ONLY from what Phase 1 found: the work docs (what storage the policy sanctions for work-adjacent personal notes) and the tools actually available on the device (employer-managed folder sync, work-hosted git, device backup). Never a personal cloud or the personal remote — one-way flow is absolute. If A4 placed the state in a work-managed location, backup may already be inherited — record that as the answer. Nothing suitable found → record **unresolved** and note that `local/state/` is consciously single-copy until re-run.
+- **A6 — backup of the work-side estate.** The estate never pushes to the seed's remote, so it is single-copy until a route is chosen. Decide the backup process ONLY from what Phase 1 found: the work docs (what storage the policy sanctions for work-adjacent personal notes) and the tools actually available on the device (employer-managed folder sync, work-hosted git, device backup). Never a personal cloud or the personal remote — one-way flow is absolute. If A4 rooted the estate in a work-managed location, backup may already be inherited — record that as the answer. Nothing suitable found → record **unresolved** and note that the estate is consciously single-copy until re-run.
 
-## Phase 3 — generate
+## Phase 3 — found the estate
 
-From the resolved ledger, wipe and regenerate `local/generated/`:
+From the resolved ledger, found the work-side estate at the A4 root (design principle 19). Founding rules: an existing project or state file is NEVER overwritten — re-runs regenerate instruction/skill layers only; each project gets its own `TODO.md` (`# TODO (ordered)`), `NOW.md`, and `archive.md` per `corpus/task-convention.md` at founding.
 
-1. **Instructions layer (tier 1):** produce the always-loaded instructions file in the sanctioned tooling's native format — an agent-memory file, a repo instructions file, or (no tooling) a printable conventions one-pager. Content: the adopted corpus subset, adapted per A5, law only — no changing facts.
-2. **Skills layer:** materialize each adopted portable-skills entry in the tooling's skill/instructions format; with no tooling, keep them as checklists in `local/generated/checklists/`.
-3. **Task/state layer (tier 3):** seed `local/state/TODO.md` (`# TODO (ordered)`) and `local/state/archive.md` **if absent** — an existing state file is never overwritten.
-4. **Session board (tier 2):** seed `local/state/NOW.md` if absent.
-5. **Reports dir:** seed `local/state/reports/` if absent, per `corpus/work-report.md` (expected core-adopt at every policy outcome; the seed-refresh line in `corpus/boundary-protocol.md` is the one piece depending on A2).
-6. **Portfolio board:** seed `local/state/projects.md` if absent, per the board format in `corpus/project-lifecycle.md`, pre-filling any candidates the intake's project-landscape questions (`knowledge/week1-intake.md` §12) have already surfaced. Per-project dev records (`local/state/projects/<name>.md`, per `corpus/dev-workflow.md`) are created on demand when a project goes active — never pre-seeded.
-7. **Company-watch store:** seed `local/state/company.md` if absent, per the signal-log + four-register format in `corpus/company-watch.md`, pre-filling the leadership chain, direction surfaces, and initial themes the intake's company-baseline questions (`knowledge/week1-intake.md` §13) have already surfaced.
-8. **Health tracker:** seed `local/state/health.md` if absent, per the tracker format in `corpus/health-guard.md`, and wire the guard's clock from what Phase 1 found — the best reminder mechanism the device and sanctioned tooling offer (calendar blocks, OS/assistant break reminders, the agent's own surface; degraded path: phone timers + the printed moment table).
-9. **Work record:** seed `local/state/worklog.md` if absent, per the private-record format in `corpus/work-record.md`. The PUBLIC view's home is an intake question (`knowledge/week1-intake.md` §15) — until it resolves, seed the staging file `local/state/worklog-public.md`; once a team surface is named, render there and retire the staging file.
-10. **Work-engine registry + lane state:** seed the agent-jobs registry `local/state/agent-jobs.yaml` if absent, per the schema in `corpus/work-engine.md`, with priorities/cadences drafted from the corpus defaults and the queue mode set from A1 + intake §17 (scheduled agents · session-opening sweep · degraded checklists); seed `local/state/people.md` (per `corpus/connections.md`) and `local/state/communication.md` (per `corpus/communication-craft.md`) if absent.
-11. **Footprint register:** seed `local/state/footprint.md` if absent, per `corpus/device-return.md`, and back-fill a line for anything personal already present on the machine (this clone itself needs no line while the repo is public and credential-free; the first of the user's credentials or sign-ins does).
-12. **Log:** write `local/generated/UNFOLD-LOG.md` — date, ledger summary, what was generated where, what was folded away.
-13. **Report to the user:** the ledger answers, what was generated, and the single next action (typically: wire the generated instructions file into the sanctioned tool, exact steps stated).
+1. **Found the hub** — the estate's steward project:
+   - **Estate registry:** the map of every project — name, home path, state files, genome modules. No unregistered projects; corpus references to `local/state/<file>` resolve to the owning project's state home via this registry.
+   - **Instructions layer (tier 1):** the always-loaded instructions file in the sanctioned tooling's native format — an agent-memory file, a repo instructions file, or (no tooling) a printable conventions one-pager. Content: the adopted estate-wide law (A5 subset of the craft/standards modules), law only — no changing facts. Per-project instruction files state each project's own scope and cite the hub's law, never copy it.
+   - **Task head:** the hub's `TODO.md` is the estate head — the user's ordered next actions across projects; other projects' TODOs are tails.
+   - **Agent-jobs engine:** seed the registry `agent-jobs.yaml` per the schema in `corpus/work-engine.md`, priorities/cadences drafted from the corpus defaults, queue mode set from A1 + intake §17 (scheduled agents · session-opening sweep · degraded checklists). Each job writes its OWNING project's state.
+   - **Footprint register:** seed per `corpus/device-return.md`; back-fill a line for anything personal already present on the machine (this clone itself needs no line while the repo is public and credential-free; the first of the user's credentials or sign-ins does).
+2. **Skills layer:** materialize each adopted portable-skills entry in the tooling's skill/instructions format, homed with the project it serves (estate-wide ones in the hub); with no tooling, keep them as printed checklists in the hub.
+3. **Found the people project:** seed the register `people.md` per `corpus/connections.md`.
+4. **Found the company-intelligence project:** seed `company.md` per the signal-log + four-register format in `corpus/company-watch.md`, pre-filling the leadership chain, direction surfaces, and initial themes the intake's company-baseline questions (`knowledge/week1-intake.md` §13) have already surfaced.
+5. **Found the records project:** seed `worklog.md` + `timelog.md` per `corpus/work-record.md` and the reports dir per `corpus/work-report.md` (expected core-adopt at every policy outcome; the seed-refresh line in `corpus/boundary-protocol.md` is the one piece depending on A2). The PUBLIC view's home is an intake question (`knowledge/week1-intake.md` §15) — until it resolves, seed the staging file `worklog-public.md`; once a team surface is named, render there and retire the staging file.
+6. **Found the health project:** seed the tracker `health.md` per `corpus/health-guard.md`, and wire the guard's clock from what Phase 1 found — the best reminder mechanism the device and sanctioned tooling offer (calendar blocks, OS/assistant break reminders, the agent's own surface; degraded path: phone timers + the printed moment table).
+7. **Found the communication project:** seed `communication.md` per `corpus/communication-craft.md`.
+8. **Found the risk project:** seed `risks.md` per `corpus/risk-register.md`.
+9. **Portfolio board (hub state):** seed `projects.md` per the board format in `corpus/project-lifecycle.md`, pre-filling any candidates the intake's project-landscape questions (`knowledge/week1-intake.md` §12) have already surfaced. **Per-work-project homes are founded on demand at accept** (registered in the estate registry, dev record per `corpus/dev-workflow.md`) — never pre-seeded.
+10. **Log:** write the unfold log in this clone's `local/` — date, ledger summary, the estate registry as founded, what was folded away.
+11. **Report to the user:** the ledger answers, the estate as founded (each project + its home), and the single next action (typically: wire the hub's instructions file into the sanctioned tool, exact steps stated).
 
 ## Re-running
 
-Run again from Phase 1 whenever policy or tooling changes at work, or the seed has been updated. Re-runs regenerate `local/generated/` only, append to the ledger, and never touch `local/state/`.
+Run again from Phase 1 whenever policy or tooling changes at work, or the seed has been updated. Re-runs regenerate instruction/skill layers and append to the ledger; living project state and the estate registry's existing entries are never touched.
 
-## Degraded manual path (no AI tooling sanctioned)
+Post-install, the clone's ONLY role is this update channel: day-to-day work happens in the estate projects, never in the clone (design principle 19). If the update channel goes unused (A2 unreachable), the clone is deletable without loss.
+
+## Degraded manual path (no AI tooling sanctioned, or policy cannot carry a multi-project estate)
+
+The single-clone fallback — used only when the estate form genuinely cannot exist here (design principle 19), never as a convenience default:
 
 1. Read the corpus modules; adopt them as personal working conventions in reading form.
-2. Hand-create `local/state/TODO.md` and `NOW.md`; maintain them per `corpus/task-convention.md`.
+2. Hand-create `local/state/TODO.md` and `NOW.md` in this clone; maintain them per `corpus/task-convention.md`.
 3. Use the portable-skills entries as printed checklists.
-4. Re-check the tooling policy occasionally; if an agent later becomes sanctioned, run the full unfold.
+4. Re-check the tooling policy occasionally; if an agent later becomes sanctioned, run the full unfold and found the estate.

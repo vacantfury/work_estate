@@ -2,6 +2,8 @@
 
 *The composition module (design principle 16): the corpus's standing disciplines compose as LANES of ONE running system (the craft/standards modules — role-playbook, engineering-standards, agent-reliability, human-agent-collaboration, portable-skills — underpin the lanes rather than being lanes themselves); this module holds only the composition and the agent-jobs layer that keeps the lanes running. It cites the lane modules and never copies their content — each lane's procedure stays canonical in its own module.*
 
+*Estate form (design principle 19): the engine is the HUB's organ — the registry, queue, and budget live in the hub — while each lane's state lives in its OWN estate project. `local/state/<file>` paths below resolve to the owning project's state home via the hub's estate registry.*
+
 ## The operating claim
 
 The engine exists to invert the effort ratio: **the user devotes as little attention as possible; the system devotes as much as the available budget allows.** User attention is the scarcest resource in the whole workflow; agent tokens are the cheapest. Anything an agent can carry, an agent carries. The user's residue is typed with the vocabulary of `human-agent-collaboration.md` — they participate only as:
