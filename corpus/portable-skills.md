@@ -94,3 +94,22 @@ Trigger: start of a working day or a cold return to the workspace.
 1. Read the session board (`NOW.md`) and the TODO head.
 2. Check the calendar and inbox for anything that reorders today (work-sanctioned surfaces only).
 3. Name the day's one or two priorities out of the ordered list; surface only what needs action or eyes — nothing-due checks stay silent.
+
+## terminal-recovery
+
+Trigger: new terminals fail to open (spawn errors such as `posix_spawnp failed`, "native exception", or silent failure), in the editor or machine-wide.
+
+1. Diagnose before restarting anything. On macOS the usual cause is pty exhaustion — the kernel's pseudo-terminal pool (~511) is used up: count live ptys (`ls /dev/ttys* | wc -l`) and list the top holders (`lsof | grep ttys`, grouped by process). Electron-family editors (VS Code, Cursor) are known slow leakers via integrated terminals that don't release ptys on close. On a Windows device the analogue (ConPTY/handle leaks) has different diagnostics — re-derive on first occurrence and record it here.
+2. Separate leaked/orphaned holders from live working sessions — a process's age alone doesn't make it dead.
+3. Drain at the source: close the leaking app's integrated terminals or restart the app itself, rather than killing processes blind.
+4. Gate: a person's live working sessions (agent sessions, editors, shells holding open work) are never killed on the system's initiative, however stale they look — present the list (pid · what it is · age) and wait for an explicit yes.
+5. After recovery, verify new terminals spawn, then restore any sessions the drain took down (see session-restore).
+
+## session-restore
+
+Trigger: working sessions (agent CLI sessions, editor windows) were closed by a reboot, power loss, editor force-quit/crash, or a cleanup — and the working state should come back.
+
+1. Reconstruct the victim list from evidence — the agent CLI's session logs, process history, workspace state — never from memory.
+2. Restore each session in its own project workspace, using the agent CLI's native resume mechanism (verify what the sanctioned CLI supports on device before relying on it).
+3. Restore is on-demand and human-triggered only. An always-running auto-resume watcher is a known failure shape — it fires on windows a person closed by hand and types into whatever has focus; don't build one.
+4. A hand-closed session is a decision, not a casualty: restore only what the crash took.
