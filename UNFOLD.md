@@ -48,6 +48,8 @@ From the resolved ledger, found the work-side estate at the A4 root (design prin
    - **Task head:** the hub's `TODO.md` is the estate head — the user's ordered next actions across projects; other projects' TODOs are tails.
    - **Agent-jobs engine:** seed the registry `agent-jobs.yaml` per the schema in `corpus/work-engine.md`, priorities/cadences drafted from the corpus defaults, queue mode set from A1 + intake §17 (scheduled agents · session-opening sweep · degraded checklists). Each job writes its OWNING project's state.
    - **Footprint register:** seed per `corpus/device-return.md`; back-fill a line for anything personal already present on the machine (this clone itself needs no line while the repo is public and credential-free; the first of the user's credentials or sign-ins does).
+   - **Self-model:** seed `self.md` per `corpus/self-model.md` from the intake answers already gathered (§8–§10) plus what the user states; work grain only.
+   - **Decision log:** seed `decisions.md` per `corpus/deliberation.md`; the deliberation procedure itself materializes in the skills layer (step 2) as a hub skill.
 2. **Skills layer:** materialize each adopted portable-skills entry in the tooling's skill/instructions format, homed with the project it serves (estate-wide ones in the hub); with no tooling, keep them as printed checklists in the hub.
 3. **Found the people project:** seed the register `people.md` per `corpus/connections.md`.
 4. **Found the company-intelligence project:** seed `company.md` per the signal-log + four-register format in `corpus/company-watch.md`, pre-filling the leadership chain, direction surfaces, and initial themes the intake's company-baseline questions (`knowledge/week1-intake.md` §13) have already surfaced.
