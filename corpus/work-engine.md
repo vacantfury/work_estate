@@ -56,6 +56,8 @@ The registry is the engine's config (parameters live in config, `engineering-sta
 - `output` — the `local/state/` home it writes (a job with no output home is a defect)
 - `escalation` — the ONE rule for what reaches the user (default: nothing; findings land in the output home and the session-start surfaces)
 - `gate` — any step that is prepare-only (person-facing contact, outbound sends, anything irreversible: the job stages, the user presses — always)
+- `stage` (optional; the autonomy gradient below) — present only once a job is trusted past review-everything, together with the one-line evidence that earned the promotion
+- `marker` + `silence_h` (scheduled jobs only; the autonomy gradient below) — the job's success marker and its maximum tolerated silence
 
 **Budget-ranked queue:** jobs run in priority order until the period's budget is spent — whatever the work account's real budget turns out to be, it burns top-down, so a small budget runs the head of the queue well and a large budget runs the tail too. The budget figure, the sanctioned runtime, and whether unattended/scheduled runs are permitted at all are intake facts (§17), never assumptions. **Tuning path:** priorities and cadences are reviewed against evidence at the Tue/Thu retro (`work-report.md`) — each job's output value vs its spend; a job nobody's lane consumed for two review cycles is demoted or cut.
 
@@ -63,6 +65,24 @@ The registry is the engine's config (parameters live in config, `engineering-sta
 - *Full agent harness with scheduled runs sanctioned* → jobs run as actual scheduled/background agents.
 - *Assistant-only tooling, or unattended runs not sanctioned* → the registry becomes the **session-opening sweep**: each working session starts by running the due jobs' procedures inline, highest priority first, time-boxed.
 - *No sanctioned tooling (degraded path)* → the lanes survive as session disciplines and printed checklists; the registry documents intent for a later re-run.
+
+## The autonomy gradient (direction; hardens only at its named triggers)
+
+A standing job's trust is graded on three INDEPENDENT axes. There is deliberately no single fused "level": one number cannot carry three different questions, and fusing them loses exactly the grain that keeps autonomy safe (a mature job can still contain irreversible steps; a young job can be safe to run when all its steps are mechanical).
+
+1. **Action seriousness decides the CHECKING each output gets.** This axis is already binding from birth: the irreversibility classes and verification ladder of `agent-reliability.md`, and the registry's `gate` field. Nothing here is soft.
+2. **Capability maturity decides the AUDITING cadence:** how much of a job's output the user still reviews. Three stages: every output reviewed → exceptions reviewed (the job filters, the user sees what it flags) → sampled audits (the job runs, the user audits a periodic sample). A promotion is EARNED by named evidence (a run record at the current stage in which the user had no corrections to make), recorded in the entry's `stage` field at promotion. Demotion is free and immediate: any correction the user has to make drops the job back one stage, no ceremony.
+3. **Runtime liveness decides the MONITORING**, for jobs that run unattended. Silent death is the failure class: a scheduled job that stops running looks exactly like a quiet one unless something checks. The cure is declared, not assumed: the entry's `marker` + `silence_h`, checked at every session opening (silence past the window is a surfaced finding, never presumed fine). If the runtime ever gains deploy structure (a pinned what-runs version, external consumers of its paths or names), those facts register in the entry the day they exist, and any rename or path change consults the registered consumers before it lands.
+
+**Named triggers.** Until each fires, this section is direction only and costs nothing:
+
+- *Trigger 1* — the first sanctioned scheduled/unattended job: its entry carries `marker` + `silence_h` from creation, and the session-opening sweep starts checking markers.
+- *Trigger 2* — the first job trusted past review-everything: its entry gains `stage` plus the evidence line.
+
+**Permanent boundaries, at every stage:**
+
+- Real product development is not governed by this gradient. The team's own pipeline (design rituals, CI, staging, release trains, monitoring) IS the structure for delivered work (`dev-workflow.md`, team reality first). The gradient governs only the estate's own standing jobs.
+- Maturity buys back the user's REVIEW attention, never authority. Person-facing, employer-visible, and irreversible steps stay prepare-only at every stage (rails 2 and 5; `agent-reliability.md` irreversibility). No stage, cadence, or clock ever converts a gate into an auto-run.
 
 ## Rails (binding on every job)
 
