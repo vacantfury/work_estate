@@ -24,6 +24,10 @@ Because every record is born at this grain, whatever the user later does with th
 
 Nothing is homed in two places.
 
+## Policy answers — discovered once, cited forever
+
+Boundary decisions keep citing the same few policy facts: what the employer's policy actually says on open-source contribution, publication approval, outside projects and moonlighting, patents/invention assignment, AI-tool use, and external endpoints. Each answer is discovered once (docs first, then the official channel), recorded as one dated line in `local/ledger.md` (the same ledger the gray-flow checks already use: what was asked, what the policy says, source), and cited thereafter. An undocumented re-derivation of a policy question that was already answered is a defect; a policy CHANGE re-runs the check and appends a new dated line, never edits the old one.
+
 ## Seed refresh
 
 `git pull` + re-run the unfold, when the user initiates it — conventions only. Credential-free by design: this repo is public (decided 2026-08-06), so clone and pull need no authentication under any policy that allows reading public GitHub.

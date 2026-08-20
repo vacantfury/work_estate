@@ -10,7 +10,7 @@
 
 ## What the unfold creates
 
-- **The estate** (at the A4 root): one directory per project — hub · people · company intelligence · records · health · communication · risk, plus per-work-project homes created later at accept (principle 19). Each project gets its instruction layer, its `TODO.md` + `NOW.md` + `archive.md` per `corpus/task-convention.md`, and its state files seeded from its genome module. Project homes are local git repos where device practice allows. The hub carries the estate registry — every project, its home, its state files; corpus references to `local/state/<file>` resolve to the owning project's state home via this registry.
+- **The estate** (at the A4 root): one directory per project — hub · people · company intelligence · records · health · communication · risk · resources · performance · research satellite (intake-§18-gated), plus per-work-project homes created later at accept (principles 19–20). Each project gets its instruction layer, its `TODO.md` + `NOW.md` + `archive.md` per `corpus/task-convention.md`, and its state files seeded from its genome module. Project homes are local git repos where device practice allows. The hub carries the estate registry — every project, its home, its state files; corpus references to `local/state/<file>` resolve to the owning project's state home via this registry.
 - **In this clone's `local/` (gitignored):** `local/ledger.md` — the resolved A1–A6 answers, each with its deciding evidence, dated; re-runs append a new dated section, keeping history — and the unfold log.
 
 ## Phase 0 — precondition gate
@@ -55,9 +55,12 @@ From the resolved ledger, found the work-side estate at the A4 root (design prin
 6. **Found the health project:** seed the tracker `health.md` per `corpus/health-guard.md`, and wire the guard's clock from what Phase 1 found — the best reminder mechanism the device and sanctioned tooling offer (calendar blocks, OS/assistant break reminders, the agent's own surface; degraded path: phone timers + the printed moment table).
 7. **Found the communication project:** seed `communication.md` per `corpus/communication-craft.md`.
 8. **Found the risk project:** seed `risks.md` per `corpus/risk-register.md`.
-9. **Portfolio board (hub state):** seed `projects.md` per the board format in `corpus/project-lifecycle.md`, pre-filling any candidates the intake's project-landscape questions (`knowledge/week1-intake.md` §12) have already surfaced. **Per-work-project homes are founded on demand at accept** (registered in the estate registry, dev record per `corpus/dev-workflow.md`) — never pre-seeded.
-10. **Log:** write the unfold log in this clone's `local/` — date, ledger summary, the estate registry as founded, what was folded away.
-11. **Report to the user:** the ledger answers, the estate as founded (each project + its home), and the single next action (typically: wire the hub's instructions file into the sanctioned tool, exact steps stated).
+9. **Found the resources project:** seed the register `resources.md` per `corpus/resources.md`; its first standing action is catalog discovery on the employer's benefits/program portals (intake §19) — at a fresh employment, the new-hire enrollment window is read off the portal FIRST (short window, usually irreversible once closed).
+10. **Found the performance project:** seed `review.md` + `promotion.md` per `corpus/performance.md`, shaped by the review-instrument and leveling answers intake §20 has already surfaced.
+11. **Found the research-satellite project** (only where intake §18 cleared any personal-stack presence): seed the satellite registry `research.md` per `corpus/research-infrastructure.md`; clones and credentials follow that module's setup order, each landing a footprint-register line.
+12. **Portfolio board (hub state):** seed `projects.md` per the board format in `corpus/project-lifecycle.md`, pre-filling any candidates the intake's project-landscape questions (`knowledge/week1-intake.md` §12) have already surfaced. **Per-work-project homes are founded on demand at accept** (registered in the estate registry, dev record per `corpus/dev-workflow.md`) — never pre-seeded.
+13. **Log:** write the unfold log in this clone's `local/` — date, ledger summary, the estate registry as founded, what was folded away.
+14. **Report to the user:** the ledger answers, the estate as founded (each project + its home), and the single next action (typically: wire the hub's instructions file into the sanctioned tool, exact steps stated).
 
 ## Re-running
 

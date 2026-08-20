@@ -16,6 +16,7 @@ Unfold-seeded, work-local, append-only by day:
 # Work record — private, full grain
 
 ## YYYY-MM-DD
+- site: <on-site | remote | out (leave/holiday)>
 - did: <delivered or progressed item, one line> (project: <name>)
 - meet: <meeting/review/1:1 — what it was + outcome one-liner>
 - helped: <who was unblocked / reviewed / advised>
@@ -27,6 +28,8 @@ Unfold-seeded, work-local, append-only by day:
 **Capture discipline:** cheap and continuous, never a reconstruction ceremony. A session appends what IT did as it closes (session-end capture — the same reflex as capture-at-settle, `session-discipline.md`); the user adds the lines only they know (meetings, hallway conversations, their own manual work) — a one-minute end-of-day pass suffices. A day with no entry is a visible gap, not a silent one.
 
 **Record posture** (the standing ruling, settled 2026-08-12/13, applied here): the private record lives ON the work machine, candid and complete, kept for the user's benefit — what a task actually cost, what dragged, honest working notes. The user's own work activity is knowledge legitimately theirs; completeness is never traded for appearance. Conservatism about the user's own content on the work device applies only on real risk or real company conflict, never by default.
+
+**Presence tracking** (design principle 20c): the daily `site:` line is the ground truth of on-site attendance. Design principle 9 sets the presence POSTURE (calibrated to the real team norm); this field records the DATA, so presence is managed from evidence, never impression. A periodic tally (on-site days over working days, monthly by default) is read against the written policy floor and the real team norm intake §10 discovered; drift below either surfaces in the weekly debrief, never silently — and never as pressure beyond what the norm itself implies.
 
 ## The public view — a rendering, never a second truth
 
@@ -48,7 +51,7 @@ The team very likely already has a status-record convention — weekly snippets,
 ## Consumers — why the record pays
 
 - **Manager alignment:** this is the concrete mechanism behind the playbook's "running shared record of delivered work" — the review conversation holds no surprises because the public view already told the story all period (`role-playbook.md`, working in the org).
-- **The weekly debrief (format home: HERE):** at week's end the record distills into a six-line summary appended to the worklog — `## Debrief (week of YYYY-MM-DD)`: role (how the work is going) · growth (skills/scope/evidence) · people (relationship developments, meaning grain) · load (light|normal|heavy|crunch, plus one line why if not normal) · health (floors held | breaches n (which), from the health-guard tracker, plus a strain one-liner) · events (review cycles, org changes, milestones). Distilled from the week's record — a read, not a reconstruction; the record grain rule (`boundary-protocol.md`) governs it like every record. The user reads it at week's end.
+- **The weekly debrief (format home: HERE):** at week's end the record distills into a seven-line summary appended to the worklog — `## Debrief (week of YYYY-MM-DD)`: role (how the work is going) · growth (skills/scope/evidence) · people (relationship developments, meaning grain) · load (light|normal|heavy|crunch, plus one line why if not normal) · health (floors held | breaches n (which), from the health-guard tracker, plus a strain one-liner) · presence (on-site n of m working days, vs the policy floor and team norm) · events (review cycles, org changes, milestones). Distilled from the week's record — a read, not a reconstruction; the record grain rule (`boundary-protocol.md`) governs it like every record. The user reads it at week's end.
 - **Review-time evidence:** impact narratives at review time assemble from dated record lines, not from memory.
 - **Cold-session memory:** any session answering "what happened last week / what did I do on X" reads the record.
 

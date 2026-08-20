@@ -33,6 +33,16 @@ The user's research projects live in their own estate as **private engine repos*
 
 The user's clusters are their own estate — the work machine dispatches to them as a client, under the same revocable-credential discipline. The user's own research runs there freely. Work-confidential experiments run there only if the employer's policy explicitly permits work content on non-employer compute — an intake §18 check, never a guess; the default before the answer is no.
 
+## The satellite registry — the research project's standing state (design principle 20a)
+
+The estate's **research satellite** project (principle 19 roster) stewards the user's own research presence on this device. Its state file, `local/state/research.md`, holds one row per element:
+
+- **Clone roster** — each research repo present: name · form (public interface / private engine) · credential form with its footprint-register line (`device-return.md`) · push state (`push verified YYYY-MM-DD` after the test commit, else `read-only`) · last sync date.
+- **Run state** — what is currently running or queued on the user's own compute from this device: which experiment, which cluster, since when; enough that any session can answer "what's running where" without shell archaeology.
+- **Session residue** — per-project one-liners a cold session needs (in-flight branch, next command, how to verify), per the cold-resume convention (`task-convention.md`).
+
+Steward boundary: **the satellite executes; it never governs.** Direction, portfolio judgment, and venue decisions live in the user's own estate; this project reads the clones and the user's word, works, and reports back through git. A work-side session never re-derives the user's research portfolio, priorities, or strategy from here. `research-workflow.md` remains the method lane for the research work itself, on either stack.
+
 ## Fold-away note
 
 Core-adopt whenever intake §18 clears any personal-stack presence at all. At a fully-locked-down policy outcome the module folds to its work-stack half (incumbent discovery + seam design), which stands on its own.

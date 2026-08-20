@@ -161,3 +161,27 @@
 - ☐ May work-confidential content run on non-employer compute (the user's own clusters), or is work content bound to employer devices/tenancy? Default before the answer: no.
 - ☐ The employer secret store and LLM gateway the team actually uses — the work stack's incumbents (extends §1 and §17).
 - ☐ Record every answer plus the chosen sync posture (full client vs read-only satellite) in `local/ledger.md`; on a blocked-push outcome, name the fallback explicitly.
+
+## 19. Resource catalog: benefits, budgets, programs, access (feeds design principle 20a, `corpus/resources.md`)
+
+*The catalog is discovered, never assumed — the failure mode is the resource nobody mentions. Portal-first, then ask HR/the manager/a tenured teammate what people actually use and forget to use.*
+
+- ☐ **The new-hire enrollment window, FIRST:** when it opens, when it closes, and what falls into it (health insurance, retirement elections, stock purchase enrollment, HSA/FSA-class accounts). Read it off the enrollment portal the day the portal opens; land every close date as a buffered `[due:]` line. **[assume: the window is short (weeks) and closing it is irreversible until the next annual cycle — verify]**
+- ☐ Retirement mechanics as offered: employer match formula and vesting, contribution limits, any after-tax contribution + in-plan conversion path, default investment vs available lineup.
+- ☐ Stock programs: purchase-plan terms (discount, periods, enrollment windows) and any grant/vesting mechanics relevant to elections.
+- ☐ The full benefits/perks catalog beyond the big four: wellness allowances, commuter, insurance riders, legal/backup-care/assistance programs — one register line each, even if declined.
+- ☐ Claimable budgets: learning/training, conference, equipment/home-office — amounts, cycle reset dates, claim mechanics, what actually gets approved in practice.
+- ☐ Programs: patent/invention awards, internal mobility rules, mentorship programs, hackathons, internal speaking/teaching venues — eligibility and application windows.
+- ☐ Access worth claiming at eligibility: compute quotas, license seats, data/tool access the role can request for free.
+- ☐ Cycle boundaries: when open enrollment recurs, when budgets reset — so catalog-discovery re-runs land on the calendar.
+
+## 20. Review instrument and leveling (feeds design principle 20a, `corpus/performance.md`)
+
+*Both artifacts shape themselves to what is discovered here. The rubric as practiced wins over the rubric as written (design principle 10).*
+
+- ☐ The review instrument itself: its name, its form (self-write vs manager-write vs both), its sections/prompts, cadence (annual, semi-annual, check-ins), and where past examples live.
+- ☐ The calibration process as practiced: who is in the room, what evidence actually moves outcomes, what a strong submission looks like on this team (ask the manager for one).
+- ☐ The leveling guide for the current and next level: the written bar's dimensions, and where the guide lives.
+- ☐ How promotions actually happen here: recent promotions on the team/org and what visibly earned them (feeds the company watch's events register and the promotion dossier's evidence weighting).
+- ☐ The manager's own view of the next-level bar and the current gaps, in their words (fold into the §8/§9 week-1 conversations).
+- ☐ Timing: when the next review cycle opens, so cycle preparation lands early, never at the deadline.
