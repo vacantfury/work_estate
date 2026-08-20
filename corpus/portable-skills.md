@@ -53,6 +53,40 @@ Trigger: periodic, or when an instruction surface visibly misfires (references a
 3. Propose per item: refine / merge / retire. Mechanical fixes apply directly; behavior-changing rewrites get approval.
 4. After any rename/retirement of a standard or tool: grep all instruction surfaces for the old world and fix stale references in the same session.
 
+## knowledge-audit
+
+Trigger: periodic; when two knowledge surfaces contradict each other; and always after the unfold regenerates local adaptations.
+
+1. Roster the knowledge surfaces: the committed corpus (canonical), unfold-generated local adaptations, knowledge digests, agent instruction files.
+2. Deterministic pass first: referenced files and sections still exist; dated items that came due; every adapted copy names the canonical it derives from.
+3. Judgment sweep for drift: superseded-but-still-active phrasing, canonical-vs-adaptation divergence, a rule stated in two places with no declared master.
+4. On conflict the canonical wins: fix the copy, never fork the rule. Mechanical fixes apply directly; rule rewrites get approval.
+
+## session-experience-audit
+
+Trigger: periodic, or after a stretch of sessions that felt rough.
+
+1. Gather whatever recent agent-session history the sanctioned tooling exposes (transcripts, logs, chat history). If it exposes none, collect the user's reported pain points instead.
+2. Scan for the user's own frustration and correction signals: emphatic punctuation runs, repeated corrections, "I already said" moments.
+3. Judge each moment: what frustrated the user, did the working system cause it, what root fix prevents recurrence.
+4. Route each accepted fix to its proper form (rule, procedure, check, tooling); log system-caused moments as failure-capture rows. Mechanical fixes apply directly; behavior-changing rewrites get approval.
+
+## structure-audit
+
+Trigger: evidence-driven only, never cadence: symptoms recurring across prior audits that point at a container rather than its content (items with no clear home, the same content moved twice, a file grown past its stated purpose).
+
+1. Roster the containers: folder layout, module boundaries, the task convention, state files.
+2. For each recurring symptom, ask whether the container's shape (not the content) caused it.
+3. Every finding is propose-first, and structural moves are information-lossless: move, never delete.
+
+## tools-audit
+
+Trigger: periodic, or a tool/automation visibly limping without being an incident.
+
+1. Roster the tools and automations in use (editor and agent wiring, scripts, hooks, scheduled jobs), each with its evidence trail: logs, stamps, last outputs.
+2. Verify each is alive and earning its keep: when it last ran, when it last produced something useful, whether failure rows cite it.
+3. Propose per item: keep / fix / retire. For a candidate NEW tool, recommend a bounded trial: capped, quittable, with a named keep-or-quit checkpoint.
+
 ## failure-capture and failure-review
 
 Trigger for capture: the user corrects the agent's work or labels something a failure; a shipped change regresses; any defect worth remembering. Trigger for review: periodic, or when deciding what to fix first in how the working system itself runs.
@@ -66,6 +100,10 @@ Review:
 1. Aggregate rows by cause class, weighted by severity, never raw counts.
 2. For the top classes, decide leave vs fix. A fix targets the root (the instruction surface, the tool, the gate), not the symptom.
 3. This ledger is the outcome record the human-agent boundary rule reads (see `human-agent-collaboration.md`): a measured failure deficit adds a gate or check back; a clean record supports removing one.
+
+## improvement-loop dispatch
+
+The six audits above form ONE family over the working system's estates: procedures (instructions-audit) · knowledge (knowledge-audit) · lived experience (session-experience-audit) · structures (structure-audit) · tools (tools-audit) · failures (failure-capture and failure-review). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews.
 
 ## error-analysis-pass
 
