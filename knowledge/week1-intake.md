@@ -185,3 +185,12 @@
 - ☐ How promotions actually happen here: recent promotions on the team/org and what visibly earned them (feeds the company watch's events register and the promotion dossier's evidence weighting).
 - ☐ The manager's own view of the next-level bar and the current gaps, in their words (fold into the §8/§9 week-1 conversations).
 - ☐ Timing: when the next review cycle opens, so cycle preparation lands early, never at the deadline.
+
+## 21. Content placement: the team's real storage surfaces (feeds the placement map, `corpus/estate-structure.md`)
+
+*The placement map is discovered, never assumed — the team's actual practice and the policy's sanctioned storage win over any default.*
+
+- ☐ The canonical home of team docs: which system (wiki, doc suite, shared drive) the team treats as the system of record, and which of the several that exist is truth when two hold copies.
+- ☐ Where meeting notes, decision records, and design docs canonically live — and whether the team distinguishes personal working notes from team-visible ones (and where each goes).
+- ☐ What storage the device/data policy sanctions for work-adjacent personal notes (cross-check with A4/A6: the estate root and its backup inherit from this answer).
+- ☐ Any hygiene convention for scratch space and downloads; if none, the estate names one scratch spot and a cleanup cadence.
