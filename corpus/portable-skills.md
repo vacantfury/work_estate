@@ -53,6 +53,20 @@ Trigger: periodic, or when an instruction surface visibly misfires (references a
 3. Propose per item: refine / merge / retire. Mechanical fixes apply directly; behavior-changing rewrites get approval.
 4. After any rename/retirement of a standard or tool: grep all instruction surfaces for the old world and fix stale references in the same session.
 
+## failure-capture and failure-review
+
+Trigger for capture: the user corrects the agent's work or labels something a failure; a shipped change regresses; any defect worth remembering. Trigger for review: periodic, or when deciding what to fix first in how the working system itself runs.
+
+Capture (same session as the incident):
+1. Fix the live work first. The record never substitutes for the fix.
+2. Log one row in a local failures ledger (a plain gitignored file under the workspace's local state): date · what happened in one line · cause class (instruction gap / verification gap / tooling / process / packaging of a human-executed step) · severity band (low / med / high).
+3. If the same failure class already has a written rule, a second occurrence escalates the fix from rule text to enforcement (a check, a hook, a pipeline stage), never a third restatement.
+
+Review:
+1. Aggregate rows by cause class, weighted by severity, never raw counts.
+2. For the top classes, decide leave vs fix. A fix targets the root (the instruction surface, the tool, the gate), not the symptom.
+3. This ledger is the outcome record the human-agent boundary rule reads (see `human-agent-collaboration.md`): a measured failure deficit adds a gate or check back; a clean record supports removing one.
+
 ## error-analysis-pass
 
 Trigger: every 2–4 weeks on an LLM feature, and after any significant model/prompt change or incident. (Backing conventions: `role-playbook.md`.)
