@@ -1,6 +1,6 @@
 # Store — the estate's typed data service
 
-*One shared typed store + scoring service that every register rides (design principle 25). The data-shape rule (`estate-structure.md`) is this service's CONTRACT; this module is the ENGINE that enforces it. Consumers: the people cards, the resources register, the company signal and theme registers, the worklog's structured lines, per-project boards — any register that types or scores its entries.*
+*One shared typed store + scoring service that every register rides (design principle 25). The data-shape rule (`estate-structure.md`) is this service's CONTRACT; this module is the ENGINE that enforces it. Consumers: the people cards, the resources register, the company signal and theme registers, the worklog's structured lines, per-project boards, and the task lists (store-backed form, `task-convention.md`) — any register that types or scores its entries.*
 
 ## The service
 

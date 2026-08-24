@@ -4,6 +4,16 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [3.4.0] - 2026-08-24
+
+Task-store pass (user decision 2026-08-24): the store-backed task form is promoted from a conditional footnote to the STANDARD form, ported at implementation-grade spec from the maintainer's proven cutover of this convention.
+
+- Changed: `task-convention.md` — new §The store-backed form: store as truth with `TODO.md` a banner-marked generated view · stable never-reused ids rendered `[id: tN]` (tooling addresses only; cite-by-position stands) · append-only status ledger with automatic stamps, close emits the archive line · the verb write surface (add/close/note/edit/state/rank/wake/show/list/regen/ingest/verify; adding never reorders, rank is the deliberate batch reorder) · hand edits detected by hash and absorbed by ingest (a reordered active section = the user's ranking; deleted lines reported, never silently closed; mutating verbs refuse over an un-ingested view) · declared-marker tail sections survive regeneration · wake as a standing engine job · flip-once procedure keeping the pre-flip backup · `verify` feeding the self-audit. Markdown-truth demoted to bootstrap/degraded fallback, kept flip-ready.
+- Changed: `store.md` consumers — the task lists join the register roster.
+- Changed: `UNFOLD.md` Phase 3 task-head bullet — task lists found STORE-FIRST where A7 provided an engine; a degraded install keeps flip-ready markdown and flips at the first update pass that finds one.
+- Deliberately shipped as SPEC, not code (named decision): the seed stays tooling-agnostic; the section is implementation-grade and the estate's sanctioned agent builds the tool against the A7 engine.
+- Affects: regenerate derived layers of task-convention; an installed estate flips its existing lists per the flip procedure at the next convenient sitting (living state preserved — flip parses and loads, never rewrites content).
+
 ## [3.3.0] - 2026-08-24
 
 Law-sync pass (second of its kind; baseline was the 2026-08-19 axis-1 refresh): the maintainer's working-rule estate walked rule by rule against the corpus, every rule settled or amended since the baseline either ported in the seed's generic voice or skipped with a named reason. One real drift fixed.
