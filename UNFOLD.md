@@ -32,7 +32,7 @@ Gather evidence; note everything observed (it feeds Phase 2).
 Answer A1–A6 in `local/ledger.md`, each with the one evidence line that decides it. An unanswerable question is recorded as **unresolved** with what's missing — never guessed.
 
 - **A1 — sanctioned AI tooling.** Decides what executes future sessions and the format of the generated instructions layer — and, with the intake §17 answers (token budget, unattended-run policy, reachable surfaces), the work engine's queue mode and budget knob (`corpus/work-engine.md`). Outcome classes: a full agent harness · an instructions-consuming assistant · none (→ degraded path).
-- **A2 — remote reachability.** Decides the update channel: reachable → `git pull` + re-run unfold picks up seed improvements; not reachable → the seed is refreshed rarely, by whatever sanctioned transfer route exists, or not at all.
+- **A2 — remote reachability.** Decides the update channel: reachable → versioned delta updates (§Updating an installed estate) pick up seed improvements; not reachable → the seed is refreshed rarely, by whatever sanctioned transfer route exists, or not at all.
 - **A3 — personal-repo policy.** Already gated Phase 0; record the evidence here.
 - **A4 — the estate root and project-home form.** Where the work-side estate lives (a work-projects directory in the user's device home, or a work-managed location if policy or practice prefers it) and what form project homes take (plain dirs · local git repos · work-hosted git). Default: a projects directory with each project a local git repo. Record the chosen root in the ledger; the estate never pushes to the seed's remote.
 - **A5 — applicable convention/skill subset.** Per corpus module and per portable-skills entry: **adopt / adapt / fold away**, one-line reason each. What is folded away stays in the corpus, available to later re-runs.
@@ -64,9 +64,16 @@ From the resolved ledger, found the work-side estate at the A4 root (design prin
 13. **Log:** write the unfold log in this clone's `local/` — date, ledger summary, the estate registry as founded, what was folded away.
 14. **Report to the user:** the ledger answers, the estate as founded (each project + its home), and the single next action (typically: wire the hub's instructions file into the sanctioned tool, exact steps stated).
 
-## Re-running
+## Updating an installed estate (versioned delta — never a full re-unfold)
 
-Run again from Phase 1 whenever policy or tooling changes at work, or the seed has been updated. Re-runs regenerate instruction/skill layers and append to the ledger; living project state and the estate registry's existing entries are never touched.
+A seed update is applied as a DELTA against the version the estate was derived from; the full unfold never re-runs for a seed change. The clone's own git position is the installed-version marker: `HEAD` is the seed state the estate was last derived from, and moving it (the `git pull` at the end of an update) is what marks the update complete. Seed versions are SemVer tags; `CHANGELOG.md` is the update package's manifest — each entry names the changed modules and the derived layers they affect.
+
+1. **Check (read-only; on the user's ask, or at most once per session opening).** `git fetch origin`, then `git log --oneline HEAD..origin/main` and `git diff --stat HEAD origin/main -- corpus/ UNFOLD.md knowledge/`; read the `CHANGELOG.md` entries above the installed version. Report and stop: versions and modules changed, which generated layers are affected, confirmation that living project state is untouched. Nothing is applied without the user's go.
+2. **Apply (delta only).** For each changed module, consult the existing ledger: adopt/adapt rows regenerate their derived layers from the new module text using the recorded answers — nothing already answered is re-asked; fold-away rows are noted and skipped; a module new since the installed version gets one fresh A5 row; a genuinely new ledger question is asked once.
+3. **Never clobber a local edit.** Before overwriting a generated file, check whether it was edited since generation (via its provenance header, or by regenerating from the module text at the current `HEAD` and comparing). Unedited → overwrite. Edited → show the diff and merge the seed change in, keeping the local adaptation. Every file (re)generated from this mode's first run onward carries one provenance header line: `generated from former name <version> · module <path> · A5: <decision>`.
+4. **Record and advance the marker.** Append a dated update section to `local/ledger.md` (version from → to, layers regenerated, merges made), then `git pull` so `HEAD` records the new installed version.
+
+Living project state (task files, boards, registers, records) and the estate registry's existing entries are never touched by an update. A full re-run from Phase 1 remains the instrument for WORK-side change (policy or tooling shifts at the employer); seed changes always ride this update mode. Bootstrap: an estate installed before versioning existed has no provenance headers — treat the clone's current `HEAD` as the installed baseline; headers appear as layers are first regenerated.
 
 Post-install, the clone's ONLY role is this update channel: day-to-day work happens in the estate projects, never in the clone (design principle 19). If the update channel goes unused (A2 unreachable), the clone is deletable without loss.
 
