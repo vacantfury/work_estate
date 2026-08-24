@@ -1,6 +1,6 @@
 # Portable skills (shortlist)
 
-Recurring procedures worth materializing on the work side, in whatever form the sanctioned tooling supports — agent skills, instructions files, or plain printed checklists. Each entry: trigger, compact procedure, human gates. The unfold adapts the format; the procedures are tooling-agnostic.
+Recurring procedures worth materializing on the work side, in whatever form the sanctioned tooling supports — agent skills, instructions files, or plain printed checklists. Each entry: trigger, the FULL procedure the work will use (never a compressed sketch that forces re-derivation), human gates. The unfold adapts the format; the procedures are tooling-agnostic.
 
 ## systematic-debugging
 
@@ -43,6 +43,24 @@ Trigger: a point just settled somewhere local (one project's convention, one reg
 2. Sweep the named parallels and apply the point there in the same sitting; a parallel deliberately skipped gets a one-line named reason.
 3. A promotion up a level lands via capture-at-settle (`session-discipline.md`): written durably, consumer named, old world swept.
 4. The work-side ladder tops out at the estate's own hub conventions: the seed is never edited from the work side (one-way flow). A point that looks corpus-worthy is noted as a candidate in the hub's conventions and travels upstream only through the maintainer.
+
+## project-founding
+
+Trigger: a container is about to be created — a per-project home under main-work at an ACCEPT or an accepted initiative (`project-lifecycle.md` stages 3/5), a new function project when a standing kind of work settles with no home, or an infrastructure charter's founding gate firing at its named first consumer. Also fires on discovery of homeless work: real work accumulating in sessions, scratch, or another project's files with no registered home.
+
+0. **Size test first — don't over-found.** A single deliverable is a task line; a multi-move arc with a named end is a campaign folder inside its owning project (`estate-structure.md`); only STANDING work — no natural end, its own state, its own claim on attention — earns a project.
+1. **Classify the kind** (`estate-structure.md` kinds roster): per-project home under main-work (product work) · function project (a standing register/record of the job) · infrastructure (a seam ≥2 projects ride). Infrastructure founds ONLY at its charter's named consumer gate, per its own module (`store.md` · `finder.md` · `messages.md` · `llm_utils.md` · `devices.md` · `autoflow.md` · `auto_research.md`); a capability two projects both need but no charter covers is infrastructure debt — flag it at the hub, never hand-roll it inside one project.
+2. **Settle name and home.** Name: short, or long only because accuracy needs every word (`session-discipline.md` naming rule). Home: a directory under the estate's A4 root per the registry's layout — per-project homes under main-work, function and infrastructure projects as siblings. The employer's systems stay canonical for what they own (code in the employer's git, team docs in the team's doc system — the placement map): the estate home holds the project's RECORD and state, never a duplicate of a team surface.
+3. **Seed the task surfaces** (`task-convention.md`): `TODO.md` headed `# TODO (ordered)`, `NOW.md`, `archive.md`. An existing file is NEVER overwritten — founding over existing material is absorption (step 8).
+4. **Seed the kind-specific state.** Per-project home: the project record per `dev-workflow.md` — the team's design-doc/status convention where one exists, else `local/state/projects/<name>.md` — and the accept's premortem (`risk-register.md`) declared before work starts. Function project: its registers per its owning corpus module, in the data shape (`estate-structure.md`): typed entries · append-only dated assessments · machine estimates separate from the user's judgments · knobs in a config block. Infrastructure: per its charter module. Deliberately NOT pre-seeded: `lessons.md` and `handbook.md` found lazily at their first entry — empty shells are clutter.
+5. **Instructions layer:** a per-project instructions file in the sanctioned tooling's format, stating this project's own scope and citing the hub's law — never copying it.
+6. **Register — the step that makes the project exist.** One estate-registry row at the hub: name · kind · home path · state files · genome modules (which corpus modules govern it) · EDGES (`consumes:` infrastructure seams · `feeds:` where outputs flow); state crosses the project's boundary only via the crossing protocol's four forms. Same sitting, each where it applies: a portfolio-board line for product projects (`name · stage · sponsor · why-it-matters · next action · next-show`, `project-lifecycle.md`) · a placement-map row for any NEW content kind the project introduces (`estate-structure.md`) · any standing job into the engine registry (`agent-jobs.yaml`, the job writing this project's own state, `work-engine.md`) · a footprint-register line for any personal credential or sign-in the founding lands (`device-return.md`).
+7. **First task:** the project's TODO opens with its first concrete action — a project founded with an empty TODO is a zombie at birth.
+8. **Absorption:** work already accumulated elsewhere MOVES whole into the new home — information-lossless, move never delete; an old location keeps a pointer only where something still routes readers there. Duplicated content collapses to one home plus pointers.
+
+Gates: founding a NEW function project or infrastructure seam is a structure decision — the user's word first; a per-project home rides the accept decision itself, no second ask. Absorption that rewrites or removes another project's files: propose first.
+
+Anti-patterns this exists to prevent: work accumulating with no registered home; pre-seeding homes for candidates not yet accepted (the board tracks candidates; homes found at accept); a project created but never registered — invisible to the attention view and every audit.
 
 ## dig
 

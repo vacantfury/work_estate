@@ -4,6 +4,12 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [3.2.0] - 2026-08-24
+
+- Added: `portable-skills.md` **project-founding** — the full founding procedure for any new estate container, in one entry (user decision 2026-08-24: full form, everything the founding uses): size test (task / campaign / project) → kind classification (per-project home · function project · infrastructure at its charter gate) → name + home (employer systems stay canonical for what they own) → task surfaces per `task-convention.md` → kind-specific state (project record + premortem / registers in the data shape / charter module; lessons + handbook stay lazy) → per-project instructions file citing hub law → the registration sitting (estate-registry row with edges · board line · placement-map rows · engine jobs · footprint lines) → first task → absorption (move whole, never delete). Gates: a new function project or infrastructure seam takes the user's word; a per-project home rides the accept itself. Anti-patterns: homeless work, pre-seeded candidates, unregistered projects.
+- Changed: `portable-skills.md` house rule (user correction 2026-08-24) — each entry carries the FULL procedure the work will use, never a compressed sketch that forces re-derivation; README row aligned. `project-lifecycle.md` stage-3 accept and `UNFOLD.md` Phase 3 step 11 now cite the procedure.
+- Affects: materialize one new hub skill in the skills layer; no living state touched.
+
 ## [3.1.0] - 2026-08-24
 
 The infrastructure quartet (user decisions 2026-08-24): the work-stack infrastructure ported at end-state as independent projects, names kept exact from the maintainer's proven layering. Governing insight: incumbents (gateways, clusters, the sanctioned agent tooling) are SUBSTRATE that sits behind these seams — they never replace the estate's own seam, client, platform, and engine layers.

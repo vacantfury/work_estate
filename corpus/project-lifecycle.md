@@ -30,7 +30,7 @@ The criteria pass (the checklist is standard; the weights are judgment):
 - **Cost** — expected total time-and-effort spend against the impact (the principle-9 target applies to selection first: the cheapest effort is the project not taken).
 - **People** — who it would be worked with; the allies it would build.
 
-Decision outcomes, each with its stage-4 communication: **accept** · **shape** (counter-scope: a smaller version, a time-boxed spike, "yes after X ships") · **decline via priorities** · **chase** · **initiate** (own proposal → stage 5). An **accept** also runs the project premortem (`risk-register.md`): likely failure modes with early signals and pre-planned reactions, declared before work starts — the twin of the stage-8 landing declaration.
+Decision outcomes, each with its stage-4 communication: **accept** · **shape** (counter-scope: a smaller version, a time-boxed spike, "yes after X ships") · **decline via priorities** · **chase** · **initiate** (own proposal → stage 5). An **accept** also runs the project premortem (`risk-register.md`): likely failure modes with early signals and pre-planned reactions, declared before work starts — the twin of the stage-8 landing declaration. And an accept FOUNDS the project's home under main-work — the project-founding procedure (`portable-skills.md`): task surfaces, project record, registry row with edges, board line.
 
 ## Stage 4 — communication and negotiation
 
