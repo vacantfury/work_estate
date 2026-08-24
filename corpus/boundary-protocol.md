@@ -24,6 +24,10 @@ Because every record is born at this grain, whatever the user later does with th
 
 Nothing is homed in two places.
 
+## User-only zones
+
+A directory named `ai_agent_proof`, anywhere in the user's estate, is a user-only zone: agents never read, list, search, or otherwise access its contents by any path, and never ask what is inside. Existence and a coarse outline may be referenced; contents are maintained by the user alone. A session may create an empty zone plus its wiring (ignore-file line, an outline stub at the user's dictation) on the user's ask, then never looks in.
+
 ## Policy answers — discovered once, cited forever
 
 Boundary decisions keep citing the same few policy facts: what the employer's policy actually says on open-source contribution, publication approval, outside projects and moonlighting, patents/invention assignment, AI-tool use, and external endpoints. Each answer is discovered once (docs first, then the official channel), recorded as one dated line in `local/ledger.md` (the same ledger the gray-flow checks already use: what was asked, what the policy says, source), and cited thereafter. An undocumented re-derivation of a policy question that was already answered is a defect; a policy CHANGE re-runs the check and appends a new dated line, never edits the old one.

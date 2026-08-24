@@ -12,10 +12,12 @@ The ordered-TODO task system. Plain markdown, human- and machine-readable, tooli
 
 - **One home per item.** A task lives in exactly one list, chosen by where the work executes. Move it when the locus changes — never copy; a task written in two places will desynchronize.
 - **Adding never reorders.** Append new items to the tail (or a capture inbox). Ranking happens deliberately, in batch passes — never ad hoc for one arriving item.
+- **Grasp the big, release the small.** Ranking distinguishes important from minor and acts on it twice over: selection (drop or shrink the minor rather than do everything) and sequence (the big never waits behind the small).
 - **Every session maintains the TODO of the workspace it works in.** Completions and material advances are recorded in the same session they happen.
 - **Finished and dropped items move to an archive file** (e.g. `archive.md`), one line each: `<close-date> · [done|dropped] · task text · [added: YYYY-MM-DD]`. Records are kept, never deleted. Never guess a missing date — write `[added: ?]`.
 - **Rules that never complete are not tasks.** Recurring invariants belong in the conventions/instructions layer, not the TODO.
 - **Task files and records are written in plain English,** whatever language the input arrived in (translate at intake, no glosses); human names may keep their native script.
+- **Items are cited to the user by position, never by id:** "item 2" plus a few words of the item's text. If the list ever flips to a store-backed system, the TODO file becomes a generated VIEW — the store is the write surface, machine ids on view lines are addresses for tooling only, and a hand-edit to the view is input to ingest, never the write; ids still never appear in text written for the user.
 
 ## States (before scores)
 

@@ -127,6 +127,15 @@ Trigger: periodic, or a tool/automation visibly limping without being an inciden
 3. Propose per item: keep / fix / retire. For a candidate NEW tool, recommend a bounded trial: capped, quittable, with a named keep-or-quit checkpoint.
 Since v3 the roster includes the infrastructure trio's adapters (store engine, finder sources, messages channels) and the seed's registry row — flag a stale update channel (newest version seen far ahead of installed, or last-checked ancient).
 
+## audit-overlap
+
+Trigger: periodic, or on suspicion that the same logic lives in two places ("is this duplicated somewhere", structures that feel half-replaced by something newer).
+
+1. Collect deterministically first, across the estate's own code and doc surfaces: dead/unused code (linter dead-code passes), unused dependencies, copy-paste clones, duplicate symbol names, residue name patterns (`*_old`, `*_v1`, `*_backup`, `copy`), and things a newer thing visibly superseded (version-control history shows the replacement landing while the old form stayed).
+2. Give every finding a reasoned verdict: **keep** (good overlap — record why, so it never re-surfaces) · **sweep** (residue — delete, lossless via version control) · **merge** (live duplication — extract to ONE home, consumers cite it; a capability two projects both need is infrastructure debt, `estate-structure.md`).
+3. Rank by weight — a duplicated seam or core module outranks a duplicated script or doc — never by raw count.
+4. Sweeps and mechanical merges apply directly; merges that change a consumer-facing surface get approval. Employer-owned repos are out of scope: this audits the estate's own surfaces; team code follows the team's own review channels.
+
 ## failure-capture
 
 Trigger: the user corrects the agent's work or labels something a failure; a shipped change regresses; any defect worth remembering. Runs in the same session as the incident:
@@ -145,7 +154,7 @@ Trigger: periodic, or when deciding what to fix first in how the working system 
 
 ## improvement-loop dispatch
 
-The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews. The settle-time WRITE transforms — capture-at-settle (`session-discipline.md`) · workflow-extraction · generalize — are the same loop's write phase: the audits correct what the settle moments failed to capture.
+The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · code overlap (audit-overlap) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews. The settle-time WRITE transforms — capture-at-settle (`session-discipline.md`) · workflow-extraction · generalize — are the same loop's write phase: the audits correct what the settle moments failed to capture.
 
 ## error-analysis
 
@@ -196,7 +205,7 @@ Trigger: new terminals fail to open (spawn errors such as `posix_spawnp failed`,
 1. Diagnose before restarting anything. On macOS the usual cause is pty exhaustion — the kernel's pseudo-terminal pool (~511) is used up: count live ptys (`ls /dev/ttys* | wc -l`) and list the top holders (`lsof | grep ttys`, grouped by process). Electron-family editors (VS Code, Cursor) are known slow leakers via integrated terminals that don't release ptys on close. On a Windows device the analogue (ConPTY/handle leaks) has different diagnostics — re-derive on first occurrence and record it here.
 2. Separate leaked/orphaned holders from live working sessions — a process's age alone doesn't make it dead.
 3. Drain at the source: close the leaking app's integrated terminals or restart the app itself, rather than killing processes blind.
-4. Gate: a person's live working sessions (agent sessions, editors, shells holding open work) are never killed on the system's initiative, however stale they look — present the list (pid · what it is · age) and wait for an explicit yes.
+4. Gate: a person's live working sessions (agent sessions, editors, shells holding open work) are outside the drill entirely, however stale they look — the system neither kills them NOR proposes, packages, or paste-readies a kill list of them; the only trigger for closing one is the person's own explicit ask naming it. Drain at the leak source only (step 3). (Seed incident class: a proposed "stale sessions" kill list closed dozens of open sessions and freed zero terminals — the stale-looking sessions were not the leak.)
 5. After recovery, verify new terminals spawn, then restore any sessions the drain took down (see session-restore).
 
 ## session-restore

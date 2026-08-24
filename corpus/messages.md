@@ -14,6 +14,8 @@
 
 Replies and outbound messages are prepared execute-ready: full text, correct thread, recipients checked, attachments named. The send is the user's, permanently — prepare-only at the human edge is the engine's standing rail, at every autonomy stage. Craft standards (`communication-craft.md`) apply to every prepared draft; the pre-flight assist is the same pass. A draft that commits the user to anything (a deadline, a deliverable, a position with reach) says so when presented, never buried in a routine batch.
 
+Two register rules bind every prepared draft. **Polite AND concise:** a warm, courteous register (acknowledgment, softened refusal, kind close — a terse decline is a defect even when the content is a flat no), achieved by register, never by length: each point once, plainly, no padding. **The recipient's attention is a cost spent deliberately:** an ask of another person is batched rather than dribbled, one decision per ask with the context and a recommendation included, in the cheapest acceptable form — and what they already answered is never re-asked.
+
 ## Threads and waits — one home, on the cards
 
 A live exchange with a person is a thread on that person's card (`people.md`): who owes what, last touch, next move — conversation state is RELATIONSHIP state and lives with the person, the one home per wait. This bus touches threads as traffic flows in and out and keeps no conversation of its own; its only state is the routing rules and the staged-drafts registry. The people due lane notices silence and owed replies. No separate thread list lives here — one home per wait.

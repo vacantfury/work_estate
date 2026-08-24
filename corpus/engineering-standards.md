@@ -16,6 +16,7 @@ Defaults for new code. Where the employer or team has an established practice �
 ## Parameters live in config, never as magic numbers
 
 - Any tunable — thresholds, weights, periods, band mappings, model choices — goes in a config file (YAML default) from the start, with code reading it. Fail-safe defaults in code are fine, marked as fail-safes. Pure unit conversions and mathematical constants are the exception.
+- **The categorical twin:** every closed vocabulary — taxonomy, category set, band mapping — carries a typed residual member (`unknown`/`other`) that fails toward attention rather than silent misclassification, plus a named revision signal for the vocabulary itself (e.g. the residual bucket growing past a stated share).
 - **Every heuristic number carries a tuning path:** a heuristic value enters code/config only together with a named way to tune it against real data (eval set, backtest objective, measurement). The tuning harness may come later, but the tuning task is filed at introduction time — a knob nobody can improve from evidence is a defect.
 
 ## Prefer mature tools over reinventing
@@ -23,6 +24,10 @@ Defaults for new code. Where the employer or team has an established practice �
 - If a mature library does the task well, use it; wrap it behind your own seam if a stable interface is needed. Custom code is reserved for the genuinely bespoke: no good tool exists, or it IS the project's differentiating core logic.
 - Before building any capability, check what already covers it.
 - Where research still leaves several credible candidates for a consequential choice, settle it by a small time-boxed pre-experiment per candidate — elimination by evidence, not debate (`dev-workflow.md`, choice tournaments).
+
+## Size to the known end-state
+
+- When sizing a capability, seam, standard, or structure, the default is the GENERAL form correct at the known end-state — never the narrow variant with a "prove it on one consumer first, widen later" rider. Narrow-first needs a named concrete risk the general form cannot carry (safety, irreversibility, genuine end-state uncertainty); consumer-count caution alone is never such a risk. Keep the load-bearing boundaries full-grade (gates, typed contracts); drop the conservatism riders. The estate's own infrastructure is founded this way (design principle 25).
 
 ## Testing (tiered by trigger)
 

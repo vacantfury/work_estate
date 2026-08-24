@@ -21,6 +21,10 @@ Work larger than a task but smaller than a standing project (an org-networking p
 
 Estate-wide items land in the hub's copies. These files are why the estate improves instead of re-deriving; a lesson that stays in a session transcript is a lesson lost.
 
+## The law layer — how the estate keeps its own rules
+
+The estate's binding conventions have ONE canonical home per rule: hub law (the adapted corpus modules) plus per-project instruction files that CITE hub law, never copy it — a rule stated in two places diverges silently, so any restatement declares its master. Delivery is tiered by read guarantee (`session-discipline.md`, three-tier attention): only rules that must constrain every turn ride the always-loaded file; the rest live behind pointers, read when their situation arises. If hub law outgrows one file, the mature form is one RECORD per rule — a typed header (kind: rule / copy-of-a-master / advisory heuristic · delivery: always / on-event · scope) over the current rule text — with the always-loaded file becoming a GENERATED view of the records: regenerated, never hand-edited; edits land on records. Maintenance either way: law text states the CURRENT rule only (history lives in version control), every rule names its consumer, and a superseded rule is swept the session its supersession settles (`audit-law` checks this).
+
 ## The failures log and the self-audit
 
 - **One estate failures log** (hub, `local/state/failures.md`): a dated row per real failure — what happened · cause side (system / instruction gap / process / tooling) · coarse severity. A person's error under absent or incomplete instruction attributes to the system, never the person (`session-discipline.md` completeness rule).
