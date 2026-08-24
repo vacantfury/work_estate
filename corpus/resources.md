@@ -2,12 +2,13 @@
 
 *The internal-assets project (design principle 20a). An employer grants a role a whole portfolio of resources: benefit elections, budgets, programs, quotas, tool and data access. Most of its value is lost by not knowing, not electing, or missing a window. This project manages that portfolio the way an asset manager manages accounts: know the catalog, elect deliberately, never miss a window. Operating law: **acquire normally-accessible resources at eligibility, not at need.** A resource claimed when it becomes available is cheap; the same resource chased when suddenly needed is expensive or gone.*
 
-## Scope: four resource kinds
+## Scope: five resource kinds
 
 - **Benefit elections** — retirement plan and employer-match mechanics (including after-tax conversion paths where offered), stock purchase plans, health savings accounts, insurance elections, wellness and perk allowances. The kind with hard windows: enrollment periods close, and a closed window usually stays closed until the next cycle.
 - **Budgets** — learning/training budget, conference budget, equipment and home-office allowances: claimable amounts that typically expire each cycle. An expired unclaimed budget is value burned.
 - **Programs** — patent/invention award programs, internal mobility, mentorship programs, hackathons, internal speaking and teaching venues: apply-shaped, growth- and reputation-bearing.
 - **Access** — compute quotas, license seats, data and tool access the role can request: capability-bearing, usually free to claim.
+- **Events** — attend-shaped: internal conferences, talks and brown-bags, hackathon days, trainings, org events beyond the mandatory. Windowed like elections (registration closes, the date passes) and decided, never drifted into: each candidate event gets one attendance read per the data-shape rule (`estate-structure.md`) — value to the role's current targets across three aims (learning · visibility · people, the last read with the `connections.md` register in view) against its time cost — ending in one attend/skip recommendation with its one-line why; the user decides. What an attended event yields routes to its homes: direction signals to `company-watch.md`, person moments to the people cards.
 
 ## The register — `local/state/resources.md`
 
