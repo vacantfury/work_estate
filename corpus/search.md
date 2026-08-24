@@ -7,6 +7,7 @@
 - **One query seam.** "Find X" is asked once, against the bus; the bus fans out to the channels that can answer and returns cited results (source, link, date). Projects never each re-learn where things live: the placement map (`estate-structure.md`) covers the estate's OWN content, this bus covers the employer's surfaces.
 - **The channel roster is resolved at unfold (A8):** which channels the sanctioned tooling can actually reach, each with its access mode — direct read seam · assisted read inside the tooling · user relay as last resort. The roster is a registry table; a channel gained or lost updates one row, never the consumers.
 - **Read-only by default.** The bus retrieves; writes (sending, posting, filing) belong to their owning flows and gates (the communication flow's prepare-only rail).
+- **Digs ride the bus:** scoped discovery campaigns (portable-skills `discovery-dig`) are the bus's campaign-sized form — brief and scoring meaning from the commissioning project, candidates typed into the store, a decided close.
 - **Standing watches ride the bus:** company-watch capture, the people due lane's silence checks, resources window and catalog sweeps, and the triage sweep are all bus consumers on the engine's cadence — one adapter per channel serves them all.
 - **Boundary:** employer surfaces plus whatever public retrieval the environment itself sanctions; no unsanctioned feed tooling (principle 12) and no channels beyond the job's own.
 

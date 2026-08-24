@@ -4,6 +4,17 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-08-24
+
+Upstream mimic-check pass (full walk of the maintainer's ecosystem against the roster; mimic unless genuinely different at work).
+
+- Added: portable-skills `discovery-dig` — scoped discovery campaigns any project commissions: brief + scoring meaning stay with the commissioning project, the run rides the search bus, candidates land typed in the store, decided close or explicit promotion to a standing watch. Plus the digs line in `search.md`.
+- Added: `estate-structure.md` §Kinds and the dependency rule — steward · infrastructure · function projects · work homes · seed row; one-way dependencies, meaning stays with the owning project, twice-needed capability = infrastructure debt.
+- Added: `work-engine.md` cycle pattern (end-state) — user attention batched at cycle boundaries; results reallocate budget.
+- Added: two more named absences in the not-ported list — aid-portfolio (people campaigns instead) and urgency runbooks (the employer's incident process governs).
+- Fixed: `corpus/README.md` was missing the `store.md` and `search.md` rows (2.0.0 defect).
+- Affects: regenerate the derived layers of portable-skills, search, estate-structure, work-engine. No living state touched.
+
 ## [2.0.0] - 2026-08-24
 
 Clear-structure restructure (user decisions at the 2026-08-24 structure sitting; design principle 25). MAJOR: a named absence is reversed and the roster is restructured.

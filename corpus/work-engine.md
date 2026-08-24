@@ -61,6 +61,8 @@ The registry is the engine's config (parameters live in config, `engineering-sta
 
 **Budget-ranked queue:** jobs run in priority order until the period's budget is spent — whatever the work account's real budget turns out to be, it burns top-down, so a small budget runs the head of the queue well and a large budget runs the tail too. The budget figure, the sanctioned runtime, and whether unattended/scheduled runs are permitted at all are intake facts (§17), never assumptions. **Tuning path:** priorities and cadences are reviewed against evidence at the Tue/Thu retro (`work-report.md`) — each job's output value vs its spend; a job nobody's lane consumed for two review cycles is demoted or cut.
 
+**Cycle pattern (end-state):** scheduled lanes run plan → execute → collect → report as CYCLES: the user's attention is batched at cycle boundaries (one consolidated report and choice surface per cycle, never a drip), and each cycle's results feed the next cycle's priorities and budget split — measured value reallocates budget, drift never does.
+
 **Runtime adaptation (resolved by the unfold, A1):**
 - *Full agent harness with scheduled runs sanctioned* → jobs run as actual scheduled/background agents.
 - *Assistant-only tooling, or unattended runs not sanctioned* → the registry becomes the **session-opening sweep**: each working session starts by running the due jobs' procedures inline, highest priority first, time-boxed.

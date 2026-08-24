@@ -44,6 +44,17 @@ Trigger: a point just settled somewhere local (one project's convention, one reg
 3. A promotion up a level lands via capture-at-settle (`session-discipline.md`): written durably, consumer named, old world swept.
 4. The work-side ladder tops out at the estate's own hub conventions: the seed is never edited from the work side (one-way flow). A point that looks corpus-worthy is noted as a candidate in the hub's conventions and travels upstream only through the maintainer.
 
+## discovery-dig
+
+Trigger: a project needs a SCOPED discovery — one question, a bounded sweep for candidates (people worth knowing for a named goal, internal events in a window, teams or projects touching a topic, transfer/program opportunities) — bigger than one query, smaller than a standing watch.
+
+1. The commissioning project writes a dig BRIEF: the question, the candidate shape (entity kind + fields per the store's schema), scope bounds, and what "worth surfacing" means — the scoring config stays with the commissioning project.
+2. The dig runs through the search bus (`search.md`), across every channel the roster reaches; per-dig hand-rolled channel access is the same defect as ever.
+3. Candidates land as typed store entries (`store.md`) with evidence pointers; scoring runs in the store per the brief; the commissioning project judges the shortlist.
+4. The dig CLOSES — report, shortlist, what was not covered. Anything continuing becomes a standing watch (engine job) by explicit decision, never by drift.
+
+Anti-pattern this exists to prevent: every project hand-rolling its own funnel over the same channels.
+
 ## review-simplify pass
 
 Trigger: a change is functionally complete, before merge.
