@@ -35,6 +35,15 @@ Trigger: a multi-step workflow has just recurred, with articulated preferences a
 3. Route each piece to its proper form — code / skill / rule / state file (see session-discipline, form selection).
 4. Write it durably in the same session; new automation installs only with approval.
 
+## generalize-at-settle
+
+Trigger: a point just settled somewhere local (one project's convention, one register's rule, one fix) and plausibly applies more widely — or a second surface is found hand-rolling what a first already solved.
+
+1. Ask the two axes. SCOPE: does the point belong higher up the estate's ladder (project note → hub/estate-wide convention)? PARALLELS: which analogous surfaces (other projects, registers, checklists) should carry the same point — including parallels nobody has named yet?
+2. Sweep the named parallels and apply the point there in the same sitting; a parallel deliberately skipped gets a one-line named reason.
+3. A promotion up a level lands via capture-at-settle (`session-discipline.md`): written durably, consumer named, old world swept.
+4. The work-side ladder tops out at the estate's own hub conventions: the seed is never edited from the work side (one-way flow). A point that looks corpus-worthy is noted as a candidate in the hub's conventions and travels upstream only through the maintainer.
+
 ## review-simplify pass
 
 Trigger: a change is functionally complete, before merge.
@@ -105,7 +114,7 @@ Trigger: periodic, or when deciding what to fix first in how the working system 
 
 ## improvement-loop dispatch
 
-The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews.
+The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews. The settle-time WRITE transforms — capture-at-settle (`session-discipline.md`) · workflow-extraction · generalize-at-settle — are the same loop's write phase: the audits correct what the settle moments failed to capture.
 
 ## error-analysis-pass
 
