@@ -162,7 +162,7 @@
 - ☐ The employer secret store and LLM gateway the team actually uses — the work stack's incumbents (extends §1 and §17).
 - ☐ Record every answer plus the chosen sync posture (full client vs read-only satellite) in `local/ledger.md`; on a blocked-push outcome, name the fallback explicitly.
 
-## 19. Resource catalog: benefits, budgets, programs, access (feeds design principle 20a, `corpus/resources.md`)
+## 19. Resource catalog: benefits, budgets, programs, access (feeds design principle 20a, `corpus/benefits.md`)
 
 *The catalog is discovered, never assumed — the failure mode is the resource nobody mentions. Portal-first, then ask HR/the manager/a tenured teammate what people actually use and forget to use.*
 
@@ -175,7 +175,7 @@
 - ☐ Access worth claiming at eligibility: compute quotas, license seats, data/tool access the role can request for free.
 - ☐ Cycle boundaries: when open enrollment recurs, when budgets reset — so catalog-discovery re-runs land on the calendar.
 
-## 20. Review instrument and leveling (feeds design principle 20a, `corpus/performance.md`)
+## 20. Review instrument and leveling (feeds design principle 20a, `corpus/career.md`)
 
 *Both artifacts shape themselves to what is discovered here. The rubric as practiced wins over the rubric as written (design principle 10).*
 

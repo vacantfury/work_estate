@@ -29,7 +29,7 @@ Everything in this module runs **on the work machine, under the work account, in
 | Research | `research-workflow.md` | per-project records | grounding, experiment loop, auto-research jobs |
 | Project sourcing | `project-lifecycle.md` (stage 1) | `projects.md` candidates | continuous candidate scan + per-candidate intelligence |
 | Company intelligence | `company-watch.md` | `company.md` | signal capture, register upkeep, planning-rhythm distillation |
-| Connections | `connections.md` | `people.md` | register upkeep, relationship analysis, proposed moves |
+| Connections | `people.md` | `people.md` | register upkeep, relationship analysis, proposed moves |
 | Communication craft | `communication-craft.md` | `communication.md` | artifact harvest + coaching, pre-send assists |
 | Risk register | `risk-register.md` | `risks.md` | premortems at accept/transitions, reaction-plan upkeep, calibration |
 | Health guard | `health-guard.md` | `health.md` | floor enforcement, tracker upkeep, breach surfacing |
@@ -62,6 +62,8 @@ The registry is the engine's config (parameters live in config, `engineering-sta
 **Budget-ranked queue:** jobs run in priority order until the period's budget is spent — whatever the work account's real budget turns out to be, it burns top-down, so a small budget runs the head of the queue well and a large budget runs the tail too. The budget figure, the sanctioned runtime, and whether unattended/scheduled runs are permitted at all are intake facts (§17), never assumptions. **Tuning path:** priorities and cadences are reviewed against evidence at the Tue/Thu retro (`work-report.md`) — each job's output value vs its spend; a job nobody's lane consumed for two review cycles is demoted or cut.
 
 **Cycle pattern (end-state):** scheduled lanes run plan → execute → collect → report as CYCLES: the user's attention is batched at cycle boundaries (one consolidated report and choice surface per cycle, never a drip), and each cycle's results feed the next cycle's priorities and budget split — measured value reallocates budget, drift never does.
+
+**Ample-budget posture (the expected case, settled 2026-08-24):** where the discovered budget is ample, scarcity machinery stays dormant — the FULL job roster runs on cadence, priorities order execution rather than ration it, and spare capacity is spent on DEPTH before speed: stronger verification forms (the reliability module's ladder), wider digs, more frequent scoring runs, richer triage. The budget-ranked queue below is the fallback for genuinely constrained environments, never the default posture.
 
 **Runtime adaptation (resolved by the unfold, A1):**
 - *Full agent harness with scheduled runs sanctioned* → jobs run as actual scheduled/background agents.

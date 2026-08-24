@@ -4,6 +4,19 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-08-24
+
+The v3 clear structure (user review sittings, design principle 26). MAJOR: roster restructured.
+
+- Roster: hub · store · finder · messages (infrastructure trio) · people · worklog · benefits · career · health · risk · research · main-work. Cut by content kind: information (finder) · person-traffic (messages) · relationships incl. threads (people).
+- Renamed modules: search→finder (knowledge surfaces only) · communication-flow→messages (owns mail/chat/calendar adapters; routing rules + drafts registry as state) · connections→people · resources→benefits (money-like claims only) · performance→career (absorbs growth + positioning; scope = this company only).
+- Dissolved: the company project — the watch is a standing capture job; signals typed into the store, person-signals → people, themes/reward map → career `themes.md`. Also gone: the short-lived channels concept (each bus owns its own adapters).
+- main-work is a real manager project: portfolio board + candidates + accept decisions move OUT of the hub; per-project homes live under it.
+- Store: the four scoring folds ported from the proven upstream closed forms — Bayesian **estimate** (normal-conjugate posterior, confidence→precision, half-life decay, mean ± sigma) · **balance** (decayed event account, no Bayes) · **forecast** (odds arithmetic on resolvable claims, Brier-scored) · **bands**; knobs live in the consuming project's config.
+- Hub registry gains EDGES (consumes/feeds) — the estate structure GRAPH; the crossing protocol (four legal boundary crossings) lands in estate-structure; audit-structure and audit-tools entries extended to audit the graph, the trio's adapters, and seed staleness.
+- Work-engine: ample-budget posture — scarcity machinery dormant where budget is ample (the expected case); spend on depth before speed.
+- Migration (user-confirmed at apply): rename module-derived layers; found messages + re-home board into main-work; dissolve company project (data → store/people/career); split resources register into benefits + career growth; rename directories people/benefits/career/main_work; add registry edges; re-answer A8 as two rosters. Register data is moved, never lost.
+
 ## [2.2.0] - 2026-08-24
 
 Naming pass (user rule, settled 2026-08-24: a name is either short, or long only when accuracy needs every word — never medium-long and imprecise).

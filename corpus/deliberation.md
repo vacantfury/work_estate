@@ -8,10 +8,10 @@ Decision-grade moments only: a project accept/shape/decline, an initiative pitch
 
 ## The three seats
 
-Each seat is a GROUNDING, not a persona: it argues only from its own register set and cites lines. A position without citations carries no weight — evidence or silence, the same rule as `performance.md`. Three prompts on one vibe is not a council; three register-grounded reads is.
+Each seat is a GROUNDING, not a persona: it argues only from its own register set and cites lines. A position without citations carries no weight — evidence or silence, the same rule as `career.md`. Three prompts on one vibe is not a council; three register-grounded reads is.
 
 - **First-person seat — works as the user.** Grounding: the self-model (`self-model.md`), the worklog and its candid notes (`work-record.md`), the communication log, the health tracker. Answers: what would the user actually do, in their own style, and what can they actually sustain? Well-being above the hard floors argues here.
-- **Positioning seat — the long-term target.** Grounding: the promotion dossier (`performance.md`), the company store: reward map, themes, leader trajectories (`company-watch.md`), the people register (`connections.md`). Answers: which option compounds level, reputation, relationships, and alignment with where the company is actually going?
+- **Positioning seat — the long-term target.** Grounding: the promotion dossier (`career.md`), the company store: reward map, themes, leader trajectories (`company-watch.md`), the people register (`people.md`). Answers: which option compounds level, reputation, relationships, and alignment with where the company is actually going?
 - **Delivery seat — short-term urgency.** Grounding: the portfolio board and project records (`project-lifecycle.md`), current commitments and deadlines, the manager's stated expectations, the team's ceremonies. Answers: what ships, what was promised, what does the team need now?
 
 ## Procedure

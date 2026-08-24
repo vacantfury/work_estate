@@ -1,5 +1,7 @@
 # Company watch — leadership, people, and direction intelligence
 
+*Estate form (v3, design principle 26): the watch is a standing capture JOB in the hub's engine plus schemas in the store — NOT a project. Capture rides the messages bus (all-hands, memos, announcements arriving as traffic) and the finder (knowledge surfaces); signals and themes live typed in the store; meaning homes: person-signals → the people cards, themes and the reward map → career's positioning register (`career.md`).*
+
 What the company's leadership and high-level people are doing is the highest-value intelligence stream the job offers: what they formally lead and visibly push, what they say casually, who is promoted and for what, who departs — exited or laid off — and for what, reorgs and funding moves, and the direction it all adds up to. This module is the standing system that watches it: signals collected continuously from surfaces already attended, graded by evidence strength, distilled into longitudinal registers, and consumed by three things — the project pipeline's **alignment** criterion (`project-lifecycle.md`, stage 3), **behavior calibration** (the reward map: what the company actually rewards and punishes), and **relationship aiming** (people trajectory). **The watch is an intelligence organ, never a decision channel** — everything it recommends flows through the lifecycle machinery and the working conventions.
 
 **Its field is the whole company.** The own reporting chain is watched most closely — it decides daily work — but people and events outside the org are never out of scope: **proximity weights attention; it never draws the boundary.**
@@ -67,4 +69,4 @@ Rungs 2–3 require the ladder's top grades (resourcing, sustained repetition). 
 
 The registers' lifecycle and trajectory states make *slope* visible, and slope is where the career value concentrates — for themes and for people. Established themes are the safe frame for assigned work (rung 1). Emerging and rising themes with accelerating evidence are where initiative bets (lifecycle stage 5) and pre-positioning pay. Rising people are where relationship investment pays: being early on a direction — or early with the person who will own it — is worth more than conforming to a stated one, because by the time a theme or its owner is established, the credit and the access are largely spoken for.
 
-The signal and theme registers ride the store service (`store.md`); capture and refresh sweeps query through the search bus (`search.md`).
+The signal and theme registers ride the store service (`store.md`); capture and refresh sweeps query through the finder (`finder.md`).

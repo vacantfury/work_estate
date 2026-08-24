@@ -4,7 +4,7 @@
 
 ## The merged attention view (hub)
 
-The hub can answer "what needs the user now" across the whole estate: one merged, ranked read over every project's TODO (due and active lanes) plus the standing due lanes (resources windows, connections threads, review cycles, health follow-ups). Rules:
+The hub can answer "what needs the user now" across the whole estate: one merged, ranked read over every project's TODO (due and active lanes) plus the standing due lanes (benefits windows, people threads, review cycles, health follow-ups). Rules:
 
 - **Pull on ask, never push.** The view renders when the user asks; no per-project list auto-pops, no unsolicited digest.
 - **The user's spoken priorities become pins.** When the user names something first or urgent, it pins above the computed order until done or unpinned; conversation is the one ordering channel.
@@ -28,11 +28,15 @@ Estate-wide items land in the hub's copies. These files are why the estate impro
 
 ## Kinds and the dependency rule
 
-The estate's containers have KINDS: the steward (hub) · infrastructure (store, search) · function projects (people, company, worklog, resources, performance, health, risk, research) · per-work-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
+The estate's containers have KINDS: the steward (hub) · infrastructure (store, finder, messages) · function projects (people, worklog, benefits, career, health, risk, research) · the main-work manager with its per-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
+
+**The registry is a GRAPH:** every row also declares its EDGES — `consumes:` (which infrastructure seams) and `feeds:` (where its outputs flow, e.g. the company watch → people + career) — so the hub holds the whole estate's structure and renders it on ask.
+
+**The crossing protocol** — state crosses a project boundary ONLY as one of four forms: ① a typed store entity under a declared schema (the wire format) · ② a dispatch line into the target project's TODO · ③ the hub's attention view / task head · ④ a declared engine job naming source → target. A direct write into another project's state files is a defect.
 
 ## The data-shape rule
 
-Any register that scores or types its entries (people cards, the resources register, the company watch) follows one shape:
+Any register that scores or types its entries (people cards, the benefits register, career's theme register) follows one shape:
 
 1. **Typed entries** with named fields, not free prose.
 2. **Append-only dated assessments** carrying their evidence; corrections are new lines, never edits of old ones.
@@ -51,7 +55,7 @@ Any register may carry dated RESOLVABLE predictions: `forecast: <claim> · resol
 
 ## What is deliberately NOT ported
 
-Heavier structure from the maintainer's practice stays out until a real work-side consumer exists: no standing multi-agent deliberation INFRASTRUCTURE (the deliberation convention itself is in — `deliberation.md`, know-how run inside the sanctioned tooling), no version-tagged releases (the estate ships no software), no databases or schedulers beyond what the sanctioned tooling provides, no external-feed collection (design principle 12), and no message-transport machinery of its own (the message/meeting flow convention is in — `communication-flow.md` — run entirely on the employer's mail, chat, and calendar surfaces). Scoring and retrieval infrastructure ARE ported — the store (`store.md`, typed data + scoring service) and the search bus (`search.md`, one retrieval seam over the job's channels) — sized to the known end-state (design principle 25; supersedes this list's earlier scoring/discovery-service absence, user decision 2026-08-24). Also absent by decision: no aid-portfolio system (helping colleagues and mentees runs as people-project campaigns), and no urgency-runbook system (the employer's incident process governs; personal quick-reaction prep lands as role-playbook notes only where the team leaves a gap).
+Heavier structure from the maintainer's practice stays out until a real work-side consumer exists: no standing multi-agent deliberation INFRASTRUCTURE (the deliberation convention itself is in — `deliberation.md`, know-how run inside the sanctioned tooling), no version-tagged releases (the estate ships no software), no databases or schedulers beyond what the sanctioned tooling provides, no external-feed collection (design principle 12), and no message-transport machinery of its own (the message/meeting flow convention is in — `messages.md` — run entirely on the employer's mail, chat, and calendar surfaces). Scoring and retrieval infrastructure ARE ported — the store (`store.md`, typed data + scoring service) and the finder (`finder.md`, one retrieval seam over the job's channels) — sized to the known end-state (design principle 25; supersedes this list's earlier scoring/discovery-service absence, user decision 2026-08-24). Also absent by decision: no aid-portfolio system (helping colleagues and mentees runs as people-project campaigns), and no urgency-runbook system (the employer's incident process governs; personal quick-reaction prep lands as role-playbook notes only where the team leaves a gap).
 
 ## Fold-away note (for the unfold's A5 pass)
 

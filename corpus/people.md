@@ -1,4 +1,4 @@
-# Connections — the working-relationship system
+# People — persons and relationships
 
 *Deliberate investment in working relationships at every level (design principle 16; upgraded to relationship-system grade 2026-08-19, design principle 20b). Distinct from `company-watch.md` by aim: the watch is intelligence ABOUT leadership and direction; this system is investment IN relationships — teammates, the manager, cross-team collaborators, org peers, and the high-level people worth knowing. The two feed each other: the watch's people trajectories aim this system's investment; this system's contacts feed the watch's signal log.*
 
@@ -50,7 +50,7 @@ Investment larger than one next-move (meeting the whole org in the first quarter
 2. **Sources are ordinary surfaces.** Meetings, code review, channels, all-hands. No collection beyond what ordinary presence provides.
 3. **The job serves the work; the lifelong layer lives beyond it.** Relationships that outlive the job are the user's own affair beyond this installation — the weekly debrief's people line (`work-record.md`) holds the meaning at record grain; the work register never syncs anywhere and is never copied.
 
-The register rides the store service (`store.md`); the harvest and the due lane's silence checks query channels through the search bus (`search.md`).
+The register rides the store service (`store.md`); the harvest and the due lane's silence checks query channels through the finder (`finder.md`).
 
 ## Fold-away note (for the unfold's A5 pass)
 

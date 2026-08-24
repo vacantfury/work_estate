@@ -49,7 +49,7 @@ Trigger: a point just settled somewhere local (one project's convention, one reg
 Trigger: a project needs a SCOPED discovery — one question, a bounded sweep for candidates (people worth knowing for a named goal, internal events in a window, teams or projects touching a topic, transfer/program opportunities) — bigger than one query, smaller than a standing watch.
 
 1. The commissioning project writes a dig BRIEF: the question, the candidate shape (entity kind + fields per the store's schema), scope bounds, and what "worth surfacing" means — the scoring config stays with the commissioning project.
-2. The dig runs through the search bus (`search.md`), across every channel the roster reaches; per-dig hand-rolled channel access is the same defect as ever.
+2. The dig runs through the finder (`finder.md`), across every channel the roster reaches; per-dig hand-rolled channel access is the same defect as ever.
 3. Candidates land as typed store entries (`store.md`) with evidence pointers; scoring runs in the store per the brief; the commissioning project judges the shortlist.
 4. The dig CLOSES — report, shortlist, what was not covered. Anything continuing becomes a standing watch (engine job) by explicit decision, never by drift.
 
@@ -98,6 +98,7 @@ Trigger: evidence-driven only, never cadence: symptoms recurring across prior au
 1. Roster the containers: folder layout, module boundaries, the task convention, state files.
 2. For each recurring symptom, ask whether the container's shape (not the content) caused it.
 3. Every finding is propose-first, and structural moves are information-lossless: move, never delete.
+Since v3 its evidence includes the hub's registry GRAPH: kinds, consumes/feeds edges vs reality, crossing-protocol violations (state written across a boundary outside the four legal forms), unregistered containers.
 
 ## audit-tools
 
@@ -106,6 +107,7 @@ Trigger: periodic, or a tool/automation visibly limping without being an inciden
 1. Roster the tools and automations in use (editor and agent wiring, scripts, hooks, scheduled jobs), each with its evidence trail: logs, stamps, last outputs.
 2. Verify each is alive and earning its keep: when it last ran, when it last produced something useful, whether failure rows cite it.
 3. Propose per item: keep / fix / retire. For a candidate NEW tool, recommend a bounded trial: capped, quittable, with a named keep-or-quit checkpoint.
+Since v3 the roster includes the infrastructure trio's adapters (store engine, finder sources, messages channels) and the seed's registry row — flag a stale update channel (newest version seen far ahead of installed, or last-checked ancient).
 
 ## failure-capture
 
@@ -166,7 +168,7 @@ Trigger: an online experiment/flight reaches its readout point (or is stopped ea
 Trigger: start of a working day or a cold return to the workspace.
 
 1. Read the session board (`NOW.md`) and the TODO head.
-2. Check the calendar and inbox for anything that reorders today (work-sanctioned surfaces only) — the inbox check IS the triage sweep of `communication-flow.md` (three lanes, drafts staged inert), never a parallel hand-rolled pass; the calendar read also feeds that module's meeting-prep assist.
+2. Check the calendar and inbox for anything that reorders today (work-sanctioned surfaces only) — the inbox check IS the triage sweep of `messages.md` (three lanes, drafts staged inert), never a parallel hand-rolled pass; the calendar read also feeds that module's meeting-prep assist.
 3. Name the day's one or two priorities out of the ordered list; surface only what needs action or eyes — nothing-due checks stay silent.
 
 ## terminal-recovery
