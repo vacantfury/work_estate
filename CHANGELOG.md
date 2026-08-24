@@ -4,6 +4,18 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [3.1.0] - 2026-08-24
+
+The infrastructure quartet (user decisions 2026-08-24): the work-stack infrastructure ported at end-state as independent projects, names kept exact from the maintainer's proven layering. Governing insight: incumbents (gateways, clusters, the sanctioned agent tooling) are SUBSTRATE that sits behind these seams — they never replace the estate's own seam, client, platform, and engine layers.
+
+- Added: `corpus/llm_utils.md` — the LLM provider seam: one seam, sanctioned providers behind it, usage ledger; incumbent-vs-build resolved at intake; founds at the first code consumer.
+- Added: `corpus/devices.md` — the compute and device client: registry single-truth, dispatch seam, run state, device runbooks; founds at the first granted compute target.
+- Added: `corpus/autoflow.md` — the automation platform executing the engine's job registry: scheduler, cycle runtime, worker dispatch, run ledger, liveness; the cycle-pattern and runtime-adaptation text moved here from `work-engine.md`; founds at the first sanctioned scheduled job.
+- Added: `corpus/auto_research.md` — the autonomous research engine: the standing jobs (moved here from `research-workflow.md`) plus the candidate funnel (generate → vet → package); the funnel never founds a bet — the user and their manager are the gate.
+- Changed: `estate-structure.md` — Kinds roster (infrastructure grows to seven); not-ported list amended (scheduler clause scoped: the platform runs THROUGH the sanctioned tooling, never beside it; quartet porting recorded); self-audit gains the estate-wide backup-verified check (whole estate per A6, route restore-tested at least once, unresolved A6 re-surfaced).
+- Changed: `research-infrastructure.md` work-stack bullet re-points to the two charters; `work-engine.md` and `research-workflow.md` carry pointers where text moved; README rows added.
+- Affects: the hub estate registry gains four rows (kind: infrastructure, state: chartered until each founding gate fires); regenerate derived layers of work-engine, research-workflow, research-infrastructure, estate-structure. No living state touched.
+
 ## [3.0.0] - 2026-08-24
 
 The v3 clear structure (user review sittings, design principle 26). MAJOR: roster restructured.

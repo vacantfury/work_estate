@@ -1,6 +1,6 @@
 # Research workflow — the research lane
 
-*The research arc for an applied-scientist role, ported generically from the maintainer's established research workflow (design principle 16). `project-lifecycle.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc and the auto-research jobs that run it with minimal user attention.*
+*The research arc for an applied-scientist role, ported generically from the maintainer's established research workflow (design principle 16). `project-lifecycle.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc; the standing jobs and candidate funnel that run the lane with minimal user attention are `auto_research.md`'s.*
 
 ## The arc
 
@@ -15,15 +15,9 @@ A research effort inside a product org walks the same skeleton as academic resea
 
 **Provenance discipline (binding):** every named method states on first mention whether it is established practice/literature (with source) or this effort's own proposal; provenance is checked against the source before being asserted.
 
-## Auto-research jobs (registry entries, `work-engine.md`)
+## Auto-research jobs
 
-The lane's standing jobs — each writes to its project record or the lane's state, escalates only per its rule:
-
-- **Literature scout** — periodic sweep of the field's new work relevant to active questions (external sources the tooling sanctions; internal research feeds first where they exist); output: a short delta note per active project, not a reading list.
-- **Internal prior-art scout** — standing watch on internal docs/experiment records adjacent to active questions; new relevant prior art is a grounding update, sometimes a kill signal — escalate a kill signal.
-- **Eval-landscape watch** — what benchmarks/evals/judge practices the field and the org are moving to for the active problem class; feeds stage 3.
-- **Experiment monitor** — running jobs triaged (failed runs, anomalous metrics, done-ness); result lines drafted into the project record; escalate anomalies that block the loop.
-- **Analysis and writing assists** — drafting the analysis pass and readout artifacts from the project record for the user's taste-judge pass.
+Canonical home: `auto_research.md` — the lane's standing jobs (literature and internal prior-art scouts, eval-landscape watch, experiment monitor, analysis/writing assists) and the candidate funnel, executed by the platform (`autoflow.md`) as registry entries (`work-engine.md`).
 
 ## Fit with the rest
 
