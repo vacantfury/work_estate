@@ -24,6 +24,8 @@ One entry per resource: what it is · eligibility (who, from when) · window (en
 
 This project owns discovery, eligibility, windows, elections, and execution mechanics. The resulting HOLDINGS (account balances, vested equity, insurance in force) and their financial meaning are the user's own affair beyond this installation; facts cross by the user's own word. No account values, portfolio math, or financial planning live on this machine: the register needs to know that an election was made and what it was, never what the account is worth.
 
+The register rides the store service (`store.md`); catalog discovery and window watching query through the search bus (`search.md`).
+
 ## Fold-away note (for the unfold's A5 pass)
 
 Core-adopt at every policy outcome: one register plus a due lane. The standing jobs degrade to a session-opening checklist where no agent runtime exists.

@@ -4,7 +4,7 @@
 
 ## Triage — the system reads first
 
-- Sweep on session opening or on the engine's schedule (`work-engine.md` runtime adaptation decides which; degraded install: a session-opening checklist). Every new message lands in one of three lanes:
+- Sweep on session opening or on the engine's schedule (`work-engine.md` runtime adaptation decides which; degraded install: a session-opening checklist); the sweep reaches its channels through the search bus (`search.md`). Every new message lands in one of three lanes:
   1. **Needs the user** — a decision, a commitment, a personal reply only they can give. Merges into the hub's attention view; never pushed as its own digest.
   2. **Prepare-and-present** — answerable from the record. A draft is staged; the user reviews and sends.
   3. **Note-only** — FYI. Substance worth keeping is routed to its owning register (a direction signal to the company log, a person touch to their card, project material to the project record); a message with no consequence gets no residue.

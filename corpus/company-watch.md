@@ -66,3 +66,5 @@ Rungs 2–3 require the ladder's top grades (resourcing, sustained repetition). 
 ## Trajectory over snapshot
 
 The registers' lifecycle and trajectory states make *slope* visible, and slope is where the career value concentrates — for themes and for people. Established themes are the safe frame for assigned work (rung 1). Emerging and rising themes with accelerating evidence are where initiative bets (lifecycle stage 5) and pre-positioning pay. Rising people are where relationship investment pays: being early on a direction — or early with the person who will own it — is worth more than conforming to a stated one, because by the time a theme or its owner is established, the credit and the access are largely spoken for.
+
+The signal and theme registers ride the store service (`store.md`); capture and refresh sweeps query through the search bus (`search.md`).

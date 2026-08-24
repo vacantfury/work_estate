@@ -50,6 +50,8 @@ Investment larger than one next-move (meeting the whole org in the first quarter
 2. **Sources are ordinary surfaces.** Meetings, code review, channels, all-hands. No collection beyond what ordinary presence provides.
 3. **The job serves the work; the lifelong layer lives beyond it.** Relationships that outlive the job are the user's own affair beyond this installation — the weekly debrief's people line (`work-record.md`) holds the meaning at record grain; the work register never syncs anywhere and is never copied.
 
+The register rides the store service (`store.md`); the harvest and the due lane's silence checks query channels through the search bus (`search.md`).
+
 ## Fold-away note (for the unfold's A5 pass)
 
 Core-adopt at every policy outcome — one register file. Without an agent runtime, the due-lane pass degrades to a session-opening read of the threads.

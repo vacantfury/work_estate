@@ -35,7 +35,7 @@ Any register that scores or types its entries (people cards, the resources regis
 3. **Machine estimates separate from the user's own judgments** — labeled, and the user's layer never overwritten.
 4. **Weights, thresholds, and cadences in a config block**, tunable, never buried in prose or code.
 
-Markdown registers are fine at estate scale; the shape matters, not the storage engine. If a register ever outgrows markdown, the shape migrates unchanged into whatever store the sanctioned tooling offers.
+Markdown registers are fine at estate scale; the shape matters, not the storage engine. If a register ever outgrows markdown, the shape migrates unchanged into whatever store the sanctioned tooling offers — the store service (`store.md`) owns that engine and that migration.
 
 ## The placement map — where kinds of things live
 
@@ -47,7 +47,7 @@ Any register may carry dated RESOLVABLE predictions: `forecast: <claim> · resol
 
 ## What is deliberately NOT ported
 
-Heavier structure from the maintainer's practice stays out until a real work-side consumer exists: no standing multi-agent deliberation INFRASTRUCTURE (the deliberation convention itself is in — `deliberation.md`, know-how run inside the sanctioned tooling), no version-tagged releases (the estate ships no software), no databases or schedulers beyond what the sanctioned tooling provides, no external-feed collection (design principle 12), and no message-transport machinery of its own (the message/meeting flow convention is in — `communication-flow.md` — run entirely on the employer's mail, chat, and calendar surfaces), and no shared scoring or discovery SERVICE (the data-shape rule carries the scoring discipline in place, in each register; discovery is catalog-walking on the employer's own portals — `resources.md` — never feed machinery).
+Heavier structure from the maintainer's practice stays out until a real work-side consumer exists: no standing multi-agent deliberation INFRASTRUCTURE (the deliberation convention itself is in — `deliberation.md`, know-how run inside the sanctioned tooling), no version-tagged releases (the estate ships no software), no databases or schedulers beyond what the sanctioned tooling provides, no external-feed collection (design principle 12), and no message-transport machinery of its own (the message/meeting flow convention is in — `communication-flow.md` — run entirely on the employer's mail, chat, and calendar surfaces). Scoring and retrieval infrastructure ARE ported — the store (`store.md`, typed data + scoring service) and the search bus (`search.md`, one retrieval seam over the job's channels) — sized to the known end-state (design principle 25; supersedes this list's earlier scoring/discovery-service absence, user decision 2026-08-24).
 
 ## Fold-away note (for the unfold's A5 pass)
 
