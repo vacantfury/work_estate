@@ -54,4 +54,4 @@ Relationship and expectation work is first-class, not overhead around the "real"
 
 ## Procedures
 
-The recurring procedures backing this playbook live in `portable-skills.md`: **error-analysis-pass**, **llm-judge-calibration**, **experiment-readout** (plus the general **experiment-results-triage** and **systematic-debugging**).
+The recurring procedures backing this playbook live in `portable-skills.md`: **error-analysis**, **judge-calibration**, **experiment-readout** (plus the general **results-triage** and **systematic-debugging**).

@@ -4,6 +4,14 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [2.2.0] - 2026-08-24
+
+Naming pass (user rule, settled 2026-08-24: a name is either short, or long only when accuracy needs every word — never medium-long and imprecise).
+
+- Changed: skill renames — generalize-at-settle → **generalize** · discovery-dig → **dig** · day-start orientation → **day-start** · experiment-results-triage → **results-triage** · error-analysis-pass → **error-analysis** · llm-judge-calibration → **judge-calibration** · review-simplify pass → **review-simplify**. UNFOLD's update section is now titled **Update**. All live cross-references updated (dated history entries keep the names they recorded).
+- Added: the naming rule itself in `session-discipline.md`.
+- Affects: regenerate the portable-skills-derived layer under the new names (semantics unchanged); instruction files citing old skill names update at apply.
+
 ## [2.1.0] - 2026-08-24
 
 Upstream mimic-check pass (full walk of the maintainer's ecosystem against the roster; mimic unless genuinely different at work).

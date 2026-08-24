@@ -14,7 +14,7 @@ Trigger: any bug, crash, failed run, or wrong/suspicious result — BEFORE propo
 
 Anti-pattern this exists to prevent: guess-and-patch loops ("try changing X and see") without a diagnosis.
 
-## experiment-results-triage
+## results-triage
 
 Trigger: a finished (or failed) experiment/job run, before any metric is trusted or recorded.
 
@@ -35,7 +35,7 @@ Trigger: a multi-step workflow has just recurred, with articulated preferences a
 3. Route each piece to its proper form — code / skill / rule / state file (see session-discipline, form selection).
 4. Write it durably in the same session; new automation installs only with approval.
 
-## generalize-at-settle
+## generalize
 
 Trigger: a point just settled somewhere local (one project's convention, one register's rule, one fix) and plausibly applies more widely — or a second surface is found hand-rolling what a first already solved.
 
@@ -44,7 +44,7 @@ Trigger: a point just settled somewhere local (one project's convention, one reg
 3. A promotion up a level lands via capture-at-settle (`session-discipline.md`): written durably, consumer named, old world swept.
 4. The work-side ladder tops out at the estate's own hub conventions: the seed is never edited from the work side (one-way flow). A point that looks corpus-worthy is noted as a candidate in the hub's conventions and travels upstream only through the maintainer.
 
-## discovery-dig
+## dig
 
 Trigger: a project needs a SCOPED discovery — one question, a bounded sweep for candidates (people worth knowing for a named goal, internal events in a window, teams or projects touching a topic, transfer/program opportunities) — bigger than one query, smaller than a standing watch.
 
@@ -55,7 +55,7 @@ Trigger: a project needs a SCOPED discovery — one question, a bounded sweep fo
 
 Anti-pattern this exists to prevent: every project hand-rolling its own funnel over the same channels.
 
-## review-simplify pass
+## review-simplify
 
 Trigger: a change is functionally complete, before merge.
 
@@ -125,9 +125,9 @@ Trigger: periodic, or when deciding what to fix first in how the working system 
 
 ## improvement-loop dispatch
 
-The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews. The settle-time WRITE transforms — capture-at-settle (`session-discipline.md`) · workflow-extraction · generalize-at-settle — are the same loop's write phase: the audits correct what the settle moments failed to capture.
+The audits above form ONE family over the working system's estates: procedures (audit-instructions) · law and knowledge (audit-law) · lived experience (audit-conversations) · structures (audit-structure) · tools (audit-tools) · failures (failure-capture feeding audit-failures). "Optimize everything" means: run whichever members are due, then consolidate every proposal into ONE approval batch, never a drip of asks. The loop optimizes the working SYSTEM; the work content itself is governed by its own plans and reviews. The settle-time WRITE transforms — capture-at-settle (`session-discipline.md`) · workflow-extraction · generalize — are the same loop's write phase: the audits correct what the settle moments failed to capture.
 
-## error-analysis-pass
+## error-analysis
 
 Trigger: every 2–4 weeks on an LLM feature, and after any significant model/prompt change or incident. (Backing conventions: `role-playbook.md`.)
 
@@ -140,7 +140,7 @@ Trigger: every 2–4 weeks on an LLM feature, and after any significant model/pr
 
 Anti-pattern this exists to prevent: trusting aggregate eval scores while the failure taxonomy silently rots.
 
-## llm-judge-calibration
+## judge-calibration
 
 Trigger: a new LLM-judge evaluator, or the maintenance cadence of an existing one.
 
@@ -161,7 +161,7 @@ Trigger: an online experiment/flight reaches its readout point (or is stopped ea
 4. Close with an explicit ship / hold / kill recommendation and what changed since the previous version.
 5. Record the readout durably where the team keeps experiment history.
 
-## day-start orientation
+## day-start
 
 Trigger: start of a working day or a cold return to the workspace.
 

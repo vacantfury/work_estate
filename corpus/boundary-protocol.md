@@ -30,7 +30,7 @@ Boundary decisions keep citing the same few policy facts: what the employer's po
 
 ## Seed refresh
 
-Versioned delta updates (`UNFOLD.md` §Updating an installed estate), when the user initiates them — conventions only, and never a full re-unfold: `git fetch`, read the changelog above the installed version, regenerate only the affected derived layers, then `git pull` to advance the installed-version marker. Credential-free by design: this repo is public (decided 2026-08-06), so clone, fetch, and pull need no authentication under any policy that allows reading public GitHub.
+Versioned delta updates (`UNFOLD.md` §Update), when the user initiates them — conventions only, and never a full re-unfold: `git fetch`, read the changelog above the installed version, regenerate only the affected derived layers, then `git pull` to advance the installed-version marker. Credential-free by design: this repo is public (decided 2026-08-06), so clone, fetch, and pull need no authentication under any policy that allows reading public GitHub.
 
 ## Credential rule (amended 2026-08-15)
 

@@ -9,6 +9,7 @@ How a working session — an AI agent session, or a person following the same di
 - A discussion reply carries **one clear recommendation** with brief reasoning — a neutral option survey hands the deliberation cost back to the asker. If options genuinely tie after real weighing, say so explicitly and name the tiebreaker.
 - **Multi-point deliberations go one point per round:** settle one, then move to the next — never a multi-question ballot.
 - **Conclusion first, plain terms:** lead with the one-sentence bottom line; detail after. Use standard terminology, never invented paraphrases.
+- **Naming rule:** a name is either SHORT (rough-but-short is fine) or long only because accuracy genuinely needs every word — medium-long and still imprecise is the forbidden zone. Things handled daily (projects, skills, commands, state files) default short; length is spent only on one-off documents where precision earns it.
 - An action mentioned in passing that would outgrow the current sitting is proposed as a filed task — never silently started as a multi-session workstream.
 
 ## Verification discipline
