@@ -4,6 +4,11 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-08-24
+
+- Fixed: `portable-skills.md` §day-start orientation step 2 now cites `communication-flow.md` as the one home of the inbox check (the triage sweep; the entry predated that module) — prevents a parallel hand-rolled inbox pass.
+- Affects: the portable-skills-derived layer, wording only; no new A5 row, no living state touched.
+
 ## [1.1.0] - 2026-08-24
 
 - Added: `corpus/portable-skills.md` §generalize-at-settle — the third settle-time transform alongside capture-at-settle and workflow-extraction: two axes (scope promotion up the estate ladder · parallel sweep across analogous surfaces), applied the same sitting; the work-side ladder tops out at the hub's own conventions, corpus candidates travel upstream only (one-way flow). Plus one write-phase line in §improvement-loop dispatch.
