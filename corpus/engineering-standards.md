@@ -50,6 +50,10 @@ Defaults for new code. Where the employer or team has an established practice �
 - **Which store is the sanctioned one is decided by the environment's own documentation and resources, discovered at intake — never imported from outside.** A personal secret manager present on the machine serves only personal-stack content (`research-infrastructure.md`); work secrets live in the work environment's own store, whatever intake finds it to be.
 - `.env`-style patterns stay gitignored as defense-in-depth even though such files should never exist with real values.
 - When any key is rotated or revoked, the record in the secret store is updated in the same motion — the store stays the single source of truth.
+- **Secret values never appear in output.** Diagnostics, logs, and error reports never dump the raw environment or process table (`env`, `ps eww`, config dumps) — inherited variables leak exactly this way; print variable names, mask values. A value that has reached any output, transcript, or pasted snippet is treated as exposed: rotate it, then fix the leak path.
+- **Agents and automation handle secret NAMES, never values.** Agent tooling references secrets by variable name; values are injected at process launch outside the agent's view. An agent never reads a value back, echoes it, or writes it to a file.
+- **Headless runs authenticate as a machine identity.** Scheduled jobs, CI, and cluster runs use the environment's sanctioned machine identity (service principal, managed identity, service account) at least-privilege — read-only where read-only serves — created once and reused, never a fresh ad-hoc token per project; its credential lives outside every repo.
+- **A repo documents the env-var names it needs** — in the README or config module, or a placeholder example file where the team convention uses one. Names and shapes, never values: this is the contract a fresh clone sets up against.
 
 ## Authority levels (for agentic systems taking consequential actions)
 
