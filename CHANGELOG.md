@@ -2,9 +2,11 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
-## [Unreleased]
+## [3.5.0] - 2026-08-25
 
+- Added: `portable-skills.md` **event-prep** (user decision 2026-08-25) — prep for consequential meetings and committed work events, two grades over the one entered-prepared-left-recorded convention (`messages.md` §Meetings). Meeting grade: purpose + attendee lines from the people cards, desired outcome first with the user's asks (recipient-attention rule), expected questions with prepared answers, exit capture pre-named so the post-meeting record is a fill-in. Event grade: the four-section brief — what it is / ONE time-ordered attending table with the gated-placeholder wake rule (a placeholder field only with a dated mailbox-check watch; an event-day placeholder is a defect) / targets ranked from a real roster, opening with the aim / strategies with ask scripts and the after-event close. Both grades: the system does the doable prep itself, facts carry source + checked-date, execute-ready to the final target (ported and re-derived from the maintainer's proven event-brief standard, personal machinery stripped). Plus the cross-pointer in `messages.md` §Meetings prep bullet.
 - Added: `human-agent-collaboration.md` §Standardized choice surfaces — workflow first on complex actionable matters: when a new multi-step actionable matter enters discussion with the human, the ordered workflow (time or logic order, each step's executor marked) is laid out and offered for review before actions are driven; scope deliberately excludes simple asks, work under a reviewed plan, standing procedures, and system-internal execution; piecemeal action-feeding named a failure mode (ported from a maintainer working rule settled 2026-08-25).
+- Affects: materialize one new hub skill (event-prep) in the skills layer; regenerate derived layers of messages and human-agent-collaboration. No living state touched.
 
 ## [3.4.1] - 2026-08-25
 

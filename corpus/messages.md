@@ -22,7 +22,7 @@ A live exchange with a person is a thread on that person's card (`people.md`): w
 
 ## Meetings — entered prepared, left recorded
 
-- **Prep, proportional to consequence.** A routine standup needs none. A 1:1, a review, or any meeting where something is decided or asked gets a short prep note in the owning project: purpose, the user's asks, expected questions, desired outcome. Stage events keep their fuller prep (`dev-workflow.md`, `communication-craft.md`).
+- **Prep, proportional to consequence.** A routine standup needs none. A 1:1, a review, or any meeting where something is decided or asked gets a short prep note in the owning project: purpose, the user's asks, expected questions, desired outcome. Stage events keep their fuller prep (`dev-workflow.md`, `communication-craft.md`). The full procedure, both grades (meeting note · event brief), is `portable-skills.md` event-prep.
 - **Record, always, for consequential meetings.** Outcomes and decisions land on the worklog's daily line (and the project record where one exists); person-relevant moments on the people cards; direction signals in the company log. A meeting that decided something and left no record line is a defect.
 - **The calendar is read, not owned.** Scheduling stays on the employer's calendar surface; the flow prepares before and records after.
 
