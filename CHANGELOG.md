@@ -2,6 +2,12 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [3.8.0] - 2026-08-25
+
+- Added: `session-discipline.md` **§Reply format** (user decision 2026-08-25) — the per-reply scannable close: the four-sign **status footer** (`✅ complete — nothing new deferred` / `🔔 complete — deferred: <named items>` / `🔄 continuing` / `⏸ waiting on you`; the complete bar is high — zero actionable residue, a dangling "want me to X?" means the reply is really ⏸ or the work should have been done or filed; deferrals stamp once in the arc that files them; ⏸ outranks the complete signs while anything remains with the user; live discussion holds 🔄 until explicit closure), the **item manifest** (a reply carrying ≥2 items with one needing the user closes with one evolving `# · Item · Type · Status` table above the footer; second-person types 📖 FYI / 💬 your word / 🖐 your hands; stable numbering, terminal rows shown once; board deliveries exempt — the boards ARE the manifest, cross-cited to the board delivery form), and the **anchor line** (long replies open with one blockquote restating the ask). Ported and re-derived from the maintainer's proven conversation protocol, personal machinery stripped.
+- Changed: `corpus/README.md` module line updated.
+- Affects: regenerate the derived layer of session-discipline (always-loaded instructions where materialized). No living state touched.
+
 ## [3.7.0] - 2026-08-25
 
 Compensation pass (user decision 2026-08-25): the benefits module is renamed and widened — pay joins the portfolio, and the scope gets its crisp boundary test (design principle 28).

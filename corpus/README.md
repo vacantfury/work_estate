@@ -5,7 +5,7 @@ The generic convention modules the unfold (`UNFOLD.md`) selects from and adapts.
 Modules:
 
 - `task-convention.md` — the ordered-TODO task system: one home per item, states, annotations, archive discipline.
-- `session-discipline.md` — how a working session stays reliable and cumulative: request typing, verification, capture-at-settle, form selection, the three-tier attention structure, the wrap protocol.
+- `session-discipline.md` — how a working session stays reliable and cumulative: request typing, the reply format (status footer, item manifest, anchor line), verification, capture-at-settle, form selection, the three-tier attention structure, the wrap protocol.
 - `engineering-standards.md` — code defaults: Python tooling, parameters-in-config, mature-tools-first, tiered testing, version control, secrets hygiene, authority gating for agentic systems.
 - `portable-skills.md` — the shortlist of recurring procedures worth materializing work-side as skills / instructions / checklists, each carried as the full tooling-agnostic procedure.
 - `role-playbook.md` — applied-science working conventions for LLM product features (eval-driven development loops, eval/judge/experiment discipline, sustainable-pace calibration, working-in-the-org practice), distilled from public practitioner canon; provisional until confirmed against the team's actual practice (axis 2 of the build model).
