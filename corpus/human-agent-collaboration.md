@@ -18,6 +18,28 @@ The one-sentence thesis: **human participation improves results exactly where th
 - Workflow first on complex actionable matters: when a new multi-step actionable matter enters discussion with the human (they raise it, or they engage one the system surfaced), lay out the ordered workflow before acting (time or logic order, each step's executor marked), offer it for review, then drive. Not fired by simple asks, pure discussion, work already under a reviewed plan, standing procedures, or purely system-internal execution; the narrow scope is deliberate — the broad "any complex task" form would add review touchpoints to work the human never needed to see. Feeding the human action items piecemeal with no standing plan is a failure mode even when each individual step is correct; genuine urgency compresses the plan, never skips it.
 - A flow that would create an account, profile, or identity as a side effect STOPS and names that fact before proceeding — registration is itself an authority-gate press, never something discovered afterwards.
 
+## The board delivery form
+
+Any recurring orientation or status delivery — the day-start page (`portable-skills.md`), a sweep report (`messages.md`), a "where are things" answer — renders in ONE standing form: a single page of boards. One headline sentence orients (the only text allowed to name an item that also sits on a board); then the boards; nothing else. A known form costs a fraction of the attention of a free-form status dump, and the same page every day makes anything unusual instantly visible.
+
+**Partition law:** every item appears on EXACTLY ONE board. Apply the placement test top-down, first match wins:
+
+1. Needs the user's action TODAY (required, overdue, or the user named today as the day) → **ACTION**, ranked: overdue and today's walls · the user's own declared priority order · the rest. A future wall whose action day has not arrived never lands here, however tight its computed slack — it belongs on DEADLINE.
+2. Fixed clock time → **CALENDAR** — today's meetings and events, each carrying its prep-note pointer (`messages.md` §Meetings).
+3. Hard wall ahead, action day later → **DEADLINE** — wall date + days-to-wall + origin per line. Directly after the board, ONE compact deadlines-ahead line names beyond-window items with days-to-due (omit when none). When an item's action day arrives it MOVES to ACTION: cross-day movement is the one sanctioned overlap; same-day duplication never (cross-references by name are fine, duplicate lines are not).
+4. A person is waiting on the user or pushed something needing a look (review requests, mentions, direct asks in chat) → **TEAM**.
+5. An active project at its next-show or decision point (the portfolio board read, `project-lifecycle.md`) → **PORTFOLIO**.
+6. Otherwise-ranked work → **MAIN** — the TODO head in rank order.
+7. Awareness only → **KNOWLEDGE** — terse FYI lines.
+
+**Line rules:** uniform anatomy `[source] · what · when-marker · pointer`. One visible line per item — never a prose fold or a ·-joined compression of several items into one line. A re-listed unclosed item carries its age ("since MM-DD"). Items sharing one wall may share one grouped line. **Normal-length-or-absent:** every line is self-explanatory at a read — full phrases, names spelled out, no cryptic fragments; an item not worth a readable line drops to its home (or the counts tail), never onto a board compressed. Compression reduces the number of lines, never a line's readability.
+
+**Silence rules:** empty boards say NOTHING. Deliberately NO waiting board — waiting state lives on task and thread rows and surfaces only as due nudges. An item the user has assigned to another venue leaves the boards; its owning home tracks it. Close with ONE counts/degradation tail line (skipped-bulk counts, stale-source warnings); a real error gets its one line, never silence.
+
+**Numbering:** the ACTION board's numbering IS the delivery's reference numbering — the user cites items by position; no second manifest or summary table is layered on top of the boards.
+
+The board SET adapts per install (an estate with no portfolio pipeline drops PORTFOLIO; a domain that earns standing attention may add its own board). The partition law, line anatomy, and silence rules are the form.
+
 ## Interface investment
 
 - Interface quality sets the price of every human touch — invest in proportion to the decision's weight and recurrence.
