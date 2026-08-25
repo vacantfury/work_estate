@@ -2,6 +2,11 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [4.1.0] - 2026-08-25
+
+- Added: `session-discipline.md` execute-ready bullet gains the **direct-address rule** (user ask 2026-08-25) — anything the person is pointed to (a page, a portal, a document, a file) comes with its direct address: the exact URL or file path, openable as given, on its own line; a described location the person must find by hand is a defect. Re-derived from the maintainer's proven packaging conventions (direct clickable links on documents, direct URLs on hand-offs).
+- Affects: regenerate derived layers of session-discipline. No living state touched.
+
 ## [4.0.0] - 2026-08-25
 
 - Removed: **`people.md` — the person register and relationship system dissolved** (user decision 2026-08-25, design principle 29). The estate maintains no person register, cards, thread store, or due-lane silence tracking. The employer's own surfaces are the person surface, read live at need: directory/org chart (who someone is, what they own), the mail/chat thread itself (the state of an exchange — an owed reply is visible on the surface the triage sweep already reads), the calendar (touchpoints). One home per kind: a locally maintained person store duplicates surfaces the employer already runs; relationship meaning beyond the job's own surfaces is the user's own affair outside this estate.
