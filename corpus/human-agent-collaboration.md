@@ -20,12 +20,12 @@ The one-sentence thesis: **human participation improves results exactly where th
 
 ## The board delivery form
 
-Any recurring orientation or status delivery — the day-start page (`portable-skills.md`), a sweep report (`messages.md`), a "where are things" answer — renders in ONE standing form: a single page of boards. One headline sentence orients (the only text allowed to name an item that also sits on a board); then the boards; nothing else. A known form costs a fraction of the attention of a free-form status dump, and the same page every day makes anything unusual instantly visible.
+Any recurring orientation or status delivery — the day-start page (`portable-skills.md`), a sweep report (`ties.md`), a "where are things" answer — renders in ONE standing form: a single page of boards. One headline sentence orients (the only text allowed to name an item that also sits on a board); then the boards; nothing else. A known form costs a fraction of the attention of a free-form status dump, and the same page every day makes anything unusual instantly visible.
 
 **Partition law:** every item appears on EXACTLY ONE board. Apply the placement test top-down, first match wins:
 
 1. Needs the user's action TODAY (required, overdue, or the user named today as the day) → **ACTION**, ranked: overdue and today's walls · the user's own declared priority order · the rest. A future wall whose action day has not arrived never lands here, however tight its computed slack — it belongs on DEADLINE.
-2. Fixed clock time → **CALENDAR** — today's meetings and events, each carrying its prep-note pointer (`messages.md` §Meetings).
+2. Fixed clock time → **CALENDAR** — today's meetings and events, each carrying its prep-note pointer (`ties.md` §Meetings).
 3. Hard wall ahead, action day later → **DEADLINE** — wall date + days-to-wall + origin per line. Directly after the board, ONE compact deadlines-ahead line names beyond-window items with days-to-due (omit when none). When an item's action day arrives it MOVES to ACTION: cross-day movement is the one sanctioned overlap; same-day duplication never (cross-references by name are fine, duplicate lines are not).
 4. A person is waiting on the user or pushed something needing a look (review requests, mentions, direct asks in chat) → **TEAM**.
 5. An active project at its next-show or decision point (the portfolio board read, `project-lifecycle.md`) → **PORTFOLIO**.

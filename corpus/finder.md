@@ -1,6 +1,6 @@
 # Finder — the estate's information retrieval
 
-*One seam for finding INFORMATION (design principles 25–26): the job's knowledge surfaces — docs and wikis, code and reviews, tickets, dashboards, the people directory — plus whatever public search the environment sanctions. Person-traffic channels (mail, chat, calendar) are NOT here; they belong to the messages bus (`messages.md`) — the boundary is content kind: information here, traffic there. Every project queries through this seam; per-project hand-rolled channel access is a defect. Consumers: company-watch capture on knowledge surfaces, compensation catalog discovery, career's reward-map reads, main-work candidate intelligence, any project's research ask.*
+*One seam for finding INFORMATION (design principles 25–26): the job's knowledge surfaces — docs and wikis, code and reviews, tickets, dashboards, the people directory — plus whatever public search the environment sanctions. Person-traffic channels (mail, chat, calendar) are NOT here; they belong to the ties bus (`ties.md`) — the boundary is content kind: information here, traffic there. Every project queries through this seam; per-project hand-rolled channel access is a defect. Consumers: company-watch capture on knowledge surfaces, compensation catalog discovery, career's reward-map reads, main-work candidate intelligence, any project's research ask.*
 
 ## The service
 

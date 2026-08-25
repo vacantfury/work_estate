@@ -1,13 +1,22 @@
-# Messages — the traffic bus
+# Ties — the people-and-traffic bus
 
-*Infrastructure (design principle 26) — the bus that OWNS the person-traffic channels (mail, chat, calendar) and moves everything on them: inbox and chat threads triaged so the user never tracks what needs them, replies prepared to the last keystroke, and consequential meetings entered prepared and left recorded. Distinct from `communication-craft.md` by aim: the craft lane trains the writer; this module runs the traffic. It runs entirely ON the employer's own mail, chat, and calendar surfaces — the flow is convention, never transport machinery of its own (principle 2).*
+*Infrastructure (design principle 26) — the ONE module for the human side of the job: who people are, and everything that moves between them and the user (mail, chat, calendar). It OWNS the person-traffic channels and the conventions on them: inbox and chat threads triaged so the user never tracks what needs them, replies prepared to the last keystroke, and consequential meetings entered prepared and left recorded. Distinct from `communication-craft.md` by aim: the craft lane trains the writer; this bus runs the people and the traffic. It runs entirely ON the employer's own directory, mail, chat, and calendar surfaces — the bus is convention, never machinery of its own (principle 2), and it keeps no stores (principle 29).*
+
+## People — the surface is the person system
+
+The estate maintains no person register, cards, thread store, or silence tracking (design principle 29). The employer's own surfaces ARE the person surface, read live at need:
+- **Directory / org chart** — who someone is, what they own, where they sit.
+- **The mail/chat thread itself** — the state of an exchange: who owes what, last touch, what comes next. An owed reply is visible on the surface the triage sweep already reads.
+- **The calendar** — touchpoints, past and coming.
+
+One home per kind: a locally maintained person store duplicates surfaces the employer already runs, and goes stale against them. Relationship meaning beyond the job's own surfaces is the user's own affair outside this estate.
 
 ## Triage — the system reads first
 
 - Sweep on session opening or on the engine's schedule (the platform's runtime adaptation decides which, `autoflow.md`; degraded install: a session-opening checklist); the bus carries its own channel adapters — mail, chat, calendar — resolved at unfold (A8). Every new message lands in one of three lanes:
   1. **Needs the user** — a decision, a commitment, a personal reply only they can give. Merges into the hub's attention view; never pushed as its own digest.
   2. **Prepare-and-present** — answerable from the record. A draft is staged; the user reviews and sends.
-  3. **Note-only** — FYI. Substance worth keeping is routed to its owning register (a direction signal to the company log, a person touch to their card, project material to the project record); a message with no consequence gets no residue.
+  3. **Note-only** — FYI. Substance worth keeping is routed to its owning register (a direction signal to the company log, project material to the project record); a message with no consequence gets no residue.
 - Triage grades, it never summarizes everything. The output is the short needs-you lane plus staged drafts, not a rendering of the whole inbox.
 
 ## Drafts — prepared, never sent
@@ -18,7 +27,7 @@ Two register rules bind every prepared draft. **Polite AND concise:** a warm, co
 
 ## Threads and waits — the surface is the state
 
-A live exchange lives on the employer's mail/chat surface itself: the thread IS the record of who owes what, last touch, and what comes next — one home per wait, and the home is the surface (design principle 29: this estate keeps no person register or thread store). This bus keeps no conversation state of its own; its only state is the routing rules and the staged-drafts registry. Replies the user owes surface through the triage sweep's needs-the-user lane, read off the surfaces directly.
+A live exchange lives on the employer's mail/chat surface itself: the thread IS the record of who owes what, last touch, and what comes next — one home per wait, and the home is the surface (principle 29 again: no thread store). This bus keeps no conversation state of its own; its only state is the routing rules and the staged-drafts registry. Replies the user owes surface through the triage sweep's needs-the-user lane, read off the surfaces directly.
 
 ## Meetings — entered prepared, left recorded
 
@@ -35,4 +44,4 @@ A live exchange lives on the employer's mail/chat surface itself: the thread IS 
 
 ## Fold-away note (for the unfold's A5 pass)
 
-Expected core-adopt: the bus keeps only its routing rules and drafts registry (waits live on the mail/chat surfaces themselves, meeting outcomes in the worklog). What varies by environment is only the sweep's runtime form (scheduled agent · session-opening pass · printed checklist) — the A1/§17 answer decides, exactly as for the rest of the engine.
+Expected core-adopt: the bus keeps only its routing rules and drafts registry (people are read live off the employer's directory and threads; waits live on the mail/chat surfaces themselves; meeting outcomes in the worklog). What varies by environment is only the sweep's runtime form (scheduled agent · session-opening pass · printed checklist) — the A1/§17 answer decides, exactly as for the rest of the engine.
