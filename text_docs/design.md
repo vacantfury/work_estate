@@ -1,4 +1,6 @@
-# former name — design record
+# work_estate — design record
+
+*(Repo renamed from `former name`, 2026-08-25 — see CHANGELOG 3.4.1. Old-name references and provenance headers remain valid.)*
 
 *Founded 2026-08-03 (before the maintainer's employment start — clean provenance: everything authored on personal equipment). Scope, settled at founding: only the portable, work-usable working conventions, plus idea/direction notes. Design model, same sitting: not a hand-built final form but an INSTALLATION PACKAGE — cloned onto a work device, it detects the environment (work docs + device) and unfolds itself into the form that best serves the user there.*
 

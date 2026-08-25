@@ -4,6 +4,14 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+## [3.4.1] - 2026-08-25
+
+Rename: the repo itself, `former name` → `work_estate` (user decision 2026-08-25) — the name now uses the corpus's own vocabulary (the work estate, per `estate-structure.md`), plainly self-describing.
+
+- Changed: `text_docs/design.md` title and `UNFOLD.md` provenance-header format carry the new name. Headers already written under the old name remain valid; no derived layer regenerates for this.
+- Migration for an installed estate (one-time, at the next update pull): `git remote set-url origin git@github.com:<account>/work_estate.git` (the code host redirects the old URL meanwhile, so an un-migrated clone keeps working); optionally rename the local clone directory to match. Update the seed row's clone path/name in the hub registry if recorded.
+- Affects: nothing else — no convention, module, or living state changes.
+
 ## [3.4.0] - 2026-08-24
 
 Task-store pass (user decision 2026-08-24): the store-backed task form is promoted from a conditional footnote to the STANDARD form, ported at implementation-grade spec from the maintainer's proven cutover of this convention.
