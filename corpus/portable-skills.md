@@ -204,17 +204,17 @@ Trigger: a consequential meeting on the calendar (a 1:1, a review, any meeting w
 
 **Meeting grade** — the short prep note in the owning project (the meeting-prep assist drafts it where the engine runs; else it rides day-start's calendar read):
 
-1. What it is: the meeting's purpose in one line; each attendee one line (role + what they own here), from the people cards (`people.md`) — never assume the user holds the roster in their head.
+1. What it is: the meeting's purpose in one line; each attendee one line (role + what they own here), from the employer's own surfaces (directory/org chart, team pages, recent threads) — never assume the user holds the roster in their head.
 2. Desired outcome first: what result makes the meeting a success; then the user's asks, each carrying its context and a recommendation (the recipient-attention rule, `messages.md`).
 3. Expected questions with prepared answers, drafted from the project record and worklog; where the user presents, the narrative skeleton per `communication-craft.md`.
-4. Exit: the prep note pre-names where each expected outcome will land (worklog daily line, project record, people cards, company log), so the post-meeting capture is a fill-in, never a reconstruction.
+4. Exit: the prep note pre-names where each expected outcome will land (worklog daily line, project record, company log), so the post-meeting capture is a fill-in, never a reconstruction.
 
 **Event grade** — a full brief, built the day before, exactly four sections:
 
 1. **What it is** — format and purpose of the event, hosts/organizers one line each, expected attendance and composition. Never assume the user knows the event class or the organizations.
 2. **Attending** — ONE time-ordered logistics table; every fixed fact lives at its step, never as separate bullets: getting there, entry requirements (badge/registration/code), agenda and session choices, a brief re-read slot shortly before leaving. A gated field (venue, entry code, approval) may hold a placeholder ONLY together with a wake mechanism filed in the same sitting — a dated TODO watch whose check step sweeps the registration mailbox and completes the placeholder rows IN PLACE. An event-day brief with a placeholder address is a defect.
 3. **Targets** — opens with the aim (what outcome makes attendance worth the time; the attendance read per `career.md` growth events), then the ranked people to seek — from a real attendee/speaker list where one exists, never guessed — each with a hook and an on-site finding note. Organizers rank high by default: the relationship compounds.
-4. **Strategies** — the intro line (lead with what that room values), per-target ask scripts, the on-site finding plan in numbered steps, and the after-event close: outcomes recorded per the meetings convention, new people carded (`people.md`), follow-ups staged as drafts (`messages.md`).
+4. **Strategies** — the intro line (lead with what that room values), per-target ask scripts, the on-site finding plan in numbered steps, and the after-event close: outcomes recorded per the meetings convention, follow-ups staged as drafts (`messages.md`).
 
 Both grades: the system does the doable prep itself (pull the records, draft the note, stage anything fillable) rather than listing it as the user's homework — the user's steps are only what genuinely needs their presence. Every checked fact carries source + checked-date; times and logistics re-verify on prep day. Execute-ready to the final target: a brief that names WHO or WHAT without HOW is incomplete.
 

@@ -13,7 +13,7 @@ Career-development opportunities, moved here from the claims register (split 202
 
 ## Positioning — what this company rewards
 
-The theme/reward register (meaning home of the company watch, `company-watch.md` — the watch runs as a standing capture job, its signals typed into the store): direction themes with lifecycle and evidence grade, the reward map (who is promoted and for what), portfolio implications. State: `local/state/themes.md`. Person-signals route to the people cards, never here.
+The theme/reward register (meaning home of the company watch, `company-watch.md` — the watch runs as a standing capture job, its signals typed into the store): direction themes with lifecycle and evidence grade, the reward map (who is promoted and for what), portfolio implications. State: `local/state/themes.md`. Person events stay in the watch's own registers (`local/state/company.md`), never here — this estate keeps no person register (design principle 29).
 
 ## Standing jobs (registry entries, `work-engine.md`)
 

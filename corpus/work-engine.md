@@ -29,7 +29,6 @@ Everything in this module runs **on the work machine, under the work account, in
 | Research | `research-workflow.md` + `auto_research.md` | per-project records | grounding, experiment loop, auto-research jobs + candidate funnel |
 | Project sourcing | `project-lifecycle.md` (stage 1) | `projects.md` candidates | continuous candidate scan + per-candidate intelligence |
 | Company intelligence | `company-watch.md` | `company.md` | signal capture, register upkeep, planning-rhythm distillation |
-| Connections | `people.md` | `people.md` | register upkeep, relationship analysis, proposed moves |
 | Communication craft | `communication-craft.md` | `communication.md` | artifact harvest + coaching, pre-send assists |
 | Risk register | `risk-register.md` | `risks.md` | premortems at accept/transitions, reaction-plan upkeep, calibration |
 | Health guard | `health-guard.md` | `health.md` | floor enforcement, tracker upkeep, breach surfacing |

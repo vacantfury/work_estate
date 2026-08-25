@@ -16,14 +16,14 @@ Replies and outbound messages are prepared execute-ready: full text, correct thr
 
 Two register rules bind every prepared draft. **Polite AND concise:** a warm, courteous register (acknowledgment, softened refusal, kind close — a terse decline is a defect even when the content is a flat no), achieved by register, never by length: each point once, plainly, no padding. **The recipient's attention is a cost spent deliberately:** an ask of another person is batched rather than dribbled, one decision per ask with the context and a recommendation included, in the cheapest acceptable form — and what they already answered is never re-asked.
 
-## Threads and waits — one home, on the cards
+## Threads and waits — the surface is the state
 
-A live exchange with a person is a thread on that person's card (`people.md`): who owes what, last touch, next move — conversation state is RELATIONSHIP state and lives with the person, the one home per wait. This bus touches threads as traffic flows in and out and keeps no conversation of its own; its only state is the routing rules and the staged-drafts registry. The people due lane notices silence and owed replies. No separate thread list lives here — one home per wait.
+A live exchange lives on the employer's mail/chat surface itself: the thread IS the record of who owes what, last touch, and what comes next — one home per wait, and the home is the surface (design principle 29: this estate keeps no person register or thread store). This bus keeps no conversation state of its own; its only state is the routing rules and the staged-drafts registry. Replies the user owes surface through the triage sweep's needs-the-user lane, read off the surfaces directly.
 
 ## Meetings — entered prepared, left recorded
 
 - **Prep, proportional to consequence.** A routine standup needs none. A 1:1, a review, or any meeting where something is decided or asked gets a short prep note in the owning project: purpose, the user's asks, expected questions, desired outcome. Stage events keep their fuller prep (`dev-workflow.md`, `communication-craft.md`). The full procedure, both grades (meeting note · event brief), is `portable-skills.md` event-prep.
-- **Record, always, for consequential meetings.** Outcomes and decisions land on the worklog's daily line (and the project record where one exists); person-relevant moments on the people cards; direction signals in the company log. A meeting that decided something and left no record line is a defect.
+- **Record, always, for consequential meetings.** Outcomes and decisions land on the worklog's daily line (and the project record where one exists); direction signals in the company log. A meeting that decided something and left no record line is a defect.
 - **Capture rides the calendar, reminder at the FRONT (settled 2026-08-25).** Any rendering of the day's meeting/event calendar (day-start step 2, the meeting-prep assist) OPENS with one standing line before the meeting lines: start capture before entering. For meetings where the user can — the meeting platform's recording or transcription available and permitted (e.g. Teams/Outlook) — turn it on at entry, and after the meeting open the recording or transcript from the calendar/mail surface and distill it into the record lines; where capture isn't available, notes by hand. Placement is the point: a reminder riding only per-meeting prep lines gets missed on the day it matters.
 - **The calendar is read, not owned.** Scheduling stays on the employer's calendar surface; the flow prepares before and records after.
 
@@ -35,4 +35,4 @@ A live exchange with a person is a thread on that person's card (`people.md`): w
 
 ## Fold-away note (for the unfold's A5 pass)
 
-Expected core-adopt: the bus keeps only its routing rules and drafts registry (threads live on the people cards, meeting outcomes in the worklog). What varies by environment is only the sweep's runtime form (scheduled agent · session-opening pass · printed checklist) — the A1/§17 answer decides, exactly as for the rest of the engine.
+Expected core-adopt: the bus keeps only its routing rules and drafts registry (waits live on the mail/chat surfaces themselves, meeting outcomes in the worklog). What varies by environment is only the sweep's runtime form (scheduled agent · session-opening pass · printed checklist) — the A1/§17 answer decides, exactly as for the rest of the engine.

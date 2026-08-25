@@ -1,6 +1,6 @@
 # Store — the estate's typed data service
 
-*One shared typed store + scoring service that every register rides (design principle 25). The data-shape rule (`estate-structure.md`) is this service's CONTRACT; this module is the ENGINE that enforces it. Consumers: the people cards, the resources register, the company signal and theme registers, the worklog's structured lines, per-project boards, and the task lists (store-backed form, `task-convention.md`) — any register that types or scores its entries.*
+*One shared typed store + scoring service that every register rides (design principle 25). The data-shape rule (`estate-structure.md`) is this service's CONTRACT; this module is the ENGINE that enforces it. Consumers: the resources register, the company signal and theme registers, the worklog's structured lines, per-project boards, and the task lists (store-backed form, `task-convention.md`) — any register that types or scores its entries.*
 
 ## The service
 
@@ -8,7 +8,7 @@
 - **Scoring runs in the store; meaning stays with the owning project.** A register's scoring config (weights, thresholds, bands — the data-shape rule's config block) is authored by the owning project; the store executes it uniformly and stamps every score with config version, date, and an evidence pointer.
 - **Append-only assessments; the user's judgment layer is never overwritten** (data-shape rule points 2–3).
 - **Four scoring folds** (ported from proven closed forms; every knob — weights, priors, half-lives, band edges — lives in the CONSUMING project's config): **estimate** — a latent quality inferred from noisy evidence as a Bayesian normal-conjugate posterior (confidence maps to precision, old evidence decays by half-life; mean ± sigma out — for person reception, event value, theme strength); **balance** — a decay-weighted signed event account, deliberately no Bayes (quiet stretches drain it — for relationship investment, momentum); **forecast** — a resolvable claim revised by explicit Bayesian odds arithmetic (both likelihoods stated and contestable; scored by Brier against the world — the estate's forecast lines); **bands** — the score→label mapping. Pick the fold by the question's shape; a register never invents its own arithmetic.
-- **Views, not copies.** Once the store runs, the markdown files sessions read (`people.md`, `compensation.md`, …) are RENDERED views; a hand edit to a view that carries judgment flows back as a new user-layer line, never silent divergence.
+- **Views, not copies.** Once the store runs, the markdown files sessions read (`compensation.md`, `themes.md`, …) are RENDERED views; a hand edit to a view that carries judgment flows back as a new user-layer line, never silent divergence.
 - **The engine is resolved at unfold (A7):** the best sanctioned storage engine the device offers — an embedded database where a runtime exists (SQLite-class), the tooling's native memory otherwise. Markdown-with-shape is the bootstrap form; migration is the data-shape rule's own line: the shape moves unchanged, the store owns the move.
 
 ## Standing jobs (registry entries, `work-engine.md`)

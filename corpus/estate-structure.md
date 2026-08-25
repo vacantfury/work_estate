@@ -41,7 +41,7 @@ The estate's containers have KINDS: the steward (hub) · infrastructure (store, 
 
 ## The data-shape rule
 
-Any register that scores or types its entries (people cards, the compensation register, career's theme register) follows one shape:
+Any register that scores or types its entries (the compensation register, career's theme register) follows one shape:
 
 1. **Typed entries** with named fields, not free prose.
 2. **Append-only dated assessments** carrying their evidence; corrections are new lines, never edits of old ones.
