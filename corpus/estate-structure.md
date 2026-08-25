@@ -4,7 +4,7 @@
 
 ## The merged attention view (hub)
 
-The hub can answer "what needs the user now" across the whole estate: one merged, ranked read over every project's TODO (due and active lanes) plus the standing due lanes (benefits windows, people threads, review cycles, health follow-ups). Rules:
+The hub can answer "what needs the user now" across the whole estate: one merged, ranked read over every project's TODO (due and active lanes) plus the standing due lanes (compensation windows, people threads, review cycles, health follow-ups). Rules:
 
 - **Pull on ask, never push.** The view renders when the user asks; no per-project list auto-pops, no unsolicited digest.
 - **The user's spoken priorities become pins.** When the user names something first or urgent, it pins above the computed order until done or unpinned; conversation is the one ordering channel.
@@ -33,7 +33,7 @@ The estate's binding conventions have ONE canonical home per rule: hub law (the 
 
 ## Kinds and the dependency rule
 
-The estate's containers have KINDS: the steward (hub) · infrastructure (store, finder, messages, llm_utils, devices, autoflow, auto_research) · function projects (people, worklog, benefits, career, health, risk, research) · the main-work manager with its per-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
+The estate's containers have KINDS: the steward (hub) · infrastructure (store, finder, messages, llm_utils, devices, autoflow, auto_research) · function projects (people, worklog, compensation, career, health, risk, research) · the main-work manager with its per-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
 
 **The registry is a GRAPH:** every row also declares its EDGES — `consumes:` (which infrastructure seams) and `feeds:` (where its outputs flow, e.g. the company watch → people + career) — so the hub holds the whole estate's structure and renders it on ask.
 
@@ -41,7 +41,7 @@ The estate's containers have KINDS: the steward (hub) · infrastructure (store, 
 
 ## The data-shape rule
 
-Any register that scores or types its entries (people cards, the benefits register, career's theme register) follows one shape:
+Any register that scores or types its entries (people cards, the compensation register, career's theme register) follows one shape:
 
 1. **Typed entries** with named fields, not free prose.
 2. **Append-only dated assessments** carrying their evidence; corrections are new lines, never edits of old ones.

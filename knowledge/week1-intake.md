@@ -162,16 +162,17 @@
 - ☐ The employer secret store and LLM gateway the team actually uses — the work stack's incumbents (extends §1 and §17).
 - ☐ Record every answer plus the chosen sync posture (full client vs read-only satellite) in `local/ledger.md`; on a blocked-push outcome, name the fallback explicitly.
 
-## 19. Resource catalog: benefits, budgets, programs, access (feeds design principle 20a, `corpus/benefits.md`)
+## 19. Compensation catalog: pay, benefits, budgets, access (feeds design principles 20a + 28, `corpus/compensation.md`)
 
 *The catalog is discovered, never assumed — the failure mode is the resource nobody mentions. Portal-first, then ask HR/the manager/a tenured teammate what people actually use and forget to use.*
 
 - ☐ **The new-hire enrollment window, FIRST:** when it opens, when it closes, and what falls into it (health insurance, retirement elections, stock purchase enrollment, HSA/FSA-class accounts). Read it off the enrollment portal the day the portal opens; land every close date as a buffered `[due:]` line. **[assume: the window is short (weeks) and closing it is irreversible until the next annual cycle — verify]**
+- ☐ The offer packet's pay components as register entries: base salary, bonus target and mechanics, stock award + vest schedule, sign-on terms; the merit/raise and bonus cycle calendar as practiced. **[assume: all are stated in the offer packet and the compensation portal — verify against the portal once live]**
 - ☐ Retirement mechanics as offered: employer match formula and vesting, contribution limits, any after-tax contribution + in-plan conversion path, default investment vs available lineup.
 - ☐ Stock programs: purchase-plan terms (discount, periods, enrollment windows) and any grant/vesting mechanics relevant to elections.
 - ☐ The full benefits/perks catalog beyond the big four: wellness allowances, commuter, insurance riders, legal/backup-care/assistance programs — one register line each, even if declined.
 - ☐ Claimable budgets: learning/training, conference, equipment/home-office — amounts, cycle reset dates, claim mechanics, what actually gets approved in practice.
-- ☐ Programs: patent/invention awards, internal mobility rules, mentorship programs, hackathons, internal speaking/teaching venues — eligibility and application windows.
+- ☐ Programs (routes to career §Growth, not the compensation register): patent/invention awards, internal mobility rules, mentorship programs, hackathons, internal speaking/teaching venues — eligibility and application windows.
 - ☐ Access worth claiming at eligibility: compute quotas, license seats, data/tool access the role can request for free.
 - ☐ Cycle boundaries: when open enrollment recurs, when budgets reset — so catalog-discovery re-runs land on the calendar.
 

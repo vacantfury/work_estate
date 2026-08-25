@@ -4,7 +4,7 @@
 
 ## Charter
 
-- **Registry, single truth:** one row per compute target the work can use — cluster, managed training/eval service, quota pool: access mode, capacity and quota, eligibility, cost model. Granted-but-idle capability is named waste (`benefits.md` acquire-at-eligibility: quotas are claimed when eligible and then actually used).
+- **Registry, single truth:** one row per compute target the work can use — cluster, managed training/eval service, quota pool: access mode, capacity and quota, eligibility, cost model. Granted-but-idle capability is named waste (`compensation.md` acquire-at-eligibility: quotas are claimed when eligible and then actually used).
 - **Adapters + one dispatch seam:** per-target submission mechanics (job templates, CLI/SDK wrappers) behind one seam consumers call. Mechanics only — WHAT runs where (placement policy) is the owning project's meaning.
 - **Run state:** what is running or queued from this estate — experiment, target, since when — so any session answers "what's running where" without shell archaeology.
 - **Device knowledge:** the work machine's own runbooks (setup, recovery, environment quirks) live here too — knowledge about a device lives with the device estate.

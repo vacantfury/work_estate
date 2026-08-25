@@ -1,6 +1,6 @@
 # Finder — the estate's information retrieval
 
-*One seam for finding INFORMATION (design principles 25–26): the job's knowledge surfaces — docs and wikis, code and reviews, tickets, dashboards, the people directory — plus whatever public search the environment sanctions. Person-traffic channels (mail, chat, calendar) are NOT here; they belong to the messages bus (`messages.md`) — the boundary is content kind: information here, traffic there. Every project queries through this seam; per-project hand-rolled channel access is a defect. Consumers: company-watch capture on knowledge surfaces, benefits catalog discovery, career's reward-map reads, main-work candidate intelligence, any project's research ask.*
+*One seam for finding INFORMATION (design principles 25–26): the job's knowledge surfaces — docs and wikis, code and reviews, tickets, dashboards, the people directory — plus whatever public search the environment sanctions. Person-traffic channels (mail, chat, calendar) are NOT here; they belong to the messages bus (`messages.md`) — the boundary is content kind: information here, traffic there. Every project queries through this seam; per-project hand-rolled channel access is a defect. Consumers: company-watch capture on knowledge surfaces, compensation catalog discovery, career's reward-map reads, main-work candidate intelligence, any project's research ask.*
 
 ## The service
 
@@ -8,7 +8,7 @@
 - **The source roster is resolved at unfold (A8):** which knowledge surfaces the sanctioned tooling can actually reach, each with its access mode — direct read seam · assisted read inside the tooling · user relay as last resort. The roster is a registry table; a channel gained or lost updates one row, never the consumers.
 - **Read-only by default.** The bus retrieves; writes (sending, posting, filing) belong to their owning flows and gates (the communication flow's prepare-only rail).
 - **Digs ride the bus:** scoped discovery campaigns (portable-skills `dig`) are the bus's campaign-sized form — brief and scoring meaning from the commissioning project, candidates typed into the store, a decided close.
-- **Standing watches ride the finder:** company-watch capture on knowledge surfaces, benefits window and catalog sweeps, and career's reward-map refresh run on the engine's cadence — one adapter per source serves them all.
+- **Standing watches ride the finder:** company-watch capture on knowledge surfaces, compensation window and catalog sweeps, and career's reward-map refresh run on the engine's cadence — one adapter per source serves them all.
 - **Boundary:** employer surfaces plus whatever public retrieval the environment itself sanctions; no unsanctioned feed tooling (principle 12) and no channels beyond the job's own.
 
 ## Standing jobs (registry entries, `work-engine.md`)
