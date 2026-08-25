@@ -195,7 +195,7 @@ Trigger: an online experiment/flight reaches its readout point (or is stopped ea
 Trigger: start of a working day or a cold return to the workspace.
 
 1. Read the session board (`NOW.md`) and the TODO head.
-2. Check the calendar and inbox for anything that reorders today (work-sanctioned surfaces only) — the inbox check IS the triage sweep of `messages.md` (three lanes, drafts staged inert), never a parallel hand-rolled pass; the calendar read also feeds that module's meeting-prep assist.
+2. Check the calendar and inbox for anything that reorders today (work-sanctioned surfaces only) — the inbox check IS the triage sweep of `messages.md` (three lanes, drafts staged inert), never a parallel hand-rolled pass; the calendar read also feeds that module's meeting-prep assist, and its meeting list opens with the start-capture-before-entering front line (`messages.md` §Meetings capture bullet).
 3. Deliver as ONE page in the board form (`human-agent-collaboration.md` §The board delivery form): a headline sentence naming the day's one or two priorities, then the boards in placement-test order. Surface only what needs action or eyes — nothing-due checks stay silent.
 
 ## event-prep

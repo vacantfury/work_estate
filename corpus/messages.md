@@ -24,13 +24,14 @@ A live exchange with a person is a thread on that person's card (`people.md`): w
 
 - **Prep, proportional to consequence.** A routine standup needs none. A 1:1, a review, or any meeting where something is decided or asked gets a short prep note in the owning project: purpose, the user's asks, expected questions, desired outcome. Stage events keep their fuller prep (`dev-workflow.md`, `communication-craft.md`). The full procedure, both grades (meeting note · event brief), is `portable-skills.md` event-prep.
 - **Record, always, for consequential meetings.** Outcomes and decisions land on the worklog's daily line (and the project record where one exists); person-relevant moments on the people cards; direction signals in the company log. A meeting that decided something and left no record line is a defect.
+- **Capture rides the calendar, reminder at the FRONT (settled 2026-08-25).** Any rendering of the day's meeting/event calendar (day-start step 2, the meeting-prep assist) OPENS with one standing line before the meeting lines: start capture before entering. For meetings where the user can — the meeting platform's recording or transcription available and permitted (e.g. Teams/Outlook) — turn it on at entry, and after the meeting open the recording or transcript from the calendar/mail surface and distill it into the record lines; where capture isn't available, notes by hand. Placement is the point: a reminder riding only per-meeting prep lines gets missed on the day it matters.
 - **The calendar is read, not owned.** Scheduling stays on the employer's calendar surface; the flow prepares before and records after.
 
 ## Standing jobs (registry entries, `work-engine.md`)
 
 - **Triage sweep** — the lane pass above; drafts staged inert; thread touches recorded.
 - **Meeting prep assist** — before a consequential meeting on the calendar: the prep note drafted from the relevant records.
-- **Post-meeting capture** — after one: prompt for the outcome lines and route them to their homes.
+- **Post-meeting capture** — after one: for a recorded/transcribed meeting, open the recording or transcript first and distill from it; then prompt for the outcome lines only the user knows and route them to their homes.
 
 ## Fold-away note (for the unfold's A5 pass)
 
