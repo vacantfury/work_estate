@@ -4,6 +4,8 @@ All notable seed changes, one entry per version. Versions are SemVer git tags: M
 
 ## [Unreleased]
 
+- Added: `human-agent-collaboration.md` §Standardized choice surfaces — workflow first on complex tasks: the ordered workflow (time or logic order, each step's executor marked) is laid out and offered for review before actions are driven; feeding the human action items piecemeal with no reviewed plan standing is named a failure mode (ported from a maintainer working rule settled 2026-08-25).
+
 ## [3.4.1] - 2026-08-25
 
 Rename: the repo itself, `former name` → `work_estate` (user decision 2026-08-25) — the name now uses the corpus's own vocabulary (the work estate, per `estate-structure.md`), plainly self-describing.
