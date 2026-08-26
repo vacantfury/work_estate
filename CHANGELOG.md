@@ -2,6 +2,12 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [6.2.0] - 2026-08-26
+
+- Changed: **`engineering-standards.md` §Prefer mature tools over reinventing — search-first widened to results and to the internal world** (user direction 2026-08-26): before building any capability or attacking any complex problem, search for what already exists — tools AND results (a prior experiment, published measurement, or existing analysis may already answer the question; the search precedes the design, not the review); "existing" spans the open ecosystem AND the employer's internal one — internal libraries, services, platforms, shared repos, other teams' solutions, and internal prior art count as available exactly the way open-source does, and the internal tool wins a tie (owners, support channel, compliance posture already settled).
+- Installed-estate migration: none — module text only; no skeleton templates or state files affected.
+- Affects: engineering-standards derived layers regenerate. MINOR: additive rule content.
+
 ## [6.1.0] - 2026-08-26
 
 - Added: **`estate-structure.md` §Playbooks — the standing conditional form** (settle-time port; the maintainer's practice ratified the form 2026-08-24 and the campaign section had shipped without its standing sibling): one folder + `playbook.md` front door + condition-headed plays; campaign : move :: playbook : play; deliberately-high founding bar (ALL of: standing scope · recurring/unpredictable trigger · cross-firing state · irreducible to a task line or rule · asymmetric cost of late/wrong firing — below the bar it stays a register entry, watch line, or rule); trigger honesty labels (observer + reliability, FRAGILE named), no-regrets first block on event plays with parallel re-verification of stale parameters, settle-only play edits, decided retirement with successor disposition. Boundary kept: employer incidents stay with the employer's incident process. Form template `skeleton/hub/_forms/playbook.md` added beside lessons/handbook/campaign.

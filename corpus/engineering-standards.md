@@ -22,7 +22,8 @@ Defaults for new code. Where the employer or team has an established practice �
 ## Prefer mature tools over reinventing
 
 - If a mature library does the task well, use it; wrap it behind your own seam if a stable interface is needed. Custom code is reserved for the genuinely bespoke: no good tool exists, or it IS the project's differentiating core logic.
-- Before building any capability, check what already covers it.
+- **Before building any capability or attacking any complex problem, search for what already exists — tools AND results.** Tools: something may already do the task. Results: someone may already have answered the question — a prior experiment, a published measurement, an existing analysis — making the build unnecessary. The search precedes the design, not the review.
+- **"Existing" spans both worlds: the open ecosystem and the employer's internal one.** Internal libraries, services, platforms, shared repos, other teams' solutions, and internal prior art (docs, experiment results, postmortems) count as available exactly the way open-source does — search both before writing code. Where the two tie, the internal tool wins: it comes with its owners, its support channel, and its compliance posture already settled.
 - Where research still leaves several credible candidates for a consequential choice, settle it by a small time-boxed pre-experiment per candidate — elimination by evidence, not debate (`dev-workflow.md`, choice tournaments).
 
 ## Size to the known end-state
