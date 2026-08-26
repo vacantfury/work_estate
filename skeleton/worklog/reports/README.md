@@ -1,0 +1,2 @@
+<!-- skeleton template · genome: corpus/work-report.md · remove this line at instantiation -->
+One file per report day: `YYYY-MM-DD.md`, built from the time log + work record at record grain. Template (last range: time · brain · did · value · plan-vs-actual; next range: planned time · brain budget · schedule · targets · intended value): `corpus/work-report.md`. The user reads each report and returns a verdict + plan amendments.

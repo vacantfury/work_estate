@@ -86,7 +86,7 @@
 
 ## 12. Project landscape and staffing reality (feeds design principle 11)
 
-*The project pipeline (`corpus/project-lifecycle.md`) needs the team's real staffing mechanics before it can run — same triple-source rule: docs AND artifacts AND asking people directly.*
+*The project pipeline (`corpus/project-pipeline.md`) needs the team's real staffing mechanics before it can run — same triple-source rule: docs AND artifacts AND asking people directly.*
 
 - ☐ How projects actually get born and staffed on this team: assigned top-down, volunteered, negotiated in planning — and in which ceremony (sprint planning, season planning, ad hoc)? Who actually staffs — the manager alone, leads, PM?
 - ☐ The current project menu: what's live, what's upcoming or unstaffed, what's wished-for but unowned. This is the seed content for the portfolio board (`local/state/projects.md`).

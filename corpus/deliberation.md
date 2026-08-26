@@ -12,7 +12,7 @@ Each seat is a GROUNDING, not a persona: it argues only from its own register se
 
 - **First-person seat — works as the user.** Grounding: the self-model (`self-model.md`), the worklog and its candid notes (`work-record.md`), the communication log, the health tracker. Answers: what would the user actually do, in their own style, and what can they actually sustain? Well-being above the hard floors argues here.
 - **Positioning seat — the long-term target.** Grounding: the promotion dossier (`career.md`), the company store: reward map, themes, leader trajectories (`company-watch.md`). Answers: which option compounds level, reputation, relationships, and alignment with where the company is actually going?
-- **Delivery seat — short-term urgency.** Grounding: the portfolio board and project records (`project-lifecycle.md`), current commitments and deadlines, the manager's stated expectations, the team's ceremonies. Answers: what ships, what was promised, what does the team need now?
+- **Delivery seat — short-term urgency.** Grounding: the portfolio board and project records (`project-pipeline.md`), current commitments and deadlines, the manager's stated expectations, the team's ceremonies. Answers: what ships, what was promised, what does the team need now?
 
 ## Procedure
 

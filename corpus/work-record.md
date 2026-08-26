@@ -5,7 +5,7 @@
 ## What it is — and what it is not
 
 - It records **activity**: what was done in a day — delivered and progressed work, meetings and reviews, help given, operational interruptions, things learned.
-- It is **not the project tracker.** The portfolio board (`project-lifecycle.md`, `local/state/projects.md`) holds per-project state, and each project keeps its own working notes. The work record CITES projects by name and never duplicates their state — one line "advanced X: <what moved>", the substance living in the project's own home.
+- It is **not the project tracker.** The portfolio board (`project-pipeline.md`, `local/state/projects.md`) holds per-project state, and each project keeps its own working notes. The work record CITES projects by name and never duplicates their state — one line "advanced X: <what moved>", the substance living in the project's own home.
 - Sibling stores keep their own lanes: health events → the health tracker (`health-guard.md`); company signals → the company store (`company-watch.md`). The record may point; it never re-homes.
 
 ## The private record — `local/state/worklog.md`

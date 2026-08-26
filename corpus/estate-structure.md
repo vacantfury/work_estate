@@ -33,11 +33,15 @@ The estate's binding conventions have ONE canonical home per rule: hub law (the 
 
 ## Kinds and the dependency rule
 
-The estate's containers have KINDS: the steward (hub) · infrastructure (store, finder, ties, llm_utils, devices, autoflow, auto_research) · function projects (people, worklog, compensation, career, health, risk, research) · the main-work manager with its per-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
+The estate's containers have KINDS: the steward (hub) · infrastructure (store, finder, ties, llm_utils, devices, autoflow, auto_research) · function projects (worklog, compensation, career, health, risk, research) · the main-work manager with its per-project homes · plus the seed's registry row (kind: seed). Dependencies point ONE way: projects ride the infrastructure seams; infrastructure executes and never owns a project's meaning (scoring configs, dig briefs, triage semantics belong to the owning project). A capability two projects both need is infrastructure debt — flag it, never hand-roll it twice.
 
-**The registry is a GRAPH:** every row also declares its EDGES — `consumes:` (which infrastructure seams) and `feeds:` (where its outputs flow, e.g. the company watch → people + career) — so the hub holds the whole estate's structure and renders it on ask.
+**The registry is a GRAPH:** every row also declares its EDGES — `consumes:` (which infrastructure seams) and `feeds:` (where its outputs flow, e.g. the company watch → career) — so the hub holds the whole estate's structure and renders it on ask.
 
 **The crossing protocol** — state crosses a project boundary ONLY as one of four forms: ① a typed store entity under a declared schema (the wire format) · ② a dispatch line into the target project's TODO · ③ the hub's attention view / task head · ④ a declared engine job naming source → target. A direct write into another project's state files is a defect.
+
+## The concrete tree — structure ships as files, not prose
+
+The estate's default directory layout is SHIPPED, not described: the seed's `skeleton/` directory is the installed estate's concrete form — one directory per roster project, every state file present as a template with its header, sections, and config block already written, the registry (`hub/registry.yaml`) and job registry (`hub/agent-jobs.yaml`) as real schema files. The tree is drawn once in `skeleton/README.md`; corpus references to `local/state/<file>` resolve to it via the registry. The split is deliberate: conventions are GENOMES (prose, adaptive — team reality wins); structure is PHENOTYPE (deterministic — the unfold copies, then adapts, and never invents layout). A structural change to the estate is therefore a skeleton change in the seed, shipped as a versioned delta, never a per-install improvisation.
 
 ## The data-shape rule
 

@@ -1,6 +1,9 @@
 # personal task/board state (task standard: TODO is gitignored everywhere)
 TODO.md
 NOW.md
+# skeleton templates are committed seed content, not task state — re-include them
+!skeleton/**/TODO.md
+!skeleton/**/NOW.md
 
 # work-machine-local layer — never committed (one-way flow rule, CLAUDE.md)
 local/

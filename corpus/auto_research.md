@@ -20,7 +20,7 @@ The engine's second half: a ranked, grounded queue of NEXT research candidates, 
 - **Vet** each survivor: internal prior art (the principle-10 triple source), external literature, eval feasibility, non-overlap with running projects.
 - **Package** the few that survive as decision-ready candidates: question, grounding summary, eval-design sketch, expected value, cost shape.
 
-**The gate adaptation (binding):** the funnel never founds a bet. Research selection at a job is negotiated — the funnel's terminal output is a packaged candidate for the user's manager conversation (`project-lifecycle.md` sourcing + negotiation doctrine); the user and their manager are the gate. Everything upstream of that conversation is the engine's work; the conversation itself is the user's.
+**The gate adaptation (binding):** the funnel never founds a bet. Research selection at a job is negotiated — the funnel's terminal output is a packaged candidate for the user's manager conversation (`project-pipeline.md` sourcing + negotiation doctrine); the user and their manager are the gate. Everything upstream of that conversation is the engine's work; the conversation itself is the user's.
 
 ## Founding gate
 

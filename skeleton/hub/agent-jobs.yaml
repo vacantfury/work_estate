@@ -1,0 +1,79 @@
+# skeleton template · genome: corpus/work-engine.md (schema) + corpus/autoflow.md (execution) · remove this line at instantiation
+# The agent-jobs registry — the engine's config: one entry per standing job.
+# Schema: id · lane · purpose · cadence (daily|per-session|weekly|on-event) · priority ·
+#   output (owning project's state home; a job with no output home is a defect) ·
+#   escalation (the ONE rule for what reaches the user; default nothing) ·
+#   gate (prepare-only steps: the job stages, the user presses — always) ·
+#   stage (only once trusted past review-everything, with its evidence line) ·
+#   marker + silence_h (scheduled jobs only: success marker + max tolerated silence).
+# Queue: budget-ranked, priorities burn top-down; ample budget → full roster, spend on depth.
+# Defaults below are drafted from the corpus; the unfold sets queue mode from A1 + intake §17.
+
+jobs:
+  - id: triage-sweep
+    lane: ties
+    purpose: three-lane inbox/chat triage (needs-the-user / prepare-and-present / note-only)
+    cadence: per-session
+    priority: 1
+    output: ties/drafts.md          # + attention view lines
+    escalation: needs-the-user lane only
+    gate: all drafts inert; nothing sends
+  - id: worklog-append
+    lane: worklog
+    purpose: daily private record capture at session close
+    cadence: daily
+    priority: 2
+    output: worklog/worklog.md
+    escalation: none
+  - id: report-build
+    lane: worklog
+    purpose: Tue/Thu steering report distilled from timelog + worklog
+    cadence: on-event               # report days
+    priority: 2
+    output: worklog/reports/
+    escalation: the report itself (user reads + returns verdict)
+    gate: report content is prepared; the user's review is the loop
+  - id: company-watch
+    lane: career
+    purpose: signal capture + register upkeep + planning-rhythm distillation
+    cadence: weekly
+    priority: 3
+    output: career/company.md       # themes/rewards feed career/themes.md
+    escalation: chain-break findings only
+  - id: evidence-harvest
+    lane: career
+    purpose: periodic worklog/board pass appending review-grade evidence lines
+    cadence: weekly
+    priority: 4
+    output: career/review.md
+    escalation: none
+  - id: compensation-windows
+    lane: compensation
+    purpose: catalog discovery + hard-window due lane upkeep
+    cadence: on-event               # cycle boundaries
+    priority: 3
+    output: compensation/compensation.md
+    escalation: closing windows (due lines)
+    gate: elections prepared execute-ready; the submit press is the user's
+  - id: health-guard
+    lane: health
+    purpose: floor enforcement + tracker upkeep
+    cadence: per-session
+    priority: 1
+    output: health/health.md
+    escalation: a crossed floor is named at the moment
+  - id: self-audit
+    lane: hub
+    purpose: failures/boards/conventions sweep + backup-verified check + calibration reads
+    cadence: on-event               # periodic; the estate's improvement loop
+    priority: 5
+    output: hub/failures.md
+    escalation: highest-value fixes as one batch; behavior changes wait for the user
+  - id: seed-update-check
+    lane: hub
+    purpose: read-only seed update check (fetch + changelog vs installed version)
+    cadence: on-event               # A2-gated; at most once per session opening
+    priority: 6
+    output: hub/registry.yaml       # seed row: last checked
+    escalation: pending updates surface through the attention view
+    gate: apply always waits for the user

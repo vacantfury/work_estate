@@ -8,7 +8,7 @@
 2. **Meals** — real meals, at real times, away from the desk. A meeting does not delete lunch; it moves it.
 3. **The hard stop** — the workday ends at a set time (chosen with the user at intake, recorded in `local/`). Past it, work happens only as a named exception (breach log below) — never as drift.
 4. **Movement and eyes** — the in-day cadence in the moment table.
-5. **Symptoms outrank commitments** — pain, repeated poor sleep, persistent strain: the schedule bends, not the body. The session helps renegotiate the commitment (the prioritization idiom, `project-lifecycle.md`), never helps push through.
+5. **Symptoms outrank commitments** — pain, repeated poor sleep, persistent strain: the schedule bends, not the body. The session helps renegotiate the commitment (the prioritization idiom, `project-pipeline.md`), never helps push through.
 
 ## Moment instructions — what to do, exactly, when
 

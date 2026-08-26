@@ -1,6 +1,6 @@
 # Research workflow — the research lane
 
-*The research arc for an applied-scientist role, ported generically from the maintainer's established research workflow (design principle 16). `project-lifecycle.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc; the standing jobs and candidate funnel that run the lane with minimal user attention are `auto_research.md`'s.*
+*The research arc for an applied-scientist role, ported generically from the maintainer's established research workflow (design principle 16). `project-pipeline.md` governs whether a research effort is taken on and how it lands; `dev-workflow.md` governs how its builds and experiments are staged; this module adds the research-specific arc; the standing jobs and candidate funnel that run the lane with minimal user attention are `auto_research.md`'s.*
 
 ## The arc
 

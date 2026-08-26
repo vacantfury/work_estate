@@ -25,9 +25,9 @@ Everything in this module runs **on the work machine, under the work account, in
 
 | Lane | Canonical module | Standing state (`local/state/`) | Standing work |
 |---|---|---|---|
-| Delivery — accepted projects | `project-lifecycle.md` + `dev-workflow.md` | `projects.md`, `projects/<name>.md` | dev funnel execution, board upkeep, stage-event artifacts |
+| Delivery — accepted projects | `project-pipeline.md` + `dev-workflow.md` | `projects.md`, `projects/<name>.md` | dev funnel execution, board upkeep, stage-event artifacts |
 | Research | `research-workflow.md` + `auto_research.md` | per-project records | grounding, experiment loop, auto-research jobs + candidate funnel |
-| Project sourcing | `project-lifecycle.md` (stage 1) | `projects.md` candidates | continuous candidate scan + per-candidate intelligence |
+| Project sourcing | `project-pipeline.md` (stage 1) | `projects.md` candidates | continuous candidate scan + per-candidate intelligence |
 | Company intelligence | `company-watch.md` | `company.md` | signal capture, register upkeep, planning-rhythm distillation |
 | Communication craft | `communication-craft.md` | `communication.md` | artifact harvest + coaching, pre-send assists |
 | Risk register | `risk-register.md` | `risks.md` | premortems at accept/transitions, reaction-plan upkeep, calibration |

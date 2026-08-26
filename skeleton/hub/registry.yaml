@@ -1,0 +1,102 @@
+# skeleton template · genome: corpus/estate-structure.md (kinds, edges, crossing protocol) · remove this line at instantiation
+# The estate registry — the ONE map of every project, and the estate's structure GRAPH.
+# No unregistered projects. Corpus references to local/state/<file> resolve here.
+# Edges: consumes = infrastructure seams this project rides · feeds = where its outputs flow.
+
+projects:
+  hub:
+    kind: steward
+    home: hub/
+    state: [registry.yaml, agent-jobs.yaml, self.md, decisions.md, failures.md, footprint.md, communication.md]
+    genomes: [work-engine, boundary-protocol, device-return, estate-structure, deliberation, self-model, communication-craft, sidework]
+    # task-convention + session-discipline are estate-wide law (every project consumes; no project of their own)
+    consumes: [store, finder]
+    feeds: [all]            # attention view, law layer, engine registry
+  store:
+    kind: infrastructure
+    home: store/
+    state: [schemas/schemas.yaml]
+    genomes: [store]
+    engine: markdown        # A7 answer: markdown-with-shape bootstrap | <embedded db> | <tooling memory>
+    consumes: []
+    feeds: [all]            # every typed register is its view
+  finder:
+    kind: infrastructure
+    home: finder/
+    state: [sources.md]
+    genomes: [finder]
+    consumes: []
+    feeds: [all]            # digs and standing watches ride it
+  ties:
+    kind: infrastructure
+    home: ties/
+    state: [routing.md, drafts.md]   # no person stores anywhere in the estate (principle 29)
+    genomes: [ties]
+    consumes: [finder]
+    feeds: [hub, worklog, career]    # attention view · meeting records · direction signals
+  worklog:
+    kind: function
+    home: worklog/
+    state: [worklog.md, timelog.md, worklog-public.md, reports/]
+    genomes: [work-record, work-report]
+    consumes: [store]
+    feeds: [career, hub]    # review evidence · debrief · attention view
+  compensation:
+    kind: function
+    home: compensation/
+    state: [compensation.md]
+    genomes: [compensation]
+    consumes: [store, finder]
+    feeds: [hub]            # due windows into the attention view
+  career:
+    kind: function
+    home: career/
+    state: [review.md, promotion.md, growth.md, themes.md, company.md]
+    genomes: [career, company-watch]
+    consumes: [store, finder]
+    feeds: [main-work, hub] # alignment re-scoring · attention view
+  health:
+    kind: function
+    home: health/
+    state: [health.md]
+    genomes: [health-guard]
+    consumes: []
+    feeds: [worklog]        # debrief health line
+  risk:
+    kind: function
+    home: risk/
+    state: [risks.md]
+    genomes: [risk-register]
+    consumes: []
+    feeds: [main-work, hub] # premortems at accept · calibration at self-audit
+  research:
+    kind: function          # instantiated only where intake §18 clears personal-stack presence
+    home: research/
+    state: [research.md]
+    genomes: [research-infrastructure, research-workflow]
+    consumes: [devices, llm_utils]
+    feeds: [main-work]
+  main-work:
+    kind: manager
+    home: main-work/
+    state: [projects.md, _template/]
+    genomes: [project-pipeline, project-home, dev-workflow, research-workflow]
+    consumes: [store, finder, ties]
+    feeds: [career, worklog, hub]
+  # --- _clone/ is deliberately unregistered: it seeds the seed clone's local/ledger.md, never the estate ---
+  # --- gated infrastructure: rows added when each founding gate fires ---
+  # llm_utils:    kind: infrastructure · gate: first code consumer calling a model
+  # devices:      kind: infrastructure · gate: first granted work compute target beyond the laptop
+  # autoflow:     kind: infrastructure · gate: first sanctioned scheduled/unattended job
+  # auto_research: kind: infrastructure · gate: research lane live + first standing job wanted
+  seed:
+    kind: seed              # the one evolving external dependency; never a work project
+    home: <clone path>
+    installed: <tag at HEAD>
+    channel: <A2 outcome>
+    last_checked: null
+    last_applied: null
+
+# Crossing protocol (estate-structure.md): state crosses a project boundary ONLY as
+# ① a typed store entity · ② a dispatch line into the target TODO · ③ the hub attention
+# view / task head · ④ a declared engine job naming source → target.

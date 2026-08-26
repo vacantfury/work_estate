@@ -1,0 +1,33 @@
+# skeleton template · genome: corpus/store.md · remove this line at instantiation
+# Entity schemas — one declaration per typed kind; machine-computed fields split from
+# user-judgment fields (the user layer is never overwritten). Registers are VIEWS of
+# store entities once the A7 engine lands; markdown-with-shape is the bootstrap.
+# Scoring folds available to consumers (knobs live in the CONSUMER's config, never here):
+#   estimate (Bayesian posterior, confidence->precision, half-life decay, mean±sigma)
+#   balance  (decay-weighted signed event account)
+#   forecast (Bayesian odds revision, Brier-scored at resolution)
+#   bands    (score -> label map)
+
+engine: markdown          # A7 answer; migrating engines never changes the shapes
+entities:
+  signal:                 # company-watch ground layer
+    machine: [date, source, level, text, grade]   # grade: evidence ladder 1-5
+    user: [note]
+  theme:
+    machine: [name, level, lifecycle, strongest_grade, last_confirmed]
+    user: [portfolio_implication]
+  event:                  # personnel/org ground truth
+    machine: [date, kind, who, what]
+    user: [reading]
+  resource:               # compensation claims/windows
+    machine: [name, eligibility, window, state]
+    user: [value_note, decision]
+  work_item:              # task rows (store-backed task form, task-convention.md)
+    machine: [id, title, state, rank, tags, added, project]
+    user: []              # ranking arrives via ingest of the user's hand-reordered view
+  decision:
+    machine: [date, question, recommendation]
+    user: [decision, outcome]
+  failure_row:
+    machine: [date, what, cause, severity]
+    user: [note]

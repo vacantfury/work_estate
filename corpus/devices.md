@@ -5,7 +5,7 @@
 ## Charter
 
 - **Registry, single truth:** one row per compute target the work can use — cluster, managed training/eval service, quota pool: access mode, capacity and quota, eligibility, cost model. Granted-but-idle capability is named waste (`compensation.md` acquire-at-eligibility: quotas are claimed when eligible and then actually used).
-- **Adapters + one dispatch seam:** per-target submission mechanics (job templates, CLI/SDK wrappers) behind one seam consumers call. Mechanics only — WHAT runs where (placement policy) is the owning project's meaning.
+- **Connectors + one dispatch seam:** per-target submission mechanics (job templates, CLI/SDK wrappers) behind one seam consumers call. Mechanics only — WHAT runs where (placement policy) is the owning project's meaning.
 - **Run state:** what is running or queued from this estate — experiment, target, since when — so any session answers "what's running where" without shell archaeology.
 - **Device knowledge:** the work machine's own runbooks (setup, recovery, environment quirks) live here too — knowledge about a device lives with the device estate.
 - **Layering:** above `llm_utils.md` (may consume its route seams), below `autoflow.md` (the platform places workers through this seam).
@@ -14,7 +14,7 @@
 
 ## Discover before build
 
-The incumbents here are strong (cluster schedulers, managed ML platforms) and sit BEHIND the seam: the registry and run state are almost always the real gap, the adapters thin wrappers over incumbent CLIs/SDKs. Intake (§17) resolves per target.
+The incumbents here are strong (cluster schedulers, managed ML platforms) and sit BEHIND the seam: the registry and run state are almost always the real gap, the connectors thin wrappers over incumbent CLIs/SDKs. Intake (§17) resolves per target.
 
 ## Founding gate
 

@@ -9,7 +9,7 @@
 
 ## Stage A — whole-product design
 
-- One design pass before building: the problem, constraints, success measures (the lifecycle's landing declaration made concrete), and the shape of the whole. It goes through the team's design-doc/review ritual where one exists; otherwise it is a short section of the project record.
+- One design pass before building: the problem, constraints, success measures (the pipeline's landing declaration made concrete), and the shape of the whole. It goes through the team's design-doc/review ritual where one exists; otherwise it is the record's Design section (`project-home.md`).
 - The accept-time premortem (`risk-register.md`) aims the funnel: the design names which risks and assumptions the earliest experiments should probe, so the riskiest assumption is killed or confirmed at the cheapest possible stage.
 
 ## Stage B — substructure design and decision points
@@ -39,9 +39,9 @@ Each promotion is a gate with declared criteria; each rung both tests and **moni
 
 ## Reporting rides the funnel
 
-- **Progress reports and presentations are stage events, not afterthoughts.** Every transition yields a naturally showable artifact — the design readout, tournament results ("four candidates, two killed, here's why"), the variant comparison, test-environment results, the launch readout — delivered on the lifecycle's sync cadence (`project-lifecycle.md` stage 7) through the team's own ceremonies.
+- **Progress reports and presentations are stage events, not afterthoughts.** Every transition yields a naturally showable artifact — the design readout, tournament results ("four candidates, two killed, here's why"), the variant comparison, test-environment results, the launch readout — delivered on the lifecycle's sync cadence (`project-pipeline.md` stage 7) through the team's own ceremonies.
 - The funnel makes status honest by construction: the report IS the record, filtered for its audience (`work-record.md`'s render rule), never a parallel narrative.
 
 ## The project record
 
-- Each active project keeps ONE running record: the design, decision points with candidates and tournament outcomes, variant status, current rung, and readout links. Home: the team's design-doc/status convention where one exists; otherwise `local/state/projects/<name>.md`, created when the project goes active. The portfolio board line points at it; the record cites the work record and the portfolio board, never duplicates them.
+- Each active project keeps ONE running record; its home, canonical sections, and shipped template are owned by `project-home.md` — the funnel's stages write the record's Design / Decision-points / Variants / Rung sections as they run. The team's design-doc/status convention wins where one exists.

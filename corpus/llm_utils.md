@@ -13,7 +13,7 @@
 
 ## Discover before build
 
-The team almost certainly has incumbents — a model gateway, a sanctioned SDK, an eval platform's client. Incumbents sit BEHIND the seam as providers; they do not replace it. Intake (§17) resolves the build form: an incumbent already covering the seam layer → this project is a thin adapter over it (config + the usage ledger, little more); a real gap → the seam is built per `engineering-standards.md`. If an existing open-source seam library fits and the OSS-dependency policy sanctions it, pinning it by version and keeping only work config here is the preferred form — with no contributions back from work context without the policy check.
+The team almost certainly has incumbents — a model gateway, a sanctioned SDK, an eval platform's client. Incumbents sit BEHIND the seam as providers; they do not replace it. Intake (§17) resolves the build form: an incumbent already covering the seam layer → this project is a thin connector over it (config + the usage ledger, little more); a real gap → the seam is built per `engineering-standards.md`. If an existing open-source seam library fits and the OSS-dependency policy sanctions it, pinning it by version and keeping only work config here is the preferred form — with no contributions back from work context without the policy check.
 
 ## Founding gate
 

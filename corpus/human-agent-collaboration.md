@@ -28,7 +28,7 @@ Any recurring orientation or status delivery — the day-start page (`portable-s
 2. Fixed clock time → **CALENDAR** — today's meetings and events, each carrying its prep-note pointer (`ties.md` §Meetings).
 3. Hard wall ahead, action day later → **DEADLINE** — wall date + days-to-wall + origin per line. Directly after the board, ONE compact deadlines-ahead line names beyond-window items with days-to-due (omit when none). When an item's action day arrives it MOVES to ACTION: cross-day movement is the one sanctioned overlap; same-day duplication never (cross-references by name are fine, duplicate lines are not).
 4. A person is waiting on the user or pushed something needing a look (review requests, mentions, direct asks in chat) → **TEAM**.
-5. An active project at its next-show or decision point (the portfolio board read, `project-lifecycle.md`) → **PORTFOLIO**.
+5. An active project at its next-show or decision point (the portfolio board read, `project-pipeline.md`) → **PORTFOLIO**.
 6. Otherwise-ranked work → **MAIN** — the TODO head in rank order.
 7. Awareness only → **KNOWLEDGE** — terse FYI lines.
 
