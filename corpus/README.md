@@ -17,7 +17,7 @@ One line per module; the module itself is the full statement.
 
 **The hub (steward-mind) genomes:**
 
-- `estate-structure.md` — the estate's shared structure: attention view, campaigns, lessons/handbook, the law layer, failures log + self-audit, kinds + dependency rule, crossing protocol, the concrete tree, data-shape rule, placement map, forecast lines.
+- `estate-structure.md` — the estate's shared structure: attention view, campaigns + playbooks, lessons/handbook, the law layer, failures log + self-audit, kinds + dependency rule, crossing protocol, the concrete tree, data-shape rule, placement map, forecast lines.
 - `work-engine.md` — the composition: every module a lane of ONE running workflow; the agent-jobs registry, budget-ranked queue, autonomy gradient, rails.
 - `boundary-protocol.md` — what belongs where: the self-contained premise, record grain rule, division of subject matter, credential rules.
 - `device-return.md` — the uninstaller: footprint register, triggers, exit procedure (issuer-side revocation first).
@@ -43,7 +43,7 @@ One line per module; the module itself is the full statement.
 - `career.md` — the review cycle and promotion case: continuously-current review draft, dossier against the next level's bar, growth investments, positioning.
 - `company-watch.md` — standing company intelligence (a JOB, not a project): signal log + registers, evidence ladder, re-aim ladder; candid and complete.
 - `health-guard.md` — health floors + the work/personal wall: execute-ready moment instructions, tracker + breach log; floors outrank everything.
-- `risk-register.md` — predictive failure management: premortem-born register (mode · signal · bands · reaction), calibration at every real failure.
+- `risk-register.md` — predictive failure management: premortem-born register (mode · signal · bands · reaction), standing role-continuity entries, calibration at every real failure.
 - `research-infrastructure.md` — research from the work machine: two stacks chosen by content, the never-cross rule, revocable setup order, the satellite registry.
 
 **Main-work (project work) genomes:**

@@ -8,7 +8,7 @@ The installed estate's default directory tree, shipped as real files. The corpus
 <A4 root>/
   hub/           steward-mind: registry.yaml (the estate graph) · agent-jobs.yaml ·
                  self.md · decisions.md · failures.md · footprint.md · communication.md ·
-                 _forms/ (lazy-founded kinds: lessons · handbook · campaign)
+                 _forms/ (lazy-founded kinds: lessons · handbook · campaign · playbook)
   store/         typed data + scoring service: schemas/schemas.yaml
   finder/        retrieval bus: sources.md (A8 knowledge roster)
   ties/          people-and-traffic bus: routing.md · drafts.md (no person stores — principle 29)
@@ -32,5 +32,5 @@ Every project also carries `INSTRUCTIONS.md` (scope + citations to hub law, neve
 - **Copy-then-adapt:** `_clone/` never copies (its `ledger.md` template seeds the seed clone's own gitignored `local/ledger.md`). The four gated dirs copy at their founding gates, not at unfold; `research/` copies only where intake §18 clears personal-stack presence. Everything else copies verbatim at unfold.
 - **Template headers:** every file opens with a `skeleton template` comment naming its genome module; instantiation removes that line and adds the standard provenance header (`UNFOLD.md` §Update step 3). Update deltas diff installed files against these templates.
 - **Legacy path resolution:** corpus references to `local/state/<file>` resolve to the owning project's directory in this tree via `hub/registry.yaml` (e.g. `local/state/worklog.md` → `worklog/worklog.md`). The registry is the resolver of record; this tree is its default answer.
-- **Empty shells are still clutter:** `hub/_forms/` holds the FORMS of lazy-founded kinds (lessons, handbook, campaign); they are instantiated into a project only at that project's first entry, never pre-seeded.
+- **Empty shells are still clutter:** `hub/_forms/` holds the FORMS of lazy-founded kinds (lessons, handbook, campaign, playbook); they are instantiated into a project only at that project's first entry, never pre-seeded.
 - **Team practice wins:** the tree covers the estate's OWN records only. Where intake discovers a team surface for a content kind (status posts, design docs), that surface wins and the corresponding staging file retires (e.g. `worklog/worklog-public.md`).
