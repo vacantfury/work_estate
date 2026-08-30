@@ -2,6 +2,12 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [6.3.0] - 2026-08-30
+
+- Added: **`UNFOLD.md` personal-residue sweep** (user direction 2026-08-30, following the 6.2.1 incident): the seed is written to carry no personal content, but a slip is possible — the installed side now guards itself. Phase 3 gains step 11: sweep the clone's committed content and everything generated for residue violating the hard content rules (personal names, account handles, personal contact details, references to any system outside this tool); on a hit, delete it locally the same session and add a hub TODO line to relay the finding upstream for a fix at source. §Update step 2 re-runs the sweep over every pulled delta. Former log/report steps renumbered 12/13.
+- Installed-estate migration: adopt the sweep at the next update apply, and run it once retroactively over the installed estate.
+- Affects: the unfold and update procedures themselves; no module derived layers regenerate. MINOR: additive procedure step.
+
 ## [6.2.1] - 2026-08-30
 
 - Fixed: **de-identification sweep** (maintainer order 2026-08-30) — hard content rules 1/5 enforced on committed text: the maintainer's code-host account name removed from the 3.4.1 migration line (now a `<account>` placeholder resolved from the clone's existing remote); the author's legal name in `NOTICE.md` replaced with "The author"; a stray auto-seeded catalog file referencing an external system removed (`campaigns/README.md` — it had no valid entries); the repo's former name in rename records reduced to "former name". No convention or module content changes.

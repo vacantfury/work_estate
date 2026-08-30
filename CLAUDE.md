@@ -76,4 +76,6 @@ An **open work tool**, shaped as an installation package: a portable working-con
 
 - 2026-08-26 · v6.2.0 search-first pass (user direction): engineering-standards §Prefer mature tools widened — before building any capability or attacking any complex problem, search existing tools AND existing results first; "existing" spans open-source and the employer's internal world (libraries, services, shared repos, other teams' solutions, prior art), the internal tool winning ties (owners + support + compliance already settled).
 
+- 2026-08-30 · v6.2.1 de-identification sweep + v6.3.0 residue-sweep step (user order/direction 2026-08-30): committed content scrubbed of personal identifiers (hard rules 1/5 enforced; a stray auto-seeded catalog file removed); `UNFOLD.md` gains the standing personal-residue sweep — Phase 3 step 11 + §Update re-run per delta: the installed side deletes any slipped personal content locally the same session and flags it for upstream fix.
+
 First install ran 2026-08-24; the clone on the work device now serves as the update channel (`UNFOLD.md` §Update) — see `TODO.md`.
