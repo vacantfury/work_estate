@@ -2,6 +2,11 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [6.2.1] - 2026-08-30
+
+- Fixed: **de-identification sweep** (maintainer order 2026-08-30) — hard content rules 1/5 enforced on committed text: the maintainer's code-host account name removed from the 3.4.1 migration line (now a `<account>` placeholder resolved from the clone's existing remote); the author's legal name in `NOTICE.md` replaced with "The author"; a stray auto-seeded catalog file referencing an external system removed (`campaigns/README.md` — it had no valid entries); the repo's former name in rename records reduced to "former name". No convention or module content changes.
+- Affects: nothing — no derived layer regenerates; no living state touched. PATCH: content-hygiene fix.
+
 ## [6.2.0] - 2026-08-26
 
 - Changed: **`engineering-standards.md` §Prefer mature tools over reinventing — search-first widened to results and to the internal world** (user direction 2026-08-26): before building any capability or attacking any complex problem, search for what already exists — tools AND results (a prior experiment, published measurement, or existing analysis may already answer the question; the search precedes the design, not the review); "existing" spans the open ecosystem AND the employer's internal one — internal libraries, services, platforms, shared repos, other teams' solutions, and internal prior art count as available exactly the way open-source does, and the internal tool wins a tie (owners, support channel, compliance posture already settled).
@@ -87,10 +92,10 @@ Compensation pass (user decision 2026-08-25): the benefits module is renamed and
 
 ## [3.4.1] - 2026-08-25
 
-Rename: the repo itself, `former name` → `work_estate` (user decision 2026-08-25) — the name now uses the corpus's own vocabulary (the work estate, per `estate-structure.md`), plainly self-describing.
+Rename: the repo itself takes its current name, `work_estate` (user decision 2026-08-25) — the name now uses the corpus's own vocabulary (the work estate, per `estate-structure.md`), plainly self-describing.
 
 - Changed: `text_docs/design.md` title and `UNFOLD.md` provenance-header format carry the new name. Headers already written under the old name remain valid; no derived layer regenerates for this.
-- Migration for an installed estate (one-time, at the next update pull): `git remote set-url origin git@github.com:<account>/work_estate.git` (the code host redirects the old URL meanwhile, so an un-migrated clone keeps working); optionally rename the local clone directory to match. Update the seed row's clone path/name in the hub registry if recorded.
+- Migration for an installed estate (one-time, at the next update pull): point the clone's remote at the renamed repo under the same hosting account — `git remote set-url origin git@github.com:<account>/work_estate.git`, with `<account>` taken from the clone's existing remote URL (the code host redirects the old URL meanwhile, so an un-migrated clone keeps working); optionally rename the local clone directory to match. Update the seed row's clone path/name in the hub registry if recorded.
 - Affects: nothing else — no convention, module, or living state changes.
 
 ## [3.4.0] - 2026-08-24
