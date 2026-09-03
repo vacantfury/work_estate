@@ -2,6 +2,13 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [6.4.0] - 2026-09-03
+
+- Added: **`store.md` §The engine is resolved at unfold — the data-home layout** (settle-time port; the maintainer's own infrastructure practice settled this end-state store layout, generalized): once the store engine lands, its data lives in one data home OUTSIDE the project folders, one folder per project (the project's truth database, any other tool's database as its own file beside it, found-data `inputs/`, a deletable `cache/`) — code and rendered views stay in the project folders. Naming rule: a project folder is data/state-free — `store` and `state` never name a folder INSIDE a project again.
+- Changed: **`estate-structure.md` §The concrete tree** — names today's `local/state/<file>` resolution as the CURRENT form and points at the target data-home layout above, pending the store engine's own rollout (A7); no per-reference rewrite of existing corpus text.
+- Installed-estate migration: none — module text only; no skeleton templates, registry schemas, or living state touched. The `local/state/<file>` layout stays live until a real store engine lands.
+- Affects: `store.md` and `estate-structure.md` derived layers regenerate (no skeleton file exists for either — prose only). MINOR: additive rule content, non-breaking.
+
 ## [6.3.0] - 2026-08-30
 
 - Added: **`UNFOLD.md` personal-residue sweep** (user direction 2026-08-30, following the 6.2.1 incident): the seed is written to carry no personal content, but a slip is possible — the installed side now guards itself. Phase 3 gains step 11: sweep the clone's committed content and everything generated for residue violating the hard content rules (personal names, account handles, personal contact details, references to any system outside this tool); on a hit, delete it locally the same session and add a hub TODO line to relay the finding upstream for a fix at source. §Update step 2 re-runs the sweep over every pulled delta. Former log/report steps renumbered 12/13.
