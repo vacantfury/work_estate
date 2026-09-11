@@ -36,7 +36,7 @@ The sanctioned tooling's native hooks provide intake, stop checks, context resto
 
 ## Session notifier
 
-A platform-local notifier calls attention to a completed round or a dialog that blocks progress. Adapt its command at unfold A1; the policy uses the harness's **Stop + Notification** hook pair and the latest prompt's recorded start/completion state. Timing values live in the installed config: completion minimum **120 seconds**, dialog-idle event **60 seconds**. These are notification thresholds, never work deadlines or authority timeouts.
+A platform-local notifier calls attention to a completed round or a dialog that blocks progress. Adapt its command at unfold A1; the policy uses the harness's **turn-end + idle-notification** hook pair and the latest prompt's recorded start/completion state. Timing values live in the installed config: completion minimum **120 seconds**, dialog-idle event **60 seconds**. These are notification thresholds, never work deadlines or authority timeouts.
 
 | Event | Notification policy |
 |---|---|

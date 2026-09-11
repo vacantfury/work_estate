@@ -51,7 +51,7 @@ addopts = "-m 'not live and not slow and not eval'"
 - **Versioned seams carry the strongest duty.** The release gate runs the keyless suite directly against the exact current tree before cutting a tag or release, and refuses on red or a gate error. Seam/contract tests are mandatory: the tag is the consumer contract. Providers ship explicit test helpers for consumers where useful, never auto-registered plugins; helper contract changes follow SemVer.
 - **Narrow CI:** versioned infrastructure runs the keyless suite on push and tag in a fresh checkout. Other projects add CI when shared maintenance or a consumed interface needs it, following the team's pipeline.
 - **Consequential actions:** gate/executor logic is covered, including fail-closed paths. A fixed implementation defect gets a regression check against its observed failure mode, not a test that merely repeats the implementation.
-- **Substantive builds get an independent review before completion is reported.** Triage findings before declaring done; mechanical edits are exempt. Cross-family review and immutable review inputs follow `human-agent-collaboration.md` §Two resident agents. Model evals remain judged signals and never replace deterministic controls.
+- **Substantive builds get an independent review before completion is reported.** Triage findings before declaring done; mechanical edits are exempt. Cross-family review and immutable review inputs follow `human-agent-collaboration.md` §Two agents. Model evals remain judged signals and never replace deterministic controls.
 
 ## Version control
 

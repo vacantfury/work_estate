@@ -4,7 +4,7 @@ Recurring procedures worth materializing on the work side, in whatever form the 
 
 ## One source, scoped delivery
 
-Each procedure has ONE canonical source in the project that maintains it. At unfold, materialize that source once; delivery into an agent's native skill directory is a link, not another editable copy. This applies to both resident agents (`human-agent-collaboration.md`).
+Each procedure has ONE canonical source in the project that maintains it. At unfold, materialize that source once; delivery into an agent's native skill directory is a link, not another editable copy. This applies to both agents (`human-agent-collaboration.md` §Two agents).
 
 - **Declare consumers.** Each skill's frontmatter names `consumers: estate-wide | hub | domain:<name> | project:<name>`. Estate-wide reaches every project; hub reaches the steward only; domain membership comes from the estate registry; project reaches one home. User-level skill directories hold estate-wide skills only. Missing or unrecognized scope plants no additional links and is reported for reconciliation; the unresolved count is the revision signal, with zero remaining after migration.
 - **No same-name shadowing.** Agents may resolve duplicate skill names differently, so a local copy is never an override mechanism. Project variation belongs in parameters in its instructions or config, read by the one linked procedure.

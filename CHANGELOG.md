@@ -2,6 +2,12 @@
 
 All notable seed changes, one entry per version. Versions are SemVer git tags: MAJOR = a convention reversed or restructured (existing derived layers must regenerate), MINOR = additive (new modules or module sections), PATCH = wording or fix. Each entry names the changed modules and the derived layers they affect — this file is the manifest the update mode (`UNFOLD.md` §Updating an installed estate) reads against the installed version.
 
+## [7.0.1] - 2026-09-10
+
+- Fixed: review fixes the 7.0.0 tag shipped without (wording and coherence only, no convention change): `task-convention.md` names the plan revision field as `schemas.yaml` does (was "planning stamp") and notes that work-node kinds are a separate axis from the project registry's `kind`; `human-agent-collaboration.md` §Two agents (renamed from "Two resident agents"; cross-references in engineering-standards and portable-skills follow) and the verification anchor is defined on first use; `session-discipline.md` notifier policy names the hook events generically (turn-end + idle-notification); `autoflow.md` world-effects sentence split; `corpus/README.md` list punctuation made uniform; `text_docs/plan.md` version lines corrected.
+- Installed-estate migration: none — regenerate the touched modules' derived layers at the next update apply; no skeleton file or schema changed.
+- Affects: derived layers of task-convention, human-agent-collaboration, engineering-standards, portable-skills, session-discipline, autoflow. PATCH.
+
 ## [7.0.0] - 2026-09-10
 
 Seed refresh (settle-time port; the maintainer's own practice settled the task model, two-agent coordination, and session controls). MAJOR: the task convention is restructured and the flat task schema is replaced by work nodes with related tables, so existing derived layers must regenerate.
