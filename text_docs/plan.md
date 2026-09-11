@@ -2,8 +2,9 @@
 
 ```yaml
 state: active
-last_settled: 2026-08-26
-running: v6.0.0        # latest shipped seed tag; the version an installed estate updates against
+last_settled: 2026-09-10
+running: v6.3.0        # latest reachable shipped tag at this worktree's base
+prepared: v7.0.0       # pending integration and tagging
 re_plan_triggers:      # settle events only, never cadence
   - a seed install or update surfaces a structural gap (missing template, underdetermined layout)
   - the maintainer's upstream working practice settles a change that crosses the porting bar
@@ -17,6 +18,7 @@ The seed reached install grade v1.0.0 (2026-08-24, first install complete) and h
 ## Milestones
 
 - **v6.0.0 — the concrete skeleton** *(shipped 2026-08-26)*: `skeleton/` template tree, UNFOLD Phase 3 copy-then-adapt, project-module seam re-cut, one-line corpus index.
+- **v7.0.0: seed refresh** *(prepared 2026-09-10)*: the work-tree task model and schemas, agent/session conventions, testing and promotion gates. The delta and installed-estate migration are specified in `CHANGELOG.md`; integration and tagging activate the prepared version.
 - **Next (unscheduled, consumer-driven):** installed-estate conformance pass at the work clone's next update pull — skeleton adoption, missing-file fill, ledger re-check. Rides the user's update run, not a seed change.
 
 ## Risks (premortem; predictive lane)

@@ -10,6 +10,7 @@ The installed estate's default directory tree, shipped as real files. The corpus
                  self.md · decisions.md · failures.md · footprint.md · communication.md ·
                  _forms/ (lazy-founded kinds: lessons · handbook · campaign · playbook)
   store/         typed data + scoring service: schemas/schemas.yaml
+                 includes tasks · deadlines · dispositions · execution claims
   finder/        retrieval bus: sources.md (A8 knowledge roster)
   ties/          people-and-traffic bus: routing.md · drafts.md (no person stores — principle 29)
   worklog/       worklog.md · timelog.md · worklog-public.md (staging) · reports/
@@ -26,6 +27,8 @@ The installed estate's default directory tree, shipped as real files. The corpus
 ```
 
 Every project also carries `INSTRUCTIONS.md` (scope + citations to hub law, never copies), `TODO.md` (`# TODO (ordered)`), `NOW.md`, and `archive.md`.
+
+The campaign and playbook forms carry a parent reference; campaigns require a named end, while playbooks name their standing scope and retirement disposition. Task rows and the related schemas follow `corpus/task-convention.md`. The TODO header and empty-list templates stay valid in both task forms.
 
 ## Rules
 
