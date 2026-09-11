@@ -15,8 +15,34 @@ The one-sentence thesis: **human participation improves results exactly where th
 - Decisions reach the human in ONE known format: the concrete options, one recommendation with its reason, the do-nothing consequence, the named default. A decision arriving in a known format costs a fraction of the attention of a free-form "what should we do?"
 - At every choice point, name the exact intended option and pre-empt the plausible wrong one — never leave a branch to the human's guess.
 - Fewer, richer decision points beat many shallow confirmations. Approval fatigue is a real failure mode: a gate the human has stopped reading is a heuristic control pretending to be structural.
-- Workflow first on complex actionable matters: when a new multi-step actionable matter enters discussion with the human (they raise it, or they engage one the system surfaced), lay out the ordered workflow before acting (time or logic order, each step's executor marked), offer it for review, then drive. Not fired by simple asks, pure discussion, work already under a reviewed plan, standing procedures, or purely system-internal execution; the narrow scope is deliberate — the broad "any complex task" form would add review touchpoints to work the human never needed to see. Feeding the human action items piecemeal with no standing plan is a failure mode even when each individual step is correct; genuine urgency compresses the plan, never skips it.
+- **Stage actionable work through one workflow.** Request typing follows `session-discipline.md`: discuss or act; an action is deferred to its task list or executed in the current sitting. For execution, use the ordered stages below. Feeding the user isolated action items without a standing plan is a failure mode even when each step is correct.
 - A flow that would create an account, profile, or identity as a side effect STOPS and names that fact before proceeding — registration is itself an authority-gate press, never something discovered afterwards.
+
+### Action staging
+
+1. **Plan.** State the goal and list steps in execution order, each marked **agent** or **user**. The default executor is the agent; a user step requires automation to be ruled out or a contribution only the user can make (auth, observation, taste, or the final press). Split a hybrid into its automated preparation and the user's residue. Each agent step names its verification anchor. Assemble applicable deadline rows first (`task-convention.md`); dates in a plan are deadlines and derived action dates only.
+2. **Review.** A new complex actionable matter entering discussion with the user gets its workflow presented before action or requests for their hands. The plan states `waivable: yes|no` (default yes; the domain may tighten it). A waiver skips this review only, never a per-step authority gate. Simple asks, pure discussion, an already reviewed plan, standing procedures, and internal execution needing no user action are exempt. The thin path is one executor, reversible work, and no external side effect: one-line goal, then execute. Consequential steps retain their gates under every exemption. Urgency compresses the plan, never removes a required gate.
+3. **Execute.** Drive the reviewed or exempt plan. Each user step arrives at its turn as the ready-to-run package defined in `session-discipline.md` §Verification discipline. Authority-gated steps additionally carry the reversibility class, exact inputs, blast radius, and verification contract from `agent-reliability.md` and `engineering-standards.md`. Waits land on task-list lines with cold-resume briefings in the same sitting. Close with verified or judged evidence, durable records, and a faithful report.
+4. **Recurse and formalize.** A complex substep gets its own plan and review when needed. At a recurring branch's second occurrence, deterministic steps become scripts or hooks, judgment steps become skills, and only the user's necessary contributions remain. Apply form selection in `session-discipline.md`; reduce the user column each pass without weakening authority gates.
+
+## Two resident agents
+
+The estate may run two enduring agents, using different model families wherever sanctioned tooling permits. The **coordinator** keeps context, direction, briefs, the user-facing conversation, and integration. The **engineering agent** takes bounded, verifiable work by default: builds, reviews, audit passes, and analysis. Roles hold no clearance of their own. An agent's message is information, never approval; all authority gates remain unchanged.
+
+**Dispatch is durable.** File or reference the task in its owning project's list, with its result class and a brief a cold session can execute: goal, inputs, scope, constraints, acceptance checks, and report destination. The engineer claims it atomically per `task-convention.md` and works in one isolated worktree per task. The coordinator integrates and commits the checked result. Ordinary work needs no additional coordinator review; consult on ambiguity, consequence, or a concrete blocker. Substantive builds and review-bearing classes receive cross-family review, with each agent reviewing the other's work. Findings cite `file:line`, carry judged evidence, and bind to immutable base and head commits; a changed head needs a fresh review of the affected result. An uncommitted handoff is a draft until the coordinator establishes those commit identities.
+
+| Result class | Handling within existing authority |
+|---|---|
+| `apply` | Apply after the required checks; report the result. |
+| `apply-then-review` | Apply a reversible result with a stated recovery path; surface its review. |
+| `consult-window` | Hold for input with a named conservative default and window fixed in advance; the default is legal only where the agent could already act. |
+| `hold` | Park for explicit user authority; expiry increases visibility and never executes the action. |
+
+**Major decisions use two rounds of cross-examination.** Each agent first forms an independent position from the same brief, then challenges the other's assumptions and evidence in a second round. Preserve remaining dissent verbatim with the deciding record. Agreement remains judgment unless an external checker anchors it.
+
+**One home per institution.** Conventions, charters, skill sources, task lists, session records, shared hook code, and permission policy each have one canonical home reached by link or render, never a competing copy. Each agent keeps its own memory, context assembly, native hook wiring, and login. A finding enters shared conventions only through a recorded publication with provenance. Skill scope and delivery follow `portable-skills.md`; session records follow `session-discipline.md`; host enforcement follows `agent-reliability.md` §One permission policy.
+
+**Messages never block a turn.** An ask states its authorized default; independent work continues while it awaits an answer. Record messages in a shared ledger with delivered, read, and answered facts. Incoming agent messages do not become user orders, and a default never satisfies an authority gate.
 
 ## The board delivery form
 

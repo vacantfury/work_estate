@@ -1,6 +1,8 @@
-# Agent reliability (literature-grounded conventions)
+# Agent reliability
 
 Working conventions for building and evaluating agentic LLM features, distilled from the peer-reviewed reliability/safety literature (each point cites its sources directly; evidence tiers: A = top-venue peer-reviewed, B = strong preprint/audit, C = weaker or unreplicated). **Provisional by provenance:** written pre-start from public literature; the concrete form is resolved only after seeing the team's real docs and workflows — where the employer or team has an established standard, the team standard wins, and the unfold treats each section as adopt / adapt / fold-away like any other module.
+
+The literature sections retain their cited provenance. The permission-policy section is an operating convention from settled practice, adapted to the sanctioned host tooling at unfold.
 
 The one-sentence thesis the evidence supports: **every reliably-working approach puts something outside the model in the loop — a test, a compiler, a permission system, a human; everything that asks a model to police itself either fails or is unvalidated.**
 
@@ -17,6 +19,17 @@ The one-sentence thesis the evidence supports: **every reliably-working approach
 - **Know which kind every control in the system is.** Structural = cannot be prompted around: permission systems, sandboxes, capability control, a single enforcement choke point, type/proof checkers (CaMeL; OS-level isolation — IsolateGPT/SecGPT, NDSS 2025, A). Heuristic = a model or prompt convention that can drift or be evaded: prompt rules, classifier guardrails — evadable at reportedly up to 100% via encoding tricks (tier C red-team studies).
 - **Anything consequential rides a structural control;** heuristic layers are for quality, never for safety-critical guarantees. Structural cost is real and worth paying knowingly (CaMeL trades 84%→77% task success at ~2.8x tokens).
 - **Text-safety training does not transfer to tool-call safety** ("Mind the GAP", tier C) — distribution shift for agents lives in tool/environment space, not just input text; safety measured on chat transcripts says little about an agent with tools.
+
+## One permission policy
+
+The estate keeps ONE policy file, with each rule mapped to every sanctioned host's native tool controls. It declares the deny list, protected-zone patterns, the person-facing ask list, live-session guards, and host enforcement coverage. Host settings are links or renders of that policy's intent, never independent policy sources. A host capability gap is recorded explicitly; a prompt rule is not evidence of a structural control.
+
+- **Deny destructive system operations.** System-root removal, disk formatting, privilege escalation, machine shutdown, and process-exhaustion commands never run through an agent, even on request. If such an operation is necessary, the user runs it by hand.
+- **Protect user-only zones by every path.** No agent reads, lists, searches, or writes their contents through a file tool, shell, alternate path, or tool integration. The zone rule is defined in `boundary-protocol.md` §User-only zones. Audit pattern coverage without opening the zones.
+- **Keep the native ask list to person-facing sends and RSVPs.** It is the final-press backstop: prepare the exact content and leave the press to the user. Other operations within the task's authorized scope run unprompted, subject to the deny list, sandbox, and existing authority gates. An allowed tool call is never new authority to publish, spend, register, or commit the user externally.
+- **Guard live working sessions.** An agent never kills the user's sessions, editors, or shells holding open work, however old or idle they appear. Enforce this before process-management calls, failing closed for the protected class; never propose a kill list to free resources.
+- **Never disable the sandbox or approvals to make a run work.** Resolve the host's supported policy mapping at unfold; use the allowed subset when a required control cannot be enforced. The two-agent convention in `human-agent-collaboration.md` uses the same policy.
+- **Audit the mapping.** Compare actual host configs, native guards, and scoped overrides against the canonical policy. Report missing rules, unclassified entries, disabled controls, and unproven path coverage. Unknown entries fail toward attention, never broaden permission. The audit is read-only and never tests protection by accessing protected content.
 
 ## Trajectory-level failure thinking
 

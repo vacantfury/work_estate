@@ -6,14 +6,14 @@ One line per module; the module itself is the full statement.
 
 **Estate-wide law (every project consumes; no project of their own):**
 
-- `task-convention.md` — the ordered-TODO task system: one home per item, states, annotations, archive; the store-backed form is the standard where an engine exists.
-- `session-discipline.md` — how a session stays reliable: request typing, reply format (footer, manifest, anchor), verification, capture-at-settle, form selection, three-tier attention, the wrap.
-- `engineering-standards.md` — code defaults: tooling, parameters-in-config, mature-tools-first, tiered testing, version control, secrets hygiene, authority gating.
+- `task-convention.md`: the work tree, deadline rows and derived action dates, transition refusals, typed dispositions, atomic claims, ordered lists, generated views, and cold resumption.
+- `session-discipline.md`: request typing, the session record and rendered close, notification policy, verification, capture-at-settle, form selection, attention, and parking.
+- `engineering-standards.md`: tooling, config, mature tools, controls-first testing, keyless pytest defaults, release gates and review, version control, secret hygiene, and authority.
 - `role-playbook.md` — applied-science working conventions for LLM product features; provisional until confirmed against team practice.
-- `agent-reliability.md` — literature-grounded conventions for building/evaluating agentic features: verification ladder, irreversibility classes, eval skepticism; cited, provisional.
-- `human-agent-collaboration.md` — the human's place in agentic workflows: typed roles, choice surfaces, the board delivery form, interface investment, correction harvest.
+- `agent-reliability.md`: the verification ladder, structural controls, one permission policy across hosts, irreversibility classes, and cited eval cautions.
+- `human-agent-collaboration.md`: typed human roles, staged action, two resident agents, result classes, cross-family review, choice surfaces, boards, and correction harvest.
 - `communication-craft.md` — communication as a trained capability: artifact harvest, coach passes, pre-flight assists; log under the hub's engine.
-- `portable-skills.md` — the recurring procedures worth materializing as skills/checklists, each carried in full (debugging, results-triage, project-founding, digs, event-prep, day-start, and peers).
+- `portable-skills.md`: one canonical procedure with scoped skill delivery, plus full procedures for debugging, results-triage, project-founding, digs, event-prep, day-start, and peers.
 
 **The hub (steward-mind) genomes:**
 
@@ -32,7 +32,7 @@ One line per module; the module itself is the full statement.
 - `ties.md` — the people-and-traffic bus on the employer's own surfaces: live person reads (no stores, principle 29), three-lane triage, inert drafts, the meeting flow.
 - `llm_utils.md` — the LLM provider seam: routing, retries, structured output, usage ledger; founds at the first code consumer.
 - `devices.md` — the compute and device client: registry, dispatch seam, run state; founds at the first granted compute target.
-- `autoflow.md` — the automation platform executing the engine's job registry: scheduler, cycles, dispatch, run ledger, liveness; founds at the first sanctioned scheduled job.
+- `autoflow.md`: scheduler, cycles, isolated work units, checked promotion through a serialized merge queue, verification capacity, run ledger, and liveness; founds at the first sanctioned scheduled job.
 - `auto_research.md` — the autonomous research engine: the lane's standing jobs + the candidate funnel (the funnel never founds a bet); founds with the lane's first standing job.
 
 **Function-project genomes:**

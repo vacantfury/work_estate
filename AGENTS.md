@@ -78,4 +78,6 @@ An **open work tool**, shaped as an installation package: a portable working-con
 
 - 2026-08-30 · v6.2.1 de-identification sweep + v6.3.0 residue-sweep step (user order/direction 2026-08-30): committed content scrubbed of personal identifiers (hard rules 1/5 enforced; a stray auto-seeded catalog file removed); `UNFOLD.md` gains the standing personal-residue sweep — Phase 3 step 11 + §Update re-run per delta: the installed side deletes any slipped personal content locally the same session and flags it for upstream fix.
 
+- 2026-09-10 · v7.0.0 seed refresh (settle-time port; the maintainer's own practice): work-tree task model and schemas, deadline rows, dispositions and claims; two resident agents, scoped skills, rendered session records, one permission policy, session notification policy, controls-first testing, checked automated promotion, and staged action. Derived layers regenerate; existing markdown list text stays valid.
+
 First install ran 2026-08-24; the clone on the work device now serves as the update channel (`UNFOLD.md` §Update) — see `TODO.md`.

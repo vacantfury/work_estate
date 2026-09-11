@@ -32,10 +32,26 @@ Defaults for new code. Where the employer or team has an established practice �
 
 ## Testing (tiered by trigger)
 
-- **Any code project at birth:** `tests/` + pytest as a dev dependency, with at least one smoke test. Notes/paper/exploratory repos carry no mandate.
-- **Libraries consumed by others:** green tests gate every release; the mandatory kind is seam/contract tests — the release is the consumer contract, so the tests assert the contract.
-- **Anything taking consequential actions** (spends money, sends outbound messages, mutates shared state): the gate/executor logic is test-covered, with fail-closed behavior verified by a test.
-- House style: fast, deterministic, no-network, no-secrets; the suite passes on a fresh clone with no keys.
+- **Controls before tests.** Where a deterministic control is possible, install the control and test it. Permission backstops, live-session guards, and configured spend limits act before the consequential call (`agent-reliability.md` §One permission policy); a test never substitutes for an enforceable control.
+- **Code projects at birth:** a Python package starts with `tests/`, pytest as a dev dependency, one meaningful smoke test, and the standard block below. Use the stack's equivalent for other languages. Notes, papers, and exploratory experiment code carry no blanket test mandate.
+
+```toml
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live: requires network access or keys",
+    "slow: excluded from the fast suite",
+    "eval: model evaluation, selected explicitly",
+    "quarantine: known flaky; excluded from unattended test alerts",
+]
+addopts = "-m 'not live and not slow and not eval'"
+```
+
+- **Fast and keyless by default:** `uv run pytest` passes on a fresh clone without network access or keys. Select live, slow, and eval runs deliberately. Quarantine is a known-flaky label, not permission to hide a failure from a release check; a scheduled test-alert job excludes that marker.
+- **Versioned seams carry the strongest duty.** The release gate runs the keyless suite directly against the exact current tree before cutting a tag or release, and refuses on red or a gate error. Seam/contract tests are mandatory: the tag is the consumer contract. Providers ship explicit test helpers for consumers where useful, never auto-registered plugins; helper contract changes follow SemVer.
+- **Narrow CI:** versioned infrastructure runs the keyless suite on push and tag in a fresh checkout. Other projects add CI when shared maintenance or a consumed interface needs it, following the team's pipeline.
+- **Consequential actions:** gate/executor logic is covered, including fail-closed paths. A fixed implementation defect gets a regression check against its observed failure mode, not a test that merely repeats the implementation.
+- **Substantive builds get an independent review before completion is reported.** Triage findings before declaring done; mechanical edits are exempt. Cross-family review and immutable review inputs follow `human-agent-collaboration.md` §Two resident agents. Model evals remain judged signals and never replace deterministic controls.
 
 ## Version control
 
